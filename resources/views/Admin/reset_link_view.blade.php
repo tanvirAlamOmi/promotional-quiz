@@ -24,9 +24,16 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>
+                {{-- status code start --}}
+                @if (session('status'))
+                    <div class="mb-4 font-medium text-sm text-green-600">
+                        {{ session('status') }}
+                    </div>
+                @endif
+                  {{-- status code end --}}
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('/forgot-password') }}">
+                    <form method="POST" action="{{ route('password.email') }}">
                         @csrf
 
                         {{-- <input type="hidden" name="token" value="{{ $token }}"> --}}

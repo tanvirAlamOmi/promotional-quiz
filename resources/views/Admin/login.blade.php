@@ -39,6 +39,15 @@
                           </ul>
                       </div>
                   @endif
+
+                  {{-- status code start --}}
+                  @if (session('status'))
+                      <div class="mb-4 font-medium text-sm text-green-600">
+                          {{ session('status') }}
+                      </div>
+                  @endif
+                  {{-- status code end --}}
+
                   <form class="user"  method="POST" action="{{ route('login') }}">
                     @csrf
                     <div class="form-group">
