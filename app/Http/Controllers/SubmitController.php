@@ -16,7 +16,7 @@ class SubmitController extends Controller
         $request->validate([
             'customerName' => 'required|max:255',
             'customerEmail' => 'required|email|max:255',
-            'customerPhone' => 'required|numeric|regex:/(01)[0-9]{9}/',
+            'customerPhone' => 'required|numeric',
             'prizeWon' => 'required',
         ]);
 
@@ -80,7 +80,10 @@ class SubmitController extends Controller
     public function orderListDataTable()
     {
 			$data = Submit::All();
-			return Datatables::of($data) 
+			return Datatables::of($data)
+            ->addColumn('created_at', function ($row){
+                return $row->created_at->format('d-M-Y h:m:s');
+            })
 			->make(true);
 			return $data;
     }
@@ -89,7 +92,7 @@ class SubmitController extends Controller
     {
             $product_count = Submit::select('reward', DB::raw('count(reward) as count'))
             ->groupBy('reward')->get();
-			return Datatables::of($product_count) 
+			return Datatables::of($product_count)
 			->make(true);
 
             return $product_count;

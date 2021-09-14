@@ -15,7 +15,10 @@ class UserController extends Controller
     {
         // if ($req->ajax()) {
 			$data = User::All();
-			return Datatables::of($data) 
+			return Datatables::of($data)
+            ->addColumn('created_at', function ($row){
+                return $row->created_at->format('d-M-Y h:m:s');
+            }) 
 			->make(true);
 			return $data;
 		// } 

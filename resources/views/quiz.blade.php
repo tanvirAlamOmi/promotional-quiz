@@ -419,21 +419,23 @@
     <!-- change quiz gift update page start-->
     <section class="quiz-gift">
       <div class="container">
-        <div class="card container-fluid" style="background: beige;">
+        <div class="card container-fluid" style="background: ghostwhite;">
           <div class="col-12">
             <div class="header row">
               <div class="text-left col-6">
-                <h1>Congratulations</h1>
+
+                <h1>Congratulation</h1>
               </div>
               <div class="text-right col-6" style="text-align: right;">
-                <img src="{{asset('img\celebration.webp')}}" alt="celebration-img" style="margin-top: -137px;">
+              <img src="{{asset('img\celebrate.webp')}}" alt="" 
+                style="margin-top: -137px;">
               </div>
             </div>
             <div class="body-part">
               <div class="container">
                 <div class="row align-items-center">
                   <div class="col-6 text-center">
-                    <img src="{{asset('img/gift-img.JPG')}}" id="gift_img" class="img-thumbnail" alt="gift-img">
+                    <img src="" id="gift_img" class="img-thumbnail" alt="gift-img">
                   </div>
                   <div class="col-6">
                     <h1 id="gift_name"></h1>
@@ -487,7 +489,7 @@
             <img src="{{asset('img/message.webp')}}" alt="">
             <h1>Thank You, Enjoy!</h1>
             <h2>We've sent the coupon to your Email.</h2>
-            <a href="#">Back Home</a>
+            <a href="{{url('/')}}">Back Home</a>
           </div>
         </div>
       </div>

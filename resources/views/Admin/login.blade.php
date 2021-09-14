@@ -48,11 +48,14 @@
                     <div class="form-group">
                       <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                     </div>
-                    <div class="form-group">
-                      <div class="custom-control custom-checkbox small" style="line-height: 1.5rem;">
+                    <div class="form-group row pl-3">
+                      <div class="custom-control custom-checkbox small col-6" style="line-height: 1.5rem;">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
                         <label class="custom-control-label" for="customCheck">Remember
                           Me</label>
+                      </div>
+                      <div class="custom-control custom-checkbox small col-6 text-right" style="line-height: 1.5rem;">
+                        <a href="{{url('/forgot-password')}}"> forgot Password </a>
                       </div>
                     </div>
                     <div class="form-group">
