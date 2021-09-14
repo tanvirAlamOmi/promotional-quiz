@@ -21,7 +21,7 @@ Route::post('/submit_form', [SubmitController::class, 'onSubmit']);
 Route::group(['middleware' => 'auth'], function () {
     Route::view('/home', 'Admin.home');
     Route::view('/users', 'Admin.users');
-    Route::view('/rewards_statistic', 'Admin.rewardStats');
+    Route::view('/rewards_statistic', 'Admin.reward_stats');
     Route::get('/orders_datatable', [SubmitController::class, 'orderListDataTable']);
     Route::get('/users_datatable', [UserController::class, 'userListDataTable']);
     Route::get('/rewards_datatable', [SubmitController::class, 'rewardListDataTable']);
