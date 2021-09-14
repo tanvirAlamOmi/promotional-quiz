@@ -6,7 +6,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <link href="{{asset('img/main-logo.png')}}" rel="icon">
+      <link href="{{asset('img/main-logo.webp')}}" rel="icon">
       <title>Delicious Quiz</title>
       <!-- google font-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +39,8 @@
        <div class="container">
            <div class="row">
                <div class="col-12">
-                 <img src="{{asset('img/main-logo.png')}}" class="img-fluid" alt="main-logo">
-                   <h1>Delicious Ultimate Quiz </h1>
+                 <img src="{{asset('img\main-logo.webp')}}" class="img-fluid" alt="main-logo">
+                   <h1>Delicious Ultimate Quiz dula vai </h1>
                </div>
            </div>
        </div>
@@ -65,7 +65,7 @@
                   
                   <div class="col-6">
                     <div class="card right" style="width: 18rem;">
-                        <img src="{{asset('img/Rachel.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                        <img src="{{asset('img/Rachel.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="1a" id="qus_1_opt_1" name="friends">
@@ -78,7 +78,7 @@
                   </div>
                   <div class="col-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="{{asset('img/joey.png')}}" class="img-thumbnail" alt="quiz-banner-img">
+                        <img src="{{asset('img/joey.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="1b" id="qus_1_opt_2" name="friends">
@@ -91,7 +91,7 @@
                   </div>
                   <div class="col-6">
                     <div class="card right" style="width: 18rem;">
-                        <img src="{{asset('img/Ross.png')}}" class="img-thumbnail" alt="quiz-banner-img">
+                        <img src="{{asset('img/Ross.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="1c" id="qus_1_opt_3" name="friends">
@@ -104,7 +104,7 @@
                   </div>
                   <div class="col-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="{{asset('img/Phoebe.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                        <img src="{{asset('img/Phoebe.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="1d" id="qus_1_opt_4" name="friends">
@@ -128,7 +128,7 @@
                   
                   <div class="col-6">
                     <div class="card right" style="width: 18rem;">
-                        <img src="{{asset('img/Italy.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                        <img src="{{asset('img/Italy.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="2a" id="qus_2_opt_1" name="vacation">
@@ -141,7 +141,7 @@
                   </div>
                   <div class="col-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="{{asset('img/Turkey.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                        <img src="{{asset('img/Turkey.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="2b" id="qus_2_opt_2" name="vacation">
@@ -154,7 +154,7 @@
                   </div>
                   <div class="col-6">
                     <div class="card right" style="width: 18rem;">
-                        <img src="{{asset('img/Georgia.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                        <img src="{{asset('img/Georgia.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="2c" id="qus_2_opt_3" name="vacation">
@@ -167,7 +167,7 @@
                   </div>
                   <div class="col-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="{{asset('img/Maldives.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                        <img src="{{asset('img/Maldives.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="2d" id="qus_2_opt_4" name="vacation">
@@ -191,7 +191,7 @@
                     
                     <div class="col-6">
                        <div class="card right" style="width: 18rem;">
-                          <img src="{{asset('img/louvre-abu_dhabi.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/louvre-abu_dhabi.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="3a" id="qus_3_opt_1" name="night">
@@ -204,7 +204,7 @@
                     </div>
                     <div class="col-6">
                        <div class="card" style="width: 18rem;">
-                          <img src="{{asset('img/Mangroves.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Mangroves.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="3b" id="qus_3_opt_2" name="night">
@@ -217,7 +217,7 @@
                     </div>
                     <div class="col-6">
                        <div class="card right" style="width: 18rem;">
-                          <img src="{{asset('img/corniche.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/corniche.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="3c" id="qus_3_opt_3" name="night">
@@ -230,7 +230,7 @@
                     </div>
                     <div class="col-6">
                        <div class="card" style="width: 18rem;">
-                          <img src="{{asset('img/Ferrari World.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Ferrari World.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="3d" id="qus_3_opt_4" name="night">
@@ -255,7 +255,7 @@
                     <div class="col-6">
                        <div class="card right" style="width: 18rem;">
                        <!-- change-->
-                          <img src="{{asset("img/Don_tcut.jpeg")}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Don_tcut.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="4a" id="qus_4_opt_1" name="Sandwich">
@@ -268,7 +268,7 @@
                     </div>
                     <div class="col-6">
                        <div class="card" style="width: 18rem;">
-                          <img src="{{asset('img/Rectangle.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Rectangle.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="4b" id="qus_4_opt_2" name="Sandwich">
@@ -281,7 +281,7 @@
                     </div>
                     <div class="col-6">
                        <div class="card right" style="width: 18rem;">
-                          <img src="{{asset('img/Crustless.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Crustless.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="4c" id="qus_4_opt_3" name="Sandwich">
@@ -294,7 +294,7 @@
                     </div>
                     <div class="col-6">
                        <div class="card" style="width: 18rem;">
-                          <img src="{{asset('img/Triangle.jpeg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Triangle.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="4d" id="qus_4_opt_4" name="Sandwich">
@@ -318,7 +318,7 @@
                     
                     <div class="col-6">
                        <div class="card right" style="width: 18rem;">
-                          <img src="{{asset('img/Cool Cucumber Juice-7.jpg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Cool Cucumber Juice-7.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="5a" id="qus_5_opt_1" name="juice">
@@ -331,7 +331,7 @@
                     </div>
                     <div class="col-6">
                        <div class="card" style="width: 18rem;">
-                          <img src="{{asset('img/Super Greenies Juice-4.jpg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Super Greenies Juice-4.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="5b" id="qus_5_opt_2" name="juice">
@@ -344,7 +344,7 @@
                     </div>
                     <div class="col-6">
                        <div class="card right" style="width: 18rem;">
-                          <img src="{{asset('img/Beats by Beets 6.jpg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Beats by Beets 6.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="5c" id="qus_5_opt_3" name="juice">
@@ -357,7 +357,7 @@
                     </div>
                     <div class="col-6">
                        <div class="card" style="width: 18rem;">
-                          <img src="{{asset('img/Spicy Red-8.JPG')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Spicy Red-8.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="5d" id="qus_5_opt_4" name="juice">
@@ -381,7 +381,7 @@
               
               <div class="col-6">
                   <div class="card right" style="width: 18rem;">
-                    <img src="{{asset('img\veg-sand.jpg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                    <img src="{{asset('img\veg-sand.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                     <div class="card-body">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="-v" id="qus_6_opt_1" name="craving">
@@ -394,7 +394,7 @@
               </div>
               <div class="col-6">
                   <div class="card" style="width: 18rem;">
-                  <img src="{{asset('img\non-veg.jpg')}}" class="img-thumbnail" alt="quiz-banner-img">
+                  <img src="{{asset('img\non-veg.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                     <div class="card-body">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="-n" id="qus_6_opt_2" name="craving">
@@ -417,22 +417,6 @@
     </section>
     <!-- quiz body end -->
     <!-- change quiz gift update page start-->
-    <!-- {{-- <section class="quiz-gift">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-6 text-center">
-            <img src="{{asset('img/gift-img.JPG')}}" id="gift_img" class="img-thumbnail" alt="gift-img">
-          </div>
-          <div class="col-6">
-            <h1 id="gift_name"></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deleniti beatae expedita dolorem ut fugiat suscipit saepe inventore deserunt modi, iste ullam porro sed natus eligendi recusandae voluptate temporibus ipsa.</p>
-            <button type="button" class="btn btn-primary hide" id="coupon_button">Get your coupon now</button>
-          </div>
-        </div>
-      </div>
-    </section> --}}
- -->
-
     <section class="quiz-gift">
       <div class="container">
         <div class="card container-fluid" style="background: beige;">
@@ -442,8 +426,7 @@
                 <h1>Congratulations</h1>
               </div>
               <div class="text-right col-6" style="text-align: right;">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/celebration-party-popper-tada-decoration-christmas-38099.png" alt="" 
-                style="margin-top: -137px;">
+                <img src="{{asset('img\celebration.webp')}}" alt="celebration-img" style="margin-top: -137px;">
               </div>
             </div>
             <div class="body-part">
@@ -501,7 +484,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <img src="{{asset('img/message.png')}}" alt="">
+            <img src="{{asset('img/message.webp')}}" alt="">
             <h1>Thank You, Enjoy!</h1>
             <h2>We've sent the coupon to your Email.</h2>
             <a href="#">Back Home</a>
@@ -511,16 +494,16 @@
     </section>
     <!-- Thank you page end -->
     <!--change footer start-->
-    <section class="quiz-footer">
+    <footer class="quiz-footer">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1>Copyright <script>document.write(new Date().getFullYear())</script> © Delicious</h1>
+          <h1>Copyright <?php echo date("Y"); ?> © Delicious</h1>
             <H2>Developed by <a href="https://arbreesolutions.com/" target="_blank">Arbree Solutions</a> </H2>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
     <!-- footer end-->
     <!-- preloader js start-->
     <script>
@@ -578,28 +561,28 @@
             return {
               "name" : "Pesto Chicken",
               "coupon_code" : "Pesto Chicken",
-              "img_source" : "pesto_chicken_sandwich.png"
+              "img_source" : "pesto_chicken_sandwich.webp"
             };
 
           case '1c2c3d4b5c-n':
             return {
               "name" : "Tikka",
               "coupon_code" : "Pesto Chicken",
-              "img_source" : "Tikka_flavoured_sandwich.png"
+              "img_source" : "Tikka_flavoured_sandwich.webp"
             };
             
           case '1b2b3c4a5d-n':
             return {
               "name" : "Spicy Meatball",
               "coupon_code" : "Pesto Chicken",
-              "img_source" : "Spicy_Meatball_sandwich.png"
+              "img_source" : "Spicy_Meatball_sandwich.webp"
             };
             
           case '1d2d3b4d5b-v':
             return {
               "name" : "Veggie Melt",
               "coupon_code" : "Pesto Chicken",
-              "img_source" : "Veggie_Melt_sandwich.png"
+              "img_source" : "Veggie_Melt_sandwich.webp"
             };
             
           default:
@@ -608,14 +591,14 @@
                 return {
               "name" : "Tikka flavoured sandwich",
               "coupon_code" : "Pesto Chicken",
-              "img_source" : "Tikka_sandwich.png"
+              "img_source" : "Tikka_sandwich.webp"
             };
                 
               case 'v':
                 return  {
               "name" : "Southern Roasted Veggie",
               "coupon_code" : "Pesto Chicken",
-              "img_source" : "Southern_Roasted_Veggie_sandwich.png"
+              "img_source" : "Southern_Roasted_Veggie_sandwich.webp"
             };
             }
         }
