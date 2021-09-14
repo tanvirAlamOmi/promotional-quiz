@@ -3,6 +3,8 @@
 body {
     font-family: 'Pattaya', sans-serif;
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 .right {
@@ -301,7 +303,7 @@ body {
 
 /* mobile responsive css start */
 
-@media (min-width: 575.98px) {
+@media screen and (max-width: 992px) {
     .quiz-body .qus-headline {
         padding: 0px 12px;
     }
@@ -323,6 +325,15 @@ body {
     }
     .quiz-gift .card .body-part p {
         font-size: 15px;
+    }
+    .quiz-headline img {
+        width: 23%;
+    }
+    .quiz-body .progress {
+        margin: 20px 43px;
+    }
+    .pre-loader img {
+        margin-top: 50%;
     }
 }
 
