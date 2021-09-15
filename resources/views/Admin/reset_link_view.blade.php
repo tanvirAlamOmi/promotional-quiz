@@ -8,13 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="img/logo/logo.png" rel="icon">
-  <title>RuangAdmin - Register</title>
+  <link href="{{asset('img\main-logo.webp')}}" rel="icon">
+  <title>Reset Password-Delicious</title>
   
   <link href="{{asset('Admin/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('Admin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('Admin/css/ruang-admin.min.css')}}" rel="stylesheet">
-
+    <style>
+        .card{
+            top: 50%;
+        }
+        .card-header {
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        padding: 35px 0;
+        padding-bottom: 0;
+        }
+    </style>
 </head>
 
 <body class="bg-gradient-login">
@@ -26,7 +37,7 @@
                 <div class="card-header">{{ __('Reset Password') }}</div>
                 {{-- status code start --}}
                 @if (session('status'))
-                    <div class="mb-4 font-medium text-sm text-green-600">
+                    <div class="mb-4 font-medium text-sm text-green-600" style="text-align: center; padding-top: 20px;">
                         {{ session('status') }}
                     </div>
                 @endif

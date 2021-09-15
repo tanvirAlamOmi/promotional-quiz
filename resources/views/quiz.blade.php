@@ -416,19 +416,20 @@
         </div>
     </section>
     <!-- quiz body end -->
+    
     <!-- change quiz gift update page start-->
     <section class="quiz-gift">
       <div class="container">
         <div class="card container-fluid" style="background: ghostwhite;">
           <div class="col-12">
             <div class="header row">
+            <img src="{{asset('img\celebrate.webp')}}" alt="" 
+                style="margin-top: -137px;">
               <div class="text-left col-6">
-
                 <h1>Congratulation</h1>
               </div>
               <div class="text-right col-6" style="text-align: right;">
-              <img src="{{asset('img\celebrate.webp')}}" alt="" 
-                style="margin-top: -137px;">
+              
               </div>
             </div>
             <div class="body-part">
