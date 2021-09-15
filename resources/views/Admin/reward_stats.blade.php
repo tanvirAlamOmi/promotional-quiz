@@ -3,7 +3,18 @@
 @section('pageTitle', 'General settings')
 @push('styles')
 <style>
-    
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0px;
+    }
+    .page-item.active .page-link {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #eae0d1;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: transparent;
+    border: 1px solid #eae0d1;
+    }
 </style>
 @endpush
 
