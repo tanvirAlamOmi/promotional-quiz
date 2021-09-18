@@ -25,7 +25,7 @@
 
       <style>
        
-       @media (min-width: 768px){
+       @media (max-width: 1000px){
         .container, .container-md, .container-sm {
           max-width: 935.7px !important;
         }
