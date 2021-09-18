@@ -345,11 +345,17 @@ body {
     .quiz-body .card .card-body .form-check .form-check-input {
         font-size: 21px;
         margin-top: 6px;
-        border: 1px solid #757575;;
+        border: 1px solid #757575;
     }
     .quiz-body .card .card-body .form-check .form-check-label {
-        font-size: 22px;
+        font-size: 30px;
         font-weight: 500;
+    }
+    .quiz-footer h2 {
+        font-size: 23px;
+    }
+    .quiz-footer h1 {
+        font-size: 20px;
     }
 }
 
