@@ -24,7 +24,24 @@
       <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
       <style>
-       
+       .form-check-input{
+        display: none;
+       }
+       .card{
+         
+    background: #ce452b;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+       }
+       .img-thumbnail{
+         background: transparent
+       }
+       .form-check-label{
+         
+          margin-left: -1.5rem;
+       }
+
        @media (max-width: 1000px){
         .container, .container-md, .container-sm {
           max-width: 935.7px !important;
@@ -54,8 +71,8 @@
     
     <!--pre loader start-->
     <div id="loader" class="pre-loader">
-        <img src="{{asset('img/preloader.gif')}}">
-      </div>
+      <img src="{{asset('img/preloader.gif')}}">
+    </div>
     <!-- pre loader end-->
     <!-- change Quiz section start -->
     <section class="quiz-headline" id="myDiv">
@@ -422,7 +439,7 @@
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="-n" id="qus_6_opt_2" name="craving">
                         <label class="form-check-label" for="qus_6_opt_2">
-                          non-Veg
+                          Non-Veg
                         </label>
                       </div>
                     </div>
@@ -662,7 +679,12 @@
         return k[1];
       }
 
-      $("input[type='checkbox']").click( () => {
+      $('.card').click( function () {
+        $(this).find("input:checkbox").prop('checked', true);
+        onImageclick();
+      })
+
+     function onImageclick() {
         totalPoint += $(`input:checkbox[name=${checkboxNames[boxNum]}]:checked`).val();
         boxNum++;
         progressWidth = progressWidth + progressBarPortion;
@@ -678,7 +700,7 @@
         }
 
         contentBoxShow(boxNum)
-      })
+      }
 
       $('#result_button').click( () => {
         $(".box").hide();
