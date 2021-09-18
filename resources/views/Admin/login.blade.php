@@ -8,13 +8,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="img/logo/logo.png" rel="icon">
-  <title>RuangAdmin - Login</title>
+  <link href="{{asset('img\main-logo.webp')}}" rel="icon">
+  <title>Login-Delicious</title>
   
   <link href="{{asset('Admin/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('Admin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('Admin/css/ruang-admin.min.css')}}" rel="stylesheet">
-
+  <style>
+    .login-img {
+    width: 15%;
+    height: 100%;
+    }
+  </style>
 </head>
 
 <body class="bg-gradient-login">
@@ -28,7 +33,8 @@
               <div class="col-lg-12">
                 <div class="login-form">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Login</h1>
+                  <img src="{{asset('img\main-logo.webp')}}" class="login-img" alt="main-logo">
+                    <h1 class="h4 text-gray-900 mb-4" style="font-weight:bold;">Login</h1>
                   </div>
                   @if ($errors->any())
                       <div class="alert alert-danger">
@@ -64,11 +70,11 @@
                           Me</label>
                       </div>
                       <div class="custom-control custom-checkbox small col-6 text-right" style="line-height: 1.5rem;">
-                        <a href="{{url('/forgot-password')}}"> forgot Password </a>
+                        <a href="{{url('/forgot-password')}}"> Forgot Password </a>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <button type="submit" class="btn btn-primary btn-block">Login</button> 
+                    <div class="form-group" style="text-align: -webkit-center;">
+                      <button type="submit" class="btn btn-primary btn-block" style="width: 25%;">Login</button> 
                     </div>
                     <hr> 
                   </form> 

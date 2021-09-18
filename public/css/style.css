@@ -60,7 +60,9 @@ body {
 
 /*quiz body css start*/
 
-.quiz-body {}
+.quiz-body {
+    margin-bottom: 76px;
+}
 
 .quiz-body .progress {
     margin: 20px 351px;
@@ -334,6 +336,9 @@ body {
     }
     .pre-loader img {
         margin-top: 50%;
+    }
+    .quiz-body {
+        margin-bottom: 76px;
     }
 }
 
