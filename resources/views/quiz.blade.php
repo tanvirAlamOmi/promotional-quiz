@@ -563,21 +563,21 @@
           case '1a2a3a4c5a-n':
             return {
               "name" : "Pesto Chicken",
-              "coupon_code" : "Pesto Chicken",
+              "coupon_code" : "PPDE1FREE",
               "img_source" : "pesto_chicken_sandwich.webp"
             };
 
           case '1c2c3d4b5c-n':
             return {
               "name" : "Tikka",
-              "coupon_code" : "Pesto Chicken",
+              "coupon_code" : "CT14FREE",
               "img_source" : "Tikka_flavoured_sandwich.webp"
             };
             
           case '1b2b3c4a5d-n':
             return {
               "name" : "Spicy Meatball",
-              "coupon_code" : "Pesto Chicken",
+              "coupon_code" : "SM98FREE",
               "img_source" : "Spicy_Meatball_sandwich.webp"
             };
             
@@ -600,7 +600,7 @@
               case 'v':
                 return  {
               "name" : "Southern Roasted Veggie",
-              "coupon_code" : "Pesto Chicken",
+              "coupon_code" : "SRVD5FREE",
               "img_source" : "Southern_Roasted_Veggie_sandwich.webp"
             };
             }
