@@ -117,7 +117,7 @@ body {
 .quiz-body .card .card-body .form-check .form-check-input {}
 
 .quiz-body .card .card-body .form-check .form-check-label {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -337,10 +337,19 @@ body {
         margin: 20px 43px;
     }
     .pre-loader img {
-        margin-top: 66%;
+        margin-top: 72%;
     }
     .quiz-body {
         margin-bottom: 76px;
+    }
+    .quiz-body .card .card-body .form-check .form-check-input {
+        font-size: 21px;
+        margin-top: 6px;
+        border: 1px solid rgb(0 0 0 / 63%);
+    }
+    .quiz-body .card .card-body .form-check .form-check-label {
+        font-size: 22px;
+        font-weight: 500;
     }
 }
 
