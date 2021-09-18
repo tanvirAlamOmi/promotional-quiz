@@ -416,6 +416,19 @@
         </div>
     </section>
     <!-- quiz body end -->
+    <!-- quiz terms and condition start-->
+    <section class="terms">
+      <div class="container">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </section>
+    <!-- quiz terms and condition end-->
     
     <!-- change quiz gift update page start-->
     <section class="quiz-gift">
@@ -459,7 +472,7 @@
                  
                     <form id="submitForm">
                       <div class="alert">
-                          <ul id="message">
+                          <ul id="message" style="margin: 0px;">
                           </ul>
                       </div>
                       @csrf
@@ -478,6 +491,20 @@
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
+                  <div class="col-12">
+                    <div class="term" style="padding-top: 65px; text-align: left;">
+                      <h1 style="color: #128283;">Terms & Conditions:</h1>
+                      <ul>
+                        <li>Coupon codes & Prizes are subject to change without any notice</li>
+                        <li>Coupon code only valid when ordering via our Website, Facebook, Instagram & WhatsApp.</li>
+                        <li>Coupon code can only be used once and is only valid for 2 weeks.</li>
+                        <li>Minimum basket order value & Delivery charges are still valid with the coupon code</li>
+                        <li>Not applicable on purchases of detox plans</li>
+                        <li>You can win a coupon code for your sandwich only once a month.</li>
+                        <li>By entering your details, you agree to receive SMS & Email communication by the Delicious team - we send communication on discounts & offers max; twice a month.</li>
+                      </ul>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>
