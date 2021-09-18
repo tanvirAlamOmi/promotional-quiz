@@ -379,6 +379,7 @@ body {
     }
     .quiz-body .qus-headline h1 {
         padding-top: 42px;
+        padding-bottom: 30px;
     }
 }
 
