@@ -560,14 +560,14 @@
 
       function logic(result){
         switch(result) {
-          case '1a2a3a4c5a-n':
+          case '1a2a3a4d5a-n':
             return {
               "name" : "Pesto Chicken",
               "coupon_code" : "PPDE1FREE",
               "img_source" : "pesto_chicken_sandwich.webp"
             };
 
-          case '1c2c3d4b5c-n':
+          case '1c2c3d4c5c-n':
             return {
               "name" : "Tikka",
               "coupon_code" : "CT14FREE",
@@ -581,7 +581,7 @@
               "img_source" : "Spicy_Meatball_sandwich.webp"
             };
             
-          case '1d2d3b4d5b-v':
+          case '1d2d3b4b5b-v':
             return {
               "name" : "Veggie Melt",
               "coupon_code" : "Pesto Chicken",
@@ -638,6 +638,7 @@
         $('.quiz-gift').show();
         
         prize = logic(totalPoint);
+        console.log(totalPoint);
         $('#gift_name').html(prize.name);
         $('#gift_img').attr("src", `{{asset('img/prize/${prize.img_source}')}}`);
       })
