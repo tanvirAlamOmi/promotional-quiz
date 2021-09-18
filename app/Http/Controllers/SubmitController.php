@@ -14,27 +14,28 @@ class SubmitController extends Controller
     
     public function onSubmit(Request $request ){
         $request->validate([
-            'customerName' => 'required|max:255',
+            'customerName' => 'required|max:100|min:3',
             'customerEmail' => 'required|email|max:255',
             'customerPhone' => 'required|numeric',
             'prizeWon' => 'required',
         ]);
 
         try{
-            $delayHours = 2;
-            $newDateTime = Carbon::now()->subHours($delayHours);
+            $delayDays = 30;
+            $newDateTime = Carbon::now()->subHours($delayDays);
 
             // START check if already took the code in given period of time 
 
             $result = Submit::All()
             ->where('created_at', ">", $newDateTime)
             ->where('email', $request->customerEmail)
+            ->orWhere('phone', $request->customerPhone) 
             ->first();
 
-            // if($result){
-            //     $remainintTime = $result->created_at->diff($newDateTime)->format('%H:%i');
-            //     return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime min.")); 
-            // }
+            if($result){
+                $remainintTime = $result->created_at->diff($newDateTime)->format('%H:%i');
+                return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime min.")); 
+            }
 
             // END check if already took the code in given period of time 
             // DB::transaction(function() {
