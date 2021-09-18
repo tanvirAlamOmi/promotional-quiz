@@ -13,7 +13,7 @@
     <link href="{{asset('Admin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('Admin/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('Admin/css/ruang-admin.min.css')}}" rel="stylesheet">
-    <link href="{{asset('Admin/css/datatables.min.css')}}" rel="stylesheet">
+    {{-- <link href="{{asset('Admin/css/datatables.min.css')}}" rel="stylesheet"> --}}
     
     @stack('styles')
 </head>

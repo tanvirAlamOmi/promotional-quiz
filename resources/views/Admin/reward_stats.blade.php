@@ -43,8 +43,7 @@
 @endsection
 
 @push('scripts')
-{{-- <script src="{{asset('Admin/vendor/jquery-easing/jquery.easing.min.js')}}"></script> --}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+<script src="{{asset('Admin/vendor/chart.min.js/chart.min.js')}}"></script>
 
     <script>
         
@@ -138,8 +137,6 @@
                     topDatasName[i] = ddata.responseJSON[i].reward;
                 }
 
-                console.log(topDatas);
-                console.log(topDatasName);
                 var ctx = document.getElementById('myChart');
                 if(myChart != null){
                     myChart.destroy();

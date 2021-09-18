@@ -638,7 +638,6 @@
         $('.quiz-gift').show();
         
         prize = logic(totalPoint);
-        console.log(totalPoint);
         $('#gift_name').html(prize.name);
         $('#gift_img').attr("src", `{{asset('img/prize/${prize.img_source}')}}`);
       })
