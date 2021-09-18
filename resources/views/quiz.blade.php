@@ -42,11 +42,16 @@
         .row {
           --bs-gutter-x: 0;
         }
+        .footer-bottom{
+          position: absolute;
+          bottom: 6vw;
+        }
       }
        </style>
   </head>
   
   <body onload="myFunction()">
+    
     <!--pre loader start-->
     <div id="loader" class="pre-loader">
         <img src="{{asset('img/preloader.gif')}}">
@@ -543,7 +548,7 @@
     <!-- Thank you page end -->
     <!--change footer start-->
     <footer class="quiz-footer">
-      <div class="container">
+      <div class="container footer-bottom">
         <div class="row">
           <div class="col-12">
           <h1>Copyright <?php echo date("Y"); ?> © Delicious</h1>
