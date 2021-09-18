@@ -88,6 +88,7 @@ body {
 .quiz-body .qus-headline h1 {
     padding: 10px 0;
     color: #038183;
+    font-size: 50px;
 }
 
 
@@ -116,7 +117,8 @@ body {
 .quiz-body .card .card-body .form-check .form-check-input {}
 
 .quiz-body .card .card-body .form-check .form-check-label {
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .quiz-body .btn {
@@ -162,20 +164,6 @@ body {
 .quiz-form .btn:hover {
     transition: .2s ease;
     background: #038183;
-}
-
-.quiz-form .term {
-    padding-top: 65px;
-    text-align: left;
-}
-
-.quiz-form .term h1 {
-    color: #128283;
-    font-size: 25px;
-}
-
-.quiz-form .term ul li {
-    font-size: 18px;
 }
 
 
@@ -349,16 +337,10 @@ body {
         margin: 20px 43px;
     }
     .pre-loader img {
-        margin-top: 50%;
+        margin-top: 66%;
     }
     .quiz-body {
         margin-bottom: 76px;
-    }
-    .quiz-form .term h1 {
-        font-size: 18px;
-    }
-    .quiz-form .term ul li {
-        font-size: 16px;
     }
 }
 
