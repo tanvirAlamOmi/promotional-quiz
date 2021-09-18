@@ -151,6 +151,19 @@ body {
     text-align: start;
 }
 
+.quiz-form .term {
+    text-align: left;
+    padding-top: 63px;
+}
+
+.quiz-form .term h1 {
+    color: #148185;
+}
+
+.quiz-form .term ul {}
+
+.quiz-form .term ul li {}
+
 .quiz-form .mb-3 .form-label {}
 
 .quiz-form .mb-3 .form-control {}
@@ -356,6 +369,16 @@ body {
     }
     .quiz-footer h1 {
         font-size: 20px;
+    }
+    .quiz-body .btn {
+        padding: 12px 76px;
+        font-size: 27px;
+    }
+    .quiz-form .btn {
+        font-size: 24px;
+    }
+    .quiz-body .qus-headline h1 {
+        padding-top: 42px;
     }
 }
 
