@@ -88,6 +88,7 @@ body {
 .quiz-body .qus-headline h1 {
     padding: 10px 0;
     color: #038183;
+    font-size: 50px;
 }
 
 
@@ -117,6 +118,7 @@ body {
 
 .quiz-body .card .card-body .form-check .form-check-label {
     font-size: 18px;
+    font-weight: 500;
 }
 
 .quiz-body .btn {
@@ -335,10 +337,19 @@ body {
         margin: 20px 43px;
     }
     .pre-loader img {
-        margin-top: 50%;
+        margin-top: 72%;
     }
     .quiz-body {
         margin-bottom: 76px;
+    }
+    .quiz-body .card .card-body .form-check .form-check-input {
+        font-size: 21px;
+        margin-top: 6px;
+        border: 1px solid rgb(0 0 0 / 63%);
+    }
+    .quiz-body .card .card-body .form-check .form-check-label {
+        font-size: 22px;
+        font-weight: 500;
     }
 }
 
