@@ -59,7 +59,7 @@
                 <div id="firstBox" class="row box">
                   <div class="col-12">
                       <div class="qus-headline">
-                          <h1>Where would you go for vacation?</h1>
+                          <h1>Pick a Friends Character</h1>
                       </div>
                   </div>
                   
@@ -248,19 +248,19 @@
                 <div id="fourthBox" class="row box">
                     <div class="col-12">
                         <div class="qus-headline">
-                            <h1>How do you cut your Sandwich?</h1>
+                            <h1>How do you like your sandwich bread?</h1>
                         </div>
                     </div>
                     
                     <div class="col-6">
                        <div class="card right" style="width: 18rem;">
                        <!-- change-->
-                          <img src="{{asset('img/Don_tcut.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Standard.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="4a" id="qus_4_opt_1" name="Sandwich">
                               <label class="form-check-label" for="qus_4_opt_1">
-                                I don’t cut my sandwich
+                              Standard
                               </label>
                             </div>
                           </div>
@@ -268,12 +268,12 @@
                     </div>
                     <div class="col-6">
                        <div class="card" style="width: 18rem;">
-                          <img src="{{asset('img/Rectangle.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Whole-Grain-Nut.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="4b" id="qus_4_opt_2" name="Sandwich">
                               <label class="form-check-label" for="qus_4_opt_2">
-                                Rectangles
+                               Whole Grain Nut
                               </label>
                             </div>
                           </div>
@@ -281,12 +281,12 @@
                     </div>
                     <div class="col-6">
                        <div class="card right" style="width: 18rem;">
-                          <img src="{{asset('img/Crustless.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/French-Baguette.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="4c" id="qus_4_opt_3" name="Sandwich">
                               <label class="form-check-label" for="qus_4_opt_3">
-                                Crustless
+                              French Baguette 
                               </label>
                             </div>
                           </div>
@@ -294,12 +294,12 @@
                     </div>
                     <div class="col-6">
                        <div class="card" style="width: 18rem;">
-                          <img src="{{asset('img/Triangle.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
+                          <img src="{{asset('img/Ciabatta.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="4d" id="qus_4_opt_4" name="Sandwich">
                               <label class="form-check-label" for="qus_4_opt_4">
-                                Triangles
+                              Ciabatta
                               </label>
                             </div>
                           </div>
