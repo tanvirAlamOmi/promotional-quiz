@@ -26,15 +26,16 @@ class SubmitController extends Controller
 
             // START check if already took the code in given period of time 
 
-            $result = Submit::All()
-            ->where('created_at', ">", $newDateTime)
-            ->where('email', $request->customerEmail)
-            ->orWhere('phone', $request->customerPhone) 
+            $result = Submit::where('created_at', ">", $newDateTime)
+            ->where(function ($query) use ( $request) {
+                $query->where('email', $request->customerEmail)
+                ->orWhere('phone', $request->customerPhone);
+            })
             ->first();
 
             if($result){
-                $remainintTime = $result->created_at->diff($newDateTime)->format('%H:%i');
-                return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime min.")); 
+                $remainintTime = $result->created_at->diff($newDateTime)->format('%D day(s) %H:%i:%s');
+                return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime hour(s).")); 
             }
 
             // END check if already took the code in given period of time 
