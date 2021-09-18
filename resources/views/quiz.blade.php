@@ -492,8 +492,8 @@
                     </form>
                 </div>
                   <div class="col-12">
-                    <div class="term" style="padding-top: 65px; text-align: left;">
-                      <h1 style="color: #128283;">Terms & Conditions:</h1>
+                    <div class="term">
+                      <h1>Terms & Conditions:</h1>
                       <ul>
                         <li>Coupon codes & Prizes are subject to change without any notice</li>
                         <li>Coupon code only valid when ordering via our Website, Facebook, Instagram & WhatsApp.</li>

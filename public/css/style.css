@@ -164,6 +164,20 @@ body {
     background: #038183;
 }
 
+.quiz-form .term {
+    padding-top: 65px;
+    text-align: left;
+}
+
+.quiz-form .term h1 {
+    color: #128283;
+    font-size: 25px;
+}
+
+.quiz-form .term ul li {
+    font-size: 18px;
+}
+
 
 /* quiz form section css end */
 
@@ -339,6 +353,12 @@ body {
     }
     .quiz-body {
         margin-bottom: 76px;
+    }
+    .quiz-form .term h1 {
+        font-size: 18px;
+    }
+    .quiz-form .term ul li {
+        font-size: 16px;
     }
 }
 
