@@ -24,18 +24,23 @@
       <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
       <style>
-        @media (min-width: 768px){
+       
+       @media (min-width: 768px){
         .container, .container-md, .container-sm {
-            max-width: 935.7px !important;
+          max-width: 935.7px !important;
         }
         .card{
-          width: 27rem !important;
+          width: 26rem !important;
           height: 23rem !important;
+          margin: 1.4rem !important;
         }
 
         
         .quiz-body .card img {
-            height: 19rem !important;
+          height: 19rem !important;
+        }
+        .row {
+          --bs-gutter-x: 0;
         }
       }
        </style>
@@ -77,7 +82,7 @@
                   </div>
                   
                   <div class="col-6">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card right" style="width: 18rem;">
                         <img src="{{asset('img/Rachel.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
@@ -103,7 +108,7 @@
                       </div>
                   </div>
                   <div class="col-6">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card right" style="width: 18rem;">
                         <img src="{{asset('img/Ross.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
@@ -140,7 +145,7 @@
                   </div>
                   
                   <div class="col-6">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card right" style="width: 18rem;">
                         <img src="{{asset('img/Italy.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
@@ -166,7 +171,7 @@
                       </div>
                   </div>
                   <div class="col-6">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card right" style="width: 18rem;">
                         <img src="{{asset('img/Georgia.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                         <div class="card-body">
                           <div class="form-check">
@@ -203,7 +208,7 @@
                     </div>
                     
                     <div class="col-6">
-                       <div class="card" style="width: 18rem;">
+                       <div class="card right" style="width: 18rem;">
                           <img src="{{asset('img/louvre-abu_dhabi.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -229,7 +234,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card" style="width: 18rem;">
+                       <div class="card right" style="width: 18rem;">
                           <img src="{{asset('img/corniche.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -266,7 +271,7 @@
                     </div>
                     
                     <div class="col-6">
-                       <div class="card" style="width: 18rem;">
+                       <div class="card right" style="width: 18rem;">
                        <!-- change-->
                           <img src="{{asset('img/Standard.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
@@ -293,7 +298,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card" style="width: 18rem;">
+                       <div class="card right" style="width: 18rem;">
                           <img src="{{asset('img/French-Baguette.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -330,7 +335,7 @@
                     </div>
                     
                     <div class="col-6">
-                       <div class="card" style="width: 18rem;">
+                       <div class="card right" style="width: 18rem;">
                           <img src="{{asset('img/Cool Cucumber Juice-7.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -356,7 +361,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card" style="width: 18rem;">
+                       <div class="card right" style="width: 18rem;">
                           <img src="{{asset('img/Beats by Beets 6.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -393,7 +398,7 @@
               </div>
               
               <div class="col-6">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card right" style="width: 18rem;">
                     <img src="{{asset('img\veg-sand.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                     <div class="card-body">
                       <div class="form-check">
