@@ -22,8 +22,7 @@ class SubmitController extends Controller
 
         try{
             $delayDays = 30;
-            $newDateTime = Carbon::now()->subHours($delayDays);
-
+            $newDateTime = Carbon::now()->subDays($delayDays);
             // START check if already took the code in given period of time 
 
             $result = Submit::where('created_at', ">", $newDateTime)
