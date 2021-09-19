@@ -579,7 +579,7 @@
     <!-- Thank you page end -->
     <!--change footer start-->
     <footer class="quiz-footer">
-      <div class="container footer-bottom">
+      <div class="container">
         <div class="row">
           <div class="col-12">
           <h1>Copyright <?php echo date("Y"); ?> © Delicious</h1>
