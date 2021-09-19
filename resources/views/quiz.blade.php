@@ -71,6 +71,13 @@
         .quiz-body{
           padding-top: 5%;
         }
+        .quiz-gift{
+          margin-top: -5%;
+          min-height: 70rem;
+        }
+        .quiz-form{
+          margin-top: -5%;
+        }
       }
        </style>
   </head>
@@ -705,7 +712,6 @@
       })
 
      function onImageclick(vr) {
-       console.log("hi");
         totalPoint += $(`input:checkbox[name=${checkboxNames[boxNum-1]}]:checked`).val();
         progressWidth = progressWidth + progressBarPortion;
         progressBarProgress(progressWidth)
@@ -764,6 +770,11 @@
           }
         });
       })
+
+      window.history.pushState('', null, './');
+        $(window).on('popstate', function() {
+        location.reload(true);
+      });
       
     </script>
   </body>
