@@ -64,10 +64,6 @@
         .row {
           --bs-gutter-x: 0;
         }
-        .footer-bottom{
-          position: absolute;
-          bottom: 6vw;
-        }
         .quiz-body{
           padding-top: 5%;
         }
@@ -575,11 +571,11 @@
           </div>
         </div>
       </div>
-      </section>
-      <!-- Thank you page end -->
-      <!--change footer start-->
-      <footer class="quiz-footer">
-      <div class="container footer-bottom">
+    </section>
+    <!-- Thank you page end -->
+    <!--change footer start-->
+    <footer class="quiz-footer">
+      <div class="container">
         <div class="row">
           <div class="col-12">
           <h1>Copyright <?php echo date("Y"); ?> © Delicious</h1>
