@@ -202,19 +202,19 @@
         $("#result_button").hide();
         // $("#result_button").hide();
         $('.progress').hide();
-        $('.quiz-gift').show();
+        
+        $('.quiz-form').show();
         
         prize = logic(totalPoint);
         $('#gift_name').html(prize.name);
         $('#gift_img').attr("src", `{{asset('img/prize/${prize.img_source}')}}`);
       })
 
-      $('#coupon_button').click( () => {
+      function onsubmitshowResut() {
         
-        $('.quiz-gift').hide();
-        $('.quiz-form').show();
+        $('.quiz-gift').show();
         
-      })
+      }
 
       $('#go_to_quiz').click( () => {
         $('.home-page').hide();
@@ -240,7 +240,7 @@
           }, 
           success: function(output) {
             if (output.result == "success") {
-              $('.thank-you').show();
+              onsubmitshowResut();
               $('.quiz-form').hide();
 
             }
