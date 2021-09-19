@@ -386,6 +386,31 @@ body {
 }
 
 
+
+
+.form-check-input{
+    display: none;
+}
+.quiz-card{
+    background: #ce452b;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.img-thumbnail{
+     background: transparent
+}
+.form-check-label{
+    margin-left: -1.5rem;
+}
+
+.exchange-card-color{
+    color: #ce452b;
+    background: white;
+}
+.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label{
+    opacity: 1;
+}
 /* .thank-you a i {} */
 
 
@@ -516,6 +541,31 @@ body {
     .thank-you a {
         font-size: 24px;
         padding: 20px 50px;
+    }
+    .container, .container-md, .container-sm {
+        max-width: 935.7px !important;
+    }
+    .quiz-card{
+        width: 26rem !important;
+        height: 23rem !important;
+        margin: 1.4rem !important;
+    }
+
+    
+    .quiz-card img {
+        height: 18rem !important;
+    }
+    .row {
+        --bs-gutter-x: 0;
+    }
+    .quiz-body{
+        padding-top: 5%;
+    }
+    .quiz-gift{
+        margin-top: -5%;
+    }
+    .quiz-form{
+        margin-top: -5%;
     }
 }
 

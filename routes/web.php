@@ -15,7 +15,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::view('/', 'quiz');
+Route::view('/', 'Website.main-deli');
 Route::post('/submit_form', [SubmitController::class, 'onSubmit']);
 
 Route::group(['middleware' => 'auth'], function () {
