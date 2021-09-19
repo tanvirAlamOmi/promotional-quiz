@@ -59,7 +59,7 @@
 
         
         .quiz-card img {
-          height: 19rem !important;
+          height: 18rem !important;
         }
         .row {
           --bs-gutter-x: 0;
@@ -67,6 +67,9 @@
         .footer-bottom{
           position: absolute;
           bottom: 6vw;
+        }
+        .quiz-body{
+          padding-top: 5%;
         }
       }
        </style>
