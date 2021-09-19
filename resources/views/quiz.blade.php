@@ -126,7 +126,7 @@
                 <div id="firstBox" class="row box">
                   <div class="col-12">
                       <div class="qus-headline">
-                          <h1>Pick a Friends Character</h1>
+                          <h1>Pick a friends character</h1>
                       </div>
                   </div>
                   
@@ -252,7 +252,7 @@
                 <div id="thirdBox" class="row box">
                     <div class="col-12">
                         <div class="qus-headline">
-                            <h1>Where would you spend your perfect Thursday night?</h1>
+                            <h1>Where would you spend your perfect thursday night?</h1>
                         </div>
                     </div>
                     
