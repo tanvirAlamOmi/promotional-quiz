@@ -64,16 +64,11 @@
         .row {
           --bs-gutter-x: 0;
         }
-        .footer-bottom{
-          position: absolute;
-          bottom: 6vw;
-        }
         .quiz-body{
           padding-top: 5%;
         }
         .quiz-gift{
           margin-top: -5%;
-          min-height: 70rem;
         }
         .quiz-form{
           margin-top: -5%;
@@ -99,26 +94,27 @@
           <img src="{{asset('img\sand-home.png')}}" class="sand-img" alt="">
           </div>
           <div class="col-12">
-          <button class="home-btn">free sandwich</button>
+          <button class="home-btn" id="go_to_quiz">free sandwich</button>
           </div>
         </div>
       </div>
     </section>
     <!-- home page end-->
-    <!-- change Quiz section start -->
-    <section class="quiz-headline" id="myDiv">
-       <div class="container">
-           <div class="row">
-               <div class="col-12">
-                 <img src="{{asset('img\main-logo.webp')}}" class="img-fluid" alt="main-logo">
-                   <h1>Delicious Ultimate Quiz </h1>
-               </div>
-           </div>
-       </div>
-    </section>
-    <!-- Quiz section end -->
-    <!-- quiz body start -->
-    <section class="quiz-body">
+    <div class="second-page">
+      <!-- change Quiz section start -->
+      <section class="quiz-headline" id="myDiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                  <img src="{{asset('img\main-logo.webp')}}" class="img-fluid" alt="main-logo">
+                    <h1>Delicious Ultimate Quiz </h1>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Quiz section end -->
+      <!-- quiz body start -->
+      <section class="quiz-body">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -261,20 +257,20 @@
                     </div>
                     
                     <div class="col-6">
-                       <div class="card right quiz-card" style="width: 18rem;">
+                        <div class="card right quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/louvre-abu_dhabi.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="3a" id="qus_3_opt_1" name="night">
                               <label class="form-check-label" for="qus_3_opt_1">
-                               Louvre Abu Dhabi
+                                Louvre Abu Dhabi
                               </label>
                             </div>
                           </div>
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card quiz-card" style="width: 18rem;">
+                        <div class="card quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/Mangroves.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -287,7 +283,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card right quiz-card" style="width: 18rem;">
+                        <div class="card right quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/corniche.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -300,7 +296,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card quiz-card" style="width: 18rem;">
+                        <div class="card quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/Ferrari World.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -311,9 +307,9 @@
                             </div>
                           </div>
                         </div>
-                     </div>
+                      </div>
                 </div>
-                     <!--3rd checkbox section end-->
+                      <!--3rd checkbox section end-->
                     <!-- 4th checkbox section start-->
                     
                 <div id="fourthBox" class="row box">
@@ -324,8 +320,8 @@
                     </div>
                     
                     <div class="col-6">
-                       <div class="card right quiz-card" style="width: 18rem;">
-                       <!-- change-->
+                        <div class="card right quiz-card" style="width: 18rem;">
+                        <!-- change-->
                           <img src="{{asset('img/Standard.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -338,20 +334,20 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card quiz-card" style="width: 18rem;">
+                        <div class="card quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/Whole-Grain-Nut.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="4b" id="qus_4_opt_2" name="Sandwich">
                               <label class="form-check-label" for="qus_4_opt_2">
-                               Whole Grain Nut
+                                Whole Grain Nut
                               </label>
                             </div>
                           </div>
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card right quiz-card" style="width: 18rem;">
+                        <div class="card right quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/French-Baguette.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -364,7 +360,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card quiz-card" style="width: 18rem;">
+                        <div class="card quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/Ciabatta.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -375,7 +371,7 @@
                             </div>
                           </div>
                         </div>
-                     </div>
+                      </div>
                 </div>
             <!--4th checkbox section end-->
             <!-- 5th checkbox section start-->
@@ -388,7 +384,7 @@
                     </div>
                     
                     <div class="col-6">
-                       <div class="card right quiz-card" style="width: 18rem;">
+                        <div class="card right quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/Cool Cucumber Juice-7.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -401,7 +397,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card quiz-card" style="width: 18rem;">
+                        <div class="card quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/Super Greenies Juice-4.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -414,7 +410,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card right quiz-card" style="width: 18rem;">
+                        <div class="card right quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/Beats by Beets 6.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -427,7 +423,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                       <div class="card quiz-card" style="width: 18rem;">
+                        <div class="card quiz-card" style="width: 18rem;">
                           <img src="{{asset('img/Spicy Red-8.webp')}}" class="img-thumbnail" alt="quiz-banner-img">
                           <div class="card-body">
                             <div class="form-check">
@@ -438,7 +434,7 @@
                             </div>
                           </div>
                         </div>
-                     </div>
+                      </div>
                 </div>
             <!--5th checkbox section end-->
             <!-- 6th checkbox section start-->
@@ -485,10 +481,10 @@
 
           </div>
         </div>
-    </section>
-    <!-- quiz body end -->
-    <!-- quiz terms and condition start-->
-    <section class="terms">
+      </section>
+      <!-- quiz body end -->
+      <!-- quiz terms and condition start-->
+      <section class="terms">
       <div class="container">
         <div class="row">
           <div class="col-3"></div>
@@ -498,11 +494,11 @@
           <div class="col-3"></div>
         </div>
       </div>
-    </section>
-    <!-- quiz terms and condition end-->
-    
-    <!-- change quiz gift update page start-->
-    <section class="quiz-gift">
+      </section>
+      <!-- quiz terms and condition end-->
+
+      <!-- change quiz gift update page start-->
+      <section class="quiz-gift">
       <div class="container">
         <div class="card" style="background: ghostwhite;">
           <div class="col-12">
@@ -516,14 +512,14 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- quiz gift update page end-->
-    <!--quiz result page start-->
-    <section class="quiz-form">
+      </section>
+      <!-- quiz gift update page end-->
+      <!--quiz result page start-->
+      <section class="quiz-form">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                 
+                  
                     <form id="submitForm">
                       <div class="alert">
                           <ul id="message" style="margin: 0px;">
@@ -561,10 +557,10 @@
                   </div>
             </div>
         </div>
-    </section>
-    <!--quiz result page end-->
-    <!-- Thank you page start -->
-    <section class="thank-you text-center">
+      </section>
+      <!--quiz result page end-->
+      <!-- Thank you page start -->
+      <section class="thank-you text-center">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -587,7 +583,9 @@
           </div>
         </div>
       </div>
-    </footer>
+      </footer>
+    </div>
+    
     <!-- footer end-->
     <!-- preloader js start-->
     <script>
@@ -626,9 +624,8 @@
         $('.quiz-form').hide();
         $('.quiz-gift').hide();
         $('.thank-you').hide();
+        $('.second-page').hide();
         // $('.thank-you').hide();
-        contentBoxShow(boxNum);
-        progressBarProgress(progressWidth);
       }());
 
       function contentBoxShow(boxNum){
@@ -736,6 +733,15 @@
         $('.quiz-gift').hide();
         $('.quiz-form').show();
         
+      })
+
+      $('#go_to_quiz').click( () => {
+        $('.home-page').hide();
+        
+        $('.second-page').show();
+        
+        contentBoxShow(boxNum);
+        progressBarProgress(progressWidth);
       })
 
       $('#submitForm').submit( (event) => {
