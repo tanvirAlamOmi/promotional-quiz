@@ -59,7 +59,7 @@
 
         
         .quiz-card img {
-          height: 19rem !important;
+          height: 18rem !important;
         }
         .row {
           --bs-gutter-x: 0;
