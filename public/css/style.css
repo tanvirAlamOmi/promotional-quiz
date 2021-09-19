@@ -350,7 +350,7 @@ body {
 
 /* mobile responsive css start */
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .quiz-body .qus-headline {
         padding: 0px 12px;
     }
