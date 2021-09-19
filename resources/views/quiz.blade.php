@@ -68,6 +68,9 @@
           position: absolute;
           bottom: 6vw;
         }
+        .quiz-body{
+          padding-top: 5%;
+        }
       }
        </style>
   </head>
