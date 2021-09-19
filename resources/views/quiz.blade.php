@@ -73,7 +73,7 @@
         }
         .quiz-gift{
           margin-top: -5%;
-          min-height: 70rem;
+          min-height: 90rem;
         }
         .quiz-form{
           margin-top: -5%;
