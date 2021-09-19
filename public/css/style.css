@@ -187,10 +187,40 @@ body {
 
 .quiz-gift {
     padding: 40px 0;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .quiz-gift .card {
     padding: 63px 0;
+    margin: 0px 80px;
+}
+
+.quiz-gift .card .win {
+    width: 25%;
+}
+
+.quiz-gift .card h4 {}
+
+.quiz-gift .card h1 {
+    padding: 40px 0;
+    font-size: 56px;
+    color: #148185;
+}
+
+.quiz-gift .card .test-img {
+    padding-bottom: 56px;
+}
+
+.quiz-gift .card .btn {
+    padding: 12px 37px;
+    background: #D95840;
+    border: none;
+}
+
+.quiz-gift .card .btn:hover {
+    transition: .2s ease;
+    background: #038183;
 }
 
 .quiz-gift .card .header {}
@@ -380,6 +410,35 @@ body {
     .quiz-body .qus-headline h1 {
         padding-top: 42px;
         padding-bottom: 30px;
+    }
+    .quiz-gift .card {
+        margin: 0;
+        padding: 28px 28px 40px 28px;
+    }
+    .quiz-gift .card .btn {
+        font-size: 29px;
+        margin-bottom: 46px;
+        margin-top: 44px;
+        margin-bottom: 48px;
+    }
+    .quiz-gift .card h1 {
+        padding-bottom: 19px;
+        padding: 40px 0;
+        font-size: 60px;
+    }
+    .quiz-headline img {
+        width: 31%;
+    }
+    .quiz-headline h1 {
+        font-size: 40px;
+    }
+    .quiz-gift .card .win {
+        width: 40%;
+        margin-top: 32px;
+    }
+    .quiz-gift .card .test-img {
+        padding-bottom: 56px;
+        width: 96%;
     }
 }
 

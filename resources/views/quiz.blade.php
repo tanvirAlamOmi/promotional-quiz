@@ -480,30 +480,13 @@
       <div class="container">
         <div class="card container-fluid" style="background: ghostwhite;">
           <div class="col-12">
-            <div class="header row">
-           
-              <div class="text-left col-6">
-                <h1>Congratulation</h1>
-              </div>
-              <div class="text-right col-6" style="text-align: right;">
-              <img src="{{asset('img\celebrate.webp')}}" alt="" 
-                style="margin-top: -137px;">
-              </div>
-            </div>
-            <div class="body-part">
-              <div class="container">
-                <div class="row align-items-center">
-                  <div class="col-6 text-center">
-                    <img src="" id="gift_img" class="img-thumbnail" alt="gift-img">
-                  </div>
-                  <div class="col-6">
-                    <h1 id="gift_name"></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deleniti beatae expedita dolorem ut fugiat suscipit saepe inventore deserunt modi, iste ullam porro sed natus eligendi recusandae voluptate temporibus ipsa.</p>
-                    <button type="button" class="btn btn-primary hide" id="coupon_button">Get your coupon now</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <img src="{{asset('img\clb.png')}}" alt="" class="win">
+          <h4></h4>
+          <h1 id="gift_name"></h1>
+          <img src="" id="gift_img" alt="gift-img" class="test-img">
+          </div>
+          <div>
+          <button type="button" class="btn btn-primary hide" id="coupon_button">Get your coupon now</button>
           </div>
         </div>
       </div>
