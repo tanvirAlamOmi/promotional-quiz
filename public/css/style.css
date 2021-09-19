@@ -23,23 +23,23 @@ body {
 }
 
 .home-page .logo-home {
-    width: 30%;
+    width: 22%;
 }
 
 .home-page h1 {
-    font-size: 91px;
+    font-size: 67px;
     text-transform: uppercase;
     padding: 0px 243px;
     color: #148185;
 }
 
 .home-page .sand-img {
-    width: 60%;
+    width: 55%;
 }
 
 .home-page .home-btn {
     margin-bottom: 120px;
-    font-size: 50px;
+    font-size: 39px;
     background: #148185;
     color: #fff;
     border: none;
@@ -182,11 +182,14 @@ body {
 .quiz-form {
     padding: 0 25%;
     text-align: center;
+    margin-top: -61px;
 }
 
 .quiz-form .mb-3 {
     text-align: start;
 }
+
+.quiz-form .mb-3 .form-label {}
 
 .quiz-form .term {
     text-align: left;
@@ -195,20 +198,27 @@ body {
 
 .quiz-form .term h1 {
     color: #148185;
+    font-size: 32px;
 }
 
 .quiz-form .term ul {}
 
-.quiz-form .term ul li {}
+.quiz-form .term ul li {
+    font-size: 21px;
+    font-weight: 400;
+}
 
 .quiz-form .mb-3 .form-label {}
 
-.quiz-form .mb-3 .form-control {}
+.quiz-form .mb-3 .form-control {
+    border: 1px solid #148185;
+}
 
 .quiz-form .btn {
     padding: 11px 74px;
     background: #D95840;
     border: none;
+    margin: 34px 0 0 0;
 }
 
 .quiz-form .btn:hover {
@@ -250,7 +260,7 @@ body {
 }
 
 .quiz-gift .card .btn {
-    padding: 12px 37px;
+    padding: 20px 37px;
     background: #D95840;
     border: none;
 }
@@ -482,6 +492,30 @@ body {
     }
     .quiz-form {
         padding: 0px 10%;
+    }
+    .home-page {
+        height: 100vh;
+    }
+    .home-page .logo-home {
+        width: 46%;
+        margin-top: 10vh;
+    }
+    .quiz-form .mb-3 .form-label {
+        font-size: 32px;
+    }
+    .quiz-form .mb-3 .form-control {
+        height: 73px;
+        font-size: 31px;
+    }
+    .thank-you {
+        margin-top: -68px;
+    }
+    .thank-you img {
+        width: 48%;
+    }
+    .thank-you a {
+        font-size: 24px;
+        padding: 20px 50px;
     }
 }
 
