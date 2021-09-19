@@ -481,7 +481,7 @@
     <!-- change quiz gift update page start-->
     <section class="quiz-gift">
       <div class="container">
-        <div class="card container-fluid" style="background: ghostwhite;">
+        <div class="card" style="background: ghostwhite;">
           <div class="col-12">
           <img src="{{asset('img\clb.png')}}" alt="" class="win">
           <h4></h4>
