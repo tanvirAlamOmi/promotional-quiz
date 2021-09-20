@@ -24,10 +24,7 @@
       <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
       <style>
-        .row-center {
-          margin-left: 4%;
-          margin-right: 0%;
-        }
+      
        </style>
   </head>
   
@@ -43,7 +40,6 @@
       @include('Website.home')
     <div class="main-card">
       <!-- home page end-->
-      <div class="second-page">
         <!-- change Quiz section start -->
         @include('Website.header')
         
@@ -69,7 +65,6 @@
         
         @include('Website.footer')
       <!--change footer start-->
-      </div>
     </div>
     
     
@@ -111,8 +106,8 @@
         $('.quiz-form').hide();
         $('.quiz-gift').hide();
         $('.thank-you').hide();
-        $('.second-page').hide();
-        // $('.quiz-body').hide();
+        $('.main-card').hide();
+        $('.quiz-body').hide();
         // $('.thank-you').hide();
       }());
 
@@ -215,7 +210,7 @@
 
       $('#go_to_quiz').click( () => {
         $('.home-page').hide();
-        $('.second-page').show();
+        $('.main-card').show();
         $('.quiz-form').show();
         $('.progress').hide();
       })
@@ -237,9 +232,9 @@
             if (output.result == "success") {
               $('.quiz-form').hide();
               $('.quiz-body').show();
-              contentBoxShow(boxNum);
+              // contentBoxShow(boxNum);
               $('.progress').show();
-              progressBarProgress(progressWidth);
+              // progressBarProgress(progressWidth);
             }
             else if(output.result == "failed"){
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
