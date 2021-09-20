@@ -30,41 +30,43 @@
   
   <body onload="myFunction()">
     
-    <!--pre loader start-->
-    <div id="loader" class="pre-loader">
-      <img src="{{asset('img/preloader.gif')}}">
-    </div>
-    <!-- pre loader end-->
-    <!-- home page start-->
-    
-    @include('Website.home')
-    <!-- home page end-->
-    <div class="second-page">
-      <!-- change Quiz section start -->
-      @include('Website.header')
+      <div class="card">
+        <!--pre loader start-->
+        <div id="loader" class="pre-loader">
+          <img src="{{asset('img/preloader.gif')}}">
+        </div>
+         <!-- pre loader end-->
+         <!-- home page start-->
       
-      <!-- Quiz section end -->
-      <!-- quiz body start -->
-      @include('Website.quiz-section')
-    
-      <!-- quiz body end -->
-
-      <!-- change quiz gift update page start-->
-      @include('Website.gift')
-    
-      <!-- quiz gift update page end-->
-      <!--quiz result page start-->
-     
-      @include('Website.quiz-form')
-      <!--quiz result page end-->
-      <!-- Thank you page start -->
-      @include('Website.thanks')
-
-
-      <!-- Thank you page end -->
+         @include('Website.home')
+        <!-- home page end-->
+       <div class="second-page">
+        <!-- change Quiz section start -->
+        @include('Website.header')
+        
+        <!-- Quiz section end -->
+        <!-- quiz body start -->
+        @include('Website.quiz-section')
       
-      @include('Website.footer')
-    <!--change footer start-->
+        <!-- quiz body end -->
+
+        <!-- change quiz gift update page start-->
+        @include('Website.gift')
+      
+        <!-- quiz gift update page end-->
+        <!--quiz result page start-->
+      
+        @include('Website.quiz-form')
+        <!--quiz result page end-->
+        <!-- Thank you page start -->
+        @include('Website.thanks')
+
+
+        <!-- Thank you page end -->
+        
+        @include('Website.footer')
+      <!--change footer start-->
+      </div>
     </div>
     
     <!-- footer end-->
