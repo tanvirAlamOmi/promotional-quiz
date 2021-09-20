@@ -174,6 +174,9 @@ body {
 .quiz-body .card {
     margin: 9px 0;
     box-shadow: 2px 1px 1px #0000001a;
+    width: 15rem!important;
+    height: 12rem;
+    padding: 0;
 }
 
 .quiz-body .card:hover {
@@ -183,19 +186,26 @@ body {
 
 .quiz-body .card img {
     border: none;
-    height: 200px;
+    height: 158px;
     transition: transform .5s ease;
+    padding: 0.2rem;
 }
 
 .quiz-body .card .card-body {}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 0.1rem 1rem;
+}
 
 .quiz-body .card .card-body .form-check {}
 
 .quiz-body .card .card-body .form-check .form-check-input {}
 
 .quiz-body .card .card-body .form-check .form-check-label {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .quiz-body .btn {
@@ -372,7 +382,7 @@ body {
 
 .quiz-footer {
     text-align: center;
-    padding-top: 67px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 

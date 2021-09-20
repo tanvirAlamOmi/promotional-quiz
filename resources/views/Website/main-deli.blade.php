@@ -109,7 +109,7 @@
         $('.quiz-gift').hide();
         $('.thank-you').hide();
         $('.second-page').hide();
-        $('.quiz-body').hide();
+        // $('.quiz-body').hide();
         // $('.thank-you').hide();
       }());
 
