@@ -1,10 +1,10 @@
 <section class="quiz-headline" id="myDiv">
     <div class="container" style="padding: 0;">
       <div class="col-12 row" style="margin: 0;">
-        <div class="col-6 float-left">
+        <div class="col-4 float-left">
           <img src="{{asset('img\main-logo.webp')}}" class="img-fluid" alt="main-logo">
         </div>
-        <div class="col-6">
+        <div class="col-8 relative-position">
           <h1>Delicious Ultimate Quiz </h1>
         </div>
         <div class="col-12" style="padding: 0;">

@@ -26,7 +26,14 @@ body {
     border-radius: .25rem;
 }
 
+.row-center {
+    margin-left: 3.4%;
+    margin-right: 0%;
+}
 
+.relative-position{
+    position: relative;
+}
 /*global css end*/
 
 
@@ -92,7 +99,7 @@ body {
 /* text-align: center; */
 
 .quiz-headline img {
-    width: 27%;
+    width: 100px;
     border: none;
 }
 
@@ -100,8 +107,11 @@ body {
     text-align: right;
     font-size: 19px;
     color: #D95840;
-    padding: 11% 7% 0% 0%;
     font-weight: 500;
+    margin: 0;
+    top: 39%;
+    position: absolute;
+    right: 2rem;
 }
 
 .alert-danger {
@@ -173,7 +183,7 @@ body {
 .quiz-body .card {
     margin: 9px 0;
     box-shadow: 2px 1px 1px #0000001a;
-    width: 15rem!important;
+    width: 15rem;
     height: 12rem;
     padding: 0;
 }
@@ -502,7 +512,7 @@ body {
         font-size: 15px;
     }
     .quiz-headline img {
-        width: 23%;
+        width: 175px;
     }
     .quiz-body .progress {
         margin: 20px 43px;
@@ -530,21 +540,22 @@ body {
     }
     .quiz-body .btn {
         padding: 12px 76px;
-        font-size: 27px;
+        /* font-size: 27px; */
     }
-    .quiz-form .btn {
+    /* .quiz-form .btn {
         font-size: 24px;
-    }
+    } */
     .quiz-body .qus-headline h1 {
         padding-top: 42px;
         padding-bottom: 30px;
+        font-size: 45px;
     }
     .quiz-gift .card {
         margin: 0;
         padding: 28px 28px 40px 28px;
     }
     .quiz-gift .card .btn {
-        font-size: 29px;
+        /* font-size: 29px; */
         margin-bottom: 46px;
         margin-top: 44px;
         margin-bottom: 48px;
@@ -553,9 +564,6 @@ body {
         padding-bottom: 19px;
         padding: 40px 0;
         font-size: 60px;
-    }
-    .quiz-headline img {
-        width: 31%;
     }
     .quiz-headline h1 {
         font-size: 40px;
@@ -579,42 +587,77 @@ body {
         font-size: 31px;
     }
     .thank-you {
-        margin-top: -68px;
+        margin-top: -20px;
     }
     .thank-you img {
         width: 48%;
     }
     .thank-you a {
-        font-size: 24px;
+        font-size: 29px;
         padding: 20px 50px;
     }
     .container,
     .container-md,
     .container-sm {
-        max-width: 935.7px !important;
+        max-width: 100% !important;
     }
     .quiz-card {
-        width: 26rem !important;
+        width: 24rem !important;
         height: 23rem !important;
         margin: 1.4rem !important;
     }
     .quiz-card img {
         height: 18rem !important;
     }
-    .quiz-body {
+    /* .quiz-body {
         padding-top: 5%;
-    }
-    .quiz-gift {
+    } */
+    /* .quiz-gift {
         margin-top: -5%;
-    }
+    } */
     .quiz-form {
         margin-top: -5%;
     }
     .home-page {
-        padding: 2% 2%;
+        padding: 0 0;
     }
     .home-page .card .soul-sand {
         width: 72%;
+    }
+    .main-card {
+        margin: 0 0;
+    }
+    
+    .row-center {
+        margin-left: 2.2%;
+        margin-right: 0%;
+    }
+    .btn{
+        font-size: 29px;
+    }
+    .quiz-gift .win {
+        width: 25%;
+    }
+    .quiz-gift h1 {
+        font-size: 45px;
+    }
+    .quiz-gift .test-img {
+        width: 75%;
+    }
+    .thank-you {
+        min-height: 100vw;
+    }
+    .thank-you h1 {
+        font-size: 70px;
+    }
+    .thank-you h2 {
+        font-size: 30px;
+    }
+    .quiz-form .term ul li {
+        font-size: 20px;
+    }
+    .quiz-form .term h1 {
+       font-size: 25px;
     }
 }
 
