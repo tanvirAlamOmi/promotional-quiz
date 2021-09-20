@@ -1,11 +1,6 @@
 <section class="quiz-body">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
             <!-- 1st checkbox section start-->
             <div id="firstBox" class="row box">
               <div class="col-12">
