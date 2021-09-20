@@ -5,10 +5,17 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
+    background: url(../img/home-bg.webp);
+    background-size: cover;
+    background-position: center;
 }
 
 .right {
     float: right;
+}
+
+.main-card {
+    margin: 1% 25%;
 }
 
 
@@ -118,9 +125,7 @@ body {
     margin-bottom: 76px;
 }
 
-.quiz-body .progress {
-    margin: 20px 351px;
-}
+.quiz-body .progress {}
 
 .quiz-body .progress .progress-bar {}
 
@@ -130,7 +135,7 @@ body {
 
 .quiz-body .qus-headline {
     text-align: center;
-    padding: 0px 212px;
+    padding: 0 1%;
 }
 
 .quiz-body .qus-headline img {
@@ -142,14 +147,14 @@ body {
 .quiz-body .qus-headline h1 {
     padding: 10px 0;
     color: #038183;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 
 /*quiz checkbox section css start*/
 
 .quiz-body .card {
-    margin: 10px 0;
+    margin: 9px 0;
     box-shadow: 2px 1px 1px #0000001a;
 }
 
@@ -197,7 +202,7 @@ body {
 /* quiz form section css start */
 
 .quiz-form {
-    padding: 0 25%;
+    padding: 0px 6%;
     text-align: center;
     margin-top: -61px;
 }
@@ -215,13 +220,13 @@ body {
 
 .quiz-form .term h1 {
     color: #148185;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .quiz-form .term ul {}
 
 .quiz-form .term ul li {
-    font-size: 21px;
+    font-size: 13px;
     font-weight: 400;
 }
 
@@ -235,7 +240,7 @@ body {
     padding: 11px 74px;
     background: #D95840;
     border: none;
-    margin: 34px 0 0 0;
+    margin: 16px 0 0 0;
 }
 
 .quiz-form .btn:hover {
@@ -354,11 +359,11 @@ body {
 }
 
 .quiz-footer h1 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .quiz-footer h2 {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .quiz-footer h2 a {

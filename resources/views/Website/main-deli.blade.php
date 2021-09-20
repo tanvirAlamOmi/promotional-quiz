@@ -29,18 +29,18 @@
   </head>
   
   <body onload="myFunction()">
-    
-      <div class="card">
+  
         <!--pre loader start-->
-        <div id="loader" class="pre-loader">
-          <img src="{{asset('img/preloader.gif')}}">
-        </div>
-         <!-- pre loader end-->
-         <!-- home page start-->
+      <div id="loader" class="pre-loader">
+        <img src="{{asset('img/preloader.gif')}}">
+      </div>
+      <!-- pre loader end-->
+      <!-- home page start-->
       
-         @include('Website.home')
-        <!-- home page end-->
-       <div class="second-page">
+      @include('Website.home')
+    <div class="card main-card">
+      <!-- home page end-->
+      <div class="second-page">
         <!-- change Quiz section start -->
         @include('Website.header')
         
@@ -68,6 +68,7 @@
       <!--change footer start-->
       </div>
     </div>
+    
     
     <!-- footer end-->
     <!-- preloader js start-->
@@ -108,6 +109,7 @@
         $('.quiz-gift').hide();
         $('.thank-you').hide();
         $('.second-page').hide();
+        $('.quiz-body').hide();
         // $('.thank-you').hide();
       }());
 
@@ -145,7 +147,7 @@
           case '1d2d3b4b5b-v':
             return {
               "name" : "Veggie Melt",
-              "coupon_code" : "VM77FREE",
+              "coupon_code" : "Pesto Chicken",
               "img_source" : "Veggie_Melt_sandwich.webp"
             };
             
@@ -154,7 +156,7 @@
               case 'n':
                 return {
               "name" : "Tikka flavoured sandwich",
-              "coupon_code" : "CT14FREE",
+              "coupon_code" : "Pesto Chicken",
               "img_source" : "Tikka_sandwich.webp"
             };
                 
@@ -231,6 +233,7 @@
           success: function(output) {
             if (output.result == "success") {
               $('.quiz-form').hide();
+              $('.quiz-body').show();
               contentBoxShow(boxNum);
               $('.progress').show();
               progressBarProgress(progressWidth);
