@@ -173,7 +173,7 @@
         return k[1];
       }
 
-      $('.card').click( function () {
+      $('.quiz-card').click( function () {
         $(this).find("input:checkbox").prop('checked', true);
         let vr = this;
         boxNum++;
@@ -200,6 +200,7 @@
 
       $('#result_button').click( () => {
         $(".box").hide();
+        $('.quiz-body').hide();
         $("#result_button").hide();
         $('.quiz-gift').show();
         $('.progress').hide();
@@ -232,9 +233,9 @@
             if (output.result == "success") {
               $('.quiz-form').hide();
               $('.quiz-body').show();
-              // contentBoxShow(boxNum);
               $('.progress').show();
-              // progressBarProgress(progressWidth);
+              contentBoxShow(boxNum);
+              progressBarProgress(progressWidth);
             }
             else if(output.result == "failed"){
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
