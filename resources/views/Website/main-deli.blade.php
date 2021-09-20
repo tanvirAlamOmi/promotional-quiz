@@ -24,7 +24,10 @@
       <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
       <style>
-      
+        .row-center {
+          margin-left: 4%;
+          margin-right: 0%;
+        }
        </style>
   </head>
   

@@ -1,6 +1,6 @@
 <section class="quiz-body">
     <div class="container">
-        <div class="row">
+        <div class="row row-center">
             <!-- 1st checkbox section start-->
             <div id="firstBox" class="row box">
               <div class="col-12">
