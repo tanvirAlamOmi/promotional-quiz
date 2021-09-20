@@ -225,7 +225,7 @@
         progressBarProgress(progressWidth);
       })
 
-      $('#submitForm').submit( (event) => {
+      $('#customerForm').submit( (event) => {
         event.preventDefault();
         $.ajax({
           type: "POST",
