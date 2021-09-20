@@ -22,10 +22,15 @@ body {
     text-align: center;
     background-size: cover;
     background-position: center;
+    padding: 2% 30%;
 }
 
-.home-page .logo-home {
+.home-page .card .logo-home {
     width: 17%;
+}
+
+.home-page .card {
+    padding: 4% 0%;
 }
 
 .home-page h1 {
@@ -35,30 +40,29 @@ body {
     color: #148185;
 }
 
-.home-page .soul-sand {
+.home-page .card .soul-sand {
     width: 55%;
+    padding: 3% 0% 3% 0%;
 }
 
-.home-page .sand-img {
+.home-page .card .sand-img {
     width: 100%;
     height: 100%;
     padding: 4% 0 0 0;
 }
 
-.home-page h1 {
-    font-size: 32px;
-    padding: 6% 0 0 0;
+.home-page .card h1 {
+    font-size: 26px;
+    padding: 4% 0 1% 0;
 }
 
-.home-page .home-btn {
-    margin-bottom: 75px;
-    font-size: 39px;
-    background: #148185;
+.home-page .card .home-btn {
+    font-size: 29px;
+    background: #ce452b;
     color: #fff;
     border: none;
     padding: 2px 36px;
     text-transform: uppercase;
-    /* margin-top: 80px; */
 }
 
 
@@ -529,17 +533,8 @@ body {
         padding-bottom: 56px;
         width: 96%;
     }
-    .home-page h1 {
-        padding: 0px 88px;
-    }
     .quiz-form {
         padding: 0px 10%;
-    }
-    .home-page {
-        height: 100vh;
-    }
-    .home-page .logo-home {
-        width: 25%;
     }
     .quiz-form .mb-3 .form-label {
         font-size: 32px;
@@ -583,12 +578,11 @@ body {
     .quiz-form {
         margin-top: -5%;
     }
-    .home-page .soul-sand {
-        width: 46%;
-        padding: 2% 0 0 0;
+    .home-page {
+        padding: 2% 2%;
     }
-    .home-page .home-btn {
-        margin: 19% 0 0 0vh;
+    .home-page .card .soul-sand {
+        width: 72%;
     }
 }
 
