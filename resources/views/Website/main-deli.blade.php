@@ -143,7 +143,7 @@
           case '1d2d3b4b5b-v':
             return {
               "name" : "Veggie Melt",
-              "coupon_code" : "Pesto Chicken",
+              "coupon_code" : "VM77FREE",
               "img_source" : "Veggie_Melt_sandwich.webp"
             };
             
@@ -152,7 +152,7 @@
               case 'n':
                 return {
               "name" : "Tikka flavoured sandwich",
-              "coupon_code" : "Pesto Chicken",
+              "coupon_code" : "CT14FREE",
               "img_source" : "Tikka_sandwich.webp"
             };
                 
