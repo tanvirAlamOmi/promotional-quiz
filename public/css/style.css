@@ -18,12 +18,14 @@ body {
 /* home page css start */
 
 .home-page {
-    background: #cbe6f8;
+    background: url(../img/home-bg.webp);
     text-align: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .home-page .logo-home {
-    width: 22%;
+    width: 17%;
 }
 
 .home-page h1 {
@@ -33,19 +35,30 @@ body {
     color: #148185;
 }
 
-.home-page .sand-img {
+.home-page .soul-sand {
     width: 55%;
 }
 
+.home-page .sand-img {
+    width: 100%;
+    height: 100%;
+    padding: 4% 0 0 0;
+}
+
+.home-page h1 {
+    font-size: 32px;
+    padding: 6% 0 0 0;
+}
+
 .home-page .home-btn {
-    margin-bottom: 120px;
+    margin-bottom: 75px;
     font-size: 39px;
     background: #148185;
     color: #fff;
     border: none;
-    padding: 16px 36px;
+    padding: 2px 36px;
     text-transform: uppercase;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 
@@ -385,32 +398,36 @@ body {
     background: #038183;
 }
 
-
-
-
-.form-check-input{
+.form-check-input {
     display: none;
 }
-.quiz-card{
+
+.quiz-card {
     background: #ce452b;
     text-align: center;
     color: white;
     font-weight: bold;
 }
-.img-thumbnail{
-     background: transparent
+
+.img-thumbnail {
+    background: transparent
 }
-.form-check-label{
+
+.form-check-label {
     margin-left: -1.5rem;
 }
 
-.exchange-card-color{
+.exchange-card-color {
     color: #ce452b;
     background: white;
 }
-.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label{
+
+.form-check-input:disabled~.form-check-label,
+.form-check-input[disabled]~.form-check-label {
     opacity: 1;
 }
+
+
 /* .thank-you a i {} */
 
 
@@ -522,8 +539,7 @@ body {
         height: 100vh;
     }
     .home-page .logo-home {
-        width: 46%;
-        margin-top: 10vh;
+        width: 25%;
     }
     .quiz-form .mb-3 .form-label {
         font-size: 32px;
@@ -542,30 +558,37 @@ body {
         font-size: 24px;
         padding: 20px 50px;
     }
-    .container, .container-md, .container-sm {
+    .container,
+    .container-md,
+    .container-sm {
         max-width: 935.7px !important;
     }
-    .quiz-card{
+    .quiz-card {
         width: 26rem !important;
         height: 23rem !important;
         margin: 1.4rem !important;
     }
-
-    
     .quiz-card img {
         height: 18rem !important;
     }
     .row {
         --bs-gutter-x: 0;
     }
-    .quiz-body{
+    .quiz-body {
         padding-top: 5%;
     }
-    .quiz-gift{
+    .quiz-gift {
         margin-top: -5%;
     }
-    .quiz-form{
+    .quiz-form {
         margin-top: -5%;
+    }
+    .home-page .soul-sand {
+        width: 46%;
+        padding: 2% 0 0 0;
+    }
+    .home-page .home-btn {
+        margin: 19% 0 0 0vh;
     }
 }
 
