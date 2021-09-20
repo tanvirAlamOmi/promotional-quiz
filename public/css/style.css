@@ -16,6 +16,15 @@ body {
 
 .main-card {
     margin: 1% 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
 }
 
 
@@ -76,21 +85,24 @@ body {
 /* home page css end */
 
 .quiz-headline {
-    padding-top: 9px;
-    /* text-align: center; */
+    background: #eef1db;
+    margin-bottom: 4%;
 }
 
+
+/* text-align: center; */
+
 .quiz-headline img {
-    width: 17%;
+    width: 27%;
     border: none;
 }
 
 .quiz-headline h1 {
     text-align: right;
-    font-size: 24px;
+    font-size: 19px;
     color: #D95840;
-    padding-top: 6%;
-    font-weight: bold;
+    padding: 11% 7% 0% 0%;
+    font-weight: 500;
 }
 
 .alert-danger {
@@ -127,7 +139,10 @@ body {
     margin-bottom: 76px;
 }
 
-.quiz-body .progress {}
+.progress {
+    height: 0.6rem !important;
+    border-radius: 0;
+}
 
 .quiz-body .progress .progress-bar {}
 
@@ -149,7 +164,8 @@ body {
 .quiz-body .qus-headline h1 {
     padding: 10px 0;
     color: #038183;
-    font-size: 35px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 
@@ -572,9 +588,6 @@ body {
     }
     .quiz-card img {
         height: 18rem !important;
-    }
-    .row {
-        --bs-gutter-x: 0;
     }
     .quiz-body {
         padding-top: 5%;

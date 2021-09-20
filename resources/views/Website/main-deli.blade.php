@@ -38,7 +38,7 @@
       <!-- home page start-->
       
       @include('Website.home')
-    <div class="card main-card">
+    <div class="main-card">
       <!-- home page end-->
       <div class="second-page">
         <!-- change Quiz section start -->
