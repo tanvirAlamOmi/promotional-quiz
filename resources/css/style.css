@@ -1,54 +1,91 @@
 /*Global css start*/
-.right{
-	float: right;
+
+.right {
+    float: right;
 }
+
+
 /*global css end*/
-.quiz-headline{
-}
-.quiz-headline h1{
+
+.quiz-headline {}
+
+.quiz-headline h1 {
     text-align: center;
 }
+
+
 /*quiz body css start*/
-.quiz-body{}
-.quiz-body .progress{margin: 20px 351px;}
-.quiz-body .progress .progress-bar{}
-.quiz-body .qus-headline{
+
+.quiz-body {}
+
+.quiz-body .progress {
+    margin: 20px 351px;
+}
+
+.quiz-body .progress .progress-bar {}
+
+.quiz-body .qus-headline {
     text-align: center;
 }
-.quiz-body .qus-headline img{
+
+.quiz-body .qus-headline img {
     width: 48%;
     border: none;
     padding: 10px 0;
 }
-.quiz-body .qus-headline h1{
+
+.quiz-body .qus-headline h1 {
     padding: 10px 0;
 }
+
+
 /*quiz checkbox section css start*/
-.quiz-body .card{margin: 10px 0;box-shadow: 2px 1px 1px #0000001a;}
-.quiz-body .card img{
+
+.quiz-body .card {
+    margin: 10px 0;
+    box-shadow: 2px 1px 1px #0000001a;
+}
+
+.quiz-body .card img {
     border: none;
     height: 200px;
 }
-.quiz-body .card .card-body{
-}
-.quiz-body .card .card-body .form-check{}
-.quiz-body .card .card-body .form-check .form-check-input{}
-.quiz-body .card .card-body .form-check .form-check-label{}
-.quiz-body .btn{
+
+.quiz-body .card .card-body {}
+
+.quiz-body .card .card-body .form-check {}
+
+.quiz-body .card .card-body .form-check .form-check-input {}
+
+.quiz-body .card .card-body .form-check .form-check-label {}
+
+.quiz-body .btn {
     margin: 20px 0;
 }
+
+
 /*quiz checkbox section css start*/
+
+
 /*quiz body css end*/
+
+
 /*quiz result page css start*/
-.quiz-result{
+
+.quiz-result {
     text-align: center;
 }
-.quiz-result .mb-3{
+
+.quiz-result .mb-3 {
     margin: 0 290px;
     text-align: start;
 }
-.quiz-result .mb-3 .form-label{}
-.quiz-result .mb-3 .form-control{}
-.quiz-result .btn{
-}
+
+.quiz-result .mb-3 .form-label {}
+
+.quiz-result .mb-3 .form-control {}
+
+.quiz-result .btn {}
+
+
 /*quiz result page end*/

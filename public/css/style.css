@@ -5,10 +5,25 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
+    background: url(../img/home-bg.webp);
+    background-size: cover;
+    background-position: center;
 }
 
 .right {
     float: right;
+}
+
+.main-card {
+    margin: 1% 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
 }
 
 
@@ -18,12 +33,19 @@ body {
 /* home page css start */
 
 .home-page {
-    background: #cbe6f8;
+    background: url(../img/home-bg.webp);
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 2% 30%;
 }
 
-.home-page .logo-home {
-    width: 22%;
+.home-page .card .logo-home {
+    width: 17%;
+}
+
+.home-page .card {
+    padding: 4% 0%;
 }
 
 .home-page h1 {
@@ -33,38 +55,53 @@ body {
     color: #148185;
 }
 
-.home-page .sand-img {
+.home-page .card .soul-sand {
     width: 55%;
+    padding: 3% 0% 3% 0%;
 }
 
-.home-page .home-btn {
-    margin-bottom: 120px;
-    font-size: 39px;
-    background: #148185;
+.home-page .card .sand-img {
+    width: 100%;
+    height: 100%;
+    padding: 4% 0 0 0;
+}
+
+.home-page .card h1 {
+    font-size: 26px;
+    padding: 4% 0 1% 0;
+}
+
+.home-page .card .home-btn {
+    font-size: 29px;
+    background: #ce452b;
     color: #fff;
     border: none;
-    padding: 16px 36px;
+    padding: 2px 36px;
     text-transform: uppercase;
-    margin-top: 80px;
 }
 
 
 /* home page css end */
 
 .quiz-headline {
-    padding-top: 9px;
-    text-align: center;
+    background: #eef1db;
+    margin-bottom: 4%;
 }
 
+
+/* text-align: center; */
+
 .quiz-headline img {
-    width: 13%;
+    width: 27%;
     border: none;
 }
 
 .quiz-headline h1 {
-    text-align: center;
-    font-size: 32px;
+    text-align: right;
+    font-size: 19px;
     color: #D95840;
+    padding: 11% 7% 0% 0%;
+    font-weight: 500;
 }
 
 .alert-danger {
@@ -98,11 +135,12 @@ body {
 /*quiz body css start*/
 
 .quiz-body {
-    margin-bottom: 76px;
+    min-height: 32rem;
 }
 
-.quiz-body .progress {
-    margin: 20px 351px;
+.progress {
+    height: 0.6rem !important;
+    border-radius: 0;
 }
 
 .quiz-body .progress .progress-bar {}
@@ -113,7 +151,7 @@ body {
 
 .quiz-body .qus-headline {
     text-align: center;
-    padding: 0px 212px;
+    padding: 0 1%;
 }
 
 .quiz-body .qus-headline img {
@@ -125,15 +163,19 @@ body {
 .quiz-body .qus-headline h1 {
     padding: 10px 0;
     color: #038183;
-    font-size: 50px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 
 /*quiz checkbox section css start*/
 
 .quiz-body .card {
-    margin: 10px 0;
+    margin: 9px 0;
     box-shadow: 2px 1px 1px #0000001a;
+    width: 15rem!important;
+    height: 12rem;
+    padding: 0;
 }
 
 .quiz-body .card:hover {
@@ -143,19 +185,26 @@ body {
 
 .quiz-body .card img {
     border: none;
-    height: 200px;
+    height: 158px;
     transition: transform .5s ease;
+    padding: 0.2rem;
 }
 
 .quiz-body .card .card-body {}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 0.1rem 1rem;
+}
 
 .quiz-body .card .card-body .form-check {}
 
 .quiz-body .card .card-body .form-check .form-check-input {}
 
 .quiz-body .card .card-body .form-check .form-check-label {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .quiz-body .btn {
@@ -180,7 +229,7 @@ body {
 /* quiz form section css start */
 
 .quiz-form {
-    padding: 0 25%;
+    padding: 0px 6%;
     text-align: center;
     margin-top: -61px;
 }
@@ -198,13 +247,13 @@ body {
 
 .quiz-form .term h1 {
     color: #148185;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .quiz-form .term ul {}
 
 .quiz-form .term ul li {
-    font-size: 21px;
+    font-size: 13px;
     font-weight: 400;
 }
 
@@ -218,7 +267,7 @@ body {
     padding: 11px 74px;
     background: #D95840;
     border: none;
-    margin: 34px 0 0 0;
+    margin: 16px 0 0 0;
 }
 
 .quiz-form .btn:hover {
@@ -238,72 +287,74 @@ body {
     padding-top: 10px;
 }
 
-.quiz-gift .card {
+
+/* .quiz-gift .card {
     padding: 63px 0;
     margin: 0px 80px;
+} */
+
+.quiz-gift .win {
+    width: 18%;
 }
 
-.quiz-gift .card .win {
-    width: 25%;
-}
+.quiz-gift h4 {}
 
-.quiz-gift .card h4 {}
-
-.quiz-gift .card h1 {
-    padding: 40px 0;
-    font-size: 56px;
+.quiz-gift h1 {
+    padding: 17px 0;
+    font-size: 30px;
     color: #148185;
 }
 
-.quiz-gift .card .test-img {
-    padding-bottom: 56px;
+.quiz-gift .test-img {
+    padding-bottom: 30px;
+    width: 46%;
 }
 
-.quiz-gift .card .btn {
+.quiz-gift .btn {
     padding: 20px 37px;
     background: #D95840;
     border: none;
 }
 
-.quiz-gift .card .btn:hover {
+.quiz-gift .btn:hover {
     transition: .2s ease;
     background: #038183;
 }
 
-.quiz-gift .card .header {}
+.quiz-gift .header {}
 
-.quiz-gift .card .header h1 {
+.quiz-gift .header h1 {
     padding-left: 60px;
     font-size: 48px;
     text-transform: uppercase;
     color: #fecc00;
 }
 
-.quiz-gift .card .header h2 {
+.quiz-gift .header h2 {
     padding-left: 60px;
     font-size: 47px;
     text-transform: uppercase;
     color: #fecc00;
 }
 
-.quiz-gift .card .header img {
+.quiz-gift .header img {
     width: 50%;
 }
 
-.quiz-gift .card .body-part {}
+.quiz-gift .body-part {}
 
-.quiz-gift .card .body-part img {
+.quiz-gift .body-part img {
     border-radius: 10%;
 }
 
-.quiz-gift .card .body-part h1 {
+.quiz-gift .body-part h1 {
     font-size: 48px;
     padding: 20px 0;
     text-transform: uppercase;
     color: #128283;
 }
 
-.quiz-gift .card .body-part p {
+.quiz-gift .body-part p {
     font-size: 22px;
 }
 
@@ -332,16 +383,15 @@ body {
 
 .quiz-footer {
     text-align: center;
-    padding-top: 67px;
     padding-bottom: 20px;
 }
 
 .quiz-footer h1 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .quiz-footer h2 {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .quiz-footer h2 a {
@@ -353,23 +403,25 @@ body {
 
 /* thank you page css start */
 
-.thank-you {}
+.thank-you {
+    min-height: 27rem;
+}
 
 .thank-you img {
-    width: 33%;
+    width: 24%;
     padding-bottom: 20px;
 }
 
 .thank-you h1 {
-    font-family: 'Pattaya';
-    font-size: 76px;
+    font-size: 50px;
     color: #038183;
 }
 
 .thank-you h2 {
     font-family: 'Poppins';
     color: #000000;
-    padding-bottom: 56px;
+    padding-bottom: 35px;
+    font-size: 20px;
 }
 
 .thank-you a {
@@ -385,32 +437,36 @@ body {
     background: #038183;
 }
 
-
-
-
-.form-check-input{
+.form-check-input {
     display: none;
 }
-.quiz-card{
+
+.quiz-card {
     background: #ce452b;
     text-align: center;
     color: white;
     font-weight: bold;
 }
-.img-thumbnail{
-     background: transparent
+
+.img-thumbnail {
+    background: transparent
 }
-.form-check-label{
+
+.form-check-label {
     margin-left: -1.5rem;
 }
 
-.exchange-card-color{
+.exchange-card-color {
     color: #ce452b;
     background: white;
 }
-.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label{
+
+.form-check-input:disabled~.form-check-label,
+.form-check-input[disabled]~.form-check-label {
     opacity: 1;
 }
+
+
 /* .thank-you a i {} */
 
 
@@ -512,18 +568,8 @@ body {
         padding-bottom: 56px;
         width: 96%;
     }
-    .home-page h1 {
-        padding: 0px 88px;
-    }
     .quiz-form {
         padding: 0px 10%;
-    }
-    .home-page {
-        height: 100vh;
-    }
-    .home-page .logo-home {
-        width: 46%;
-        margin-top: 10vh;
     }
     .quiz-form .mb-3 .form-label {
         font-size: 32px;
@@ -542,30 +588,33 @@ body {
         font-size: 24px;
         padding: 20px 50px;
     }
-    .container, .container-md, .container-sm {
+    .container,
+    .container-md,
+    .container-sm {
         max-width: 935.7px !important;
     }
-    .quiz-card{
+    .quiz-card {
         width: 26rem !important;
         height: 23rem !important;
         margin: 1.4rem !important;
     }
-
-    
     .quiz-card img {
         height: 18rem !important;
     }
-    .row {
-        --bs-gutter-x: 0;
-    }
-    .quiz-body{
+    .quiz-body {
         padding-top: 5%;
     }
-    .quiz-gift{
+    .quiz-gift {
         margin-top: -5%;
     }
-    .quiz-form{
+    .quiz-form {
         margin-top: -5%;
+    }
+    .home-page {
+        padding: 2% 2%;
+    }
+    .home-page .card .soul-sand {
+        width: 72%;
     }
 }
 

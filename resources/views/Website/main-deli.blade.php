@@ -29,43 +29,44 @@
   </head>
   
   <body onload="myFunction()">
-    
-    <!--pre loader start-->
-    <div id="loader" class="pre-loader">
-      <img src="{{asset('img/preloader.gif')}}">
-    </div>
-    <!-- pre loader end-->
-    <!-- home page start-->
-    
-    @include('Website.home')
-    <!-- home page end-->
-    <div class="second-page">
-      <!-- change Quiz section start -->
-      @include('Website.header')
+  
+        <!--pre loader start-->
+      <div id="loader" class="pre-loader">
+        <img src="{{asset('img/preloader.gif')}}">
+      </div>
+      <!-- pre loader end-->
+      <!-- home page start-->
       
-      <!-- Quiz section end -->
-      <!-- quiz body start -->
-      @include('Website.quiz-section')
-    
-      <!-- quiz body end -->
-
-      <!-- change quiz gift update page start-->
-      @include('Website.gift')
-    
-      <!-- quiz gift update page end-->
-      <!--quiz result page start-->
-     
-      @include('Website.quiz-form')
-      <!--quiz result page end-->
-      <!-- Thank you page start -->
-      @include('Website.thanks')
-
-
-      <!-- Thank you page end -->
+      @include('Website.home')
+    <div class="main-card">
+      <!-- home page end-->
+        <!-- change Quiz section start -->
+        @include('Website.header')
+        
+        <!-- Quiz section end -->
+        <!-- quiz body start -->
+        @include('Website.quiz-section')
       
-      @include('Website.footer')
-    <!--change footer start-->
+        <!-- quiz body end -->
+
+        <!-- change quiz gift update page start-->
+        @include('Website.gift')
+      
+        <!-- quiz gift update page end-->
+        <!--quiz result page start-->
+      
+        @include('Website.quiz-form')
+        <!--quiz result page end-->
+        <!-- Thank you page start -->
+        @include('Website.thanks')
+
+
+        <!-- Thank you page end -->
+        
+        @include('Website.footer')
+      <!--change footer start-->
     </div>
+    
     
     <!-- footer end-->
     <!-- preloader js start-->
@@ -105,7 +106,8 @@
         $('.quiz-form').hide();
         $('.quiz-gift').hide();
         $('.thank-you').hide();
-        $('.second-page').hide();
+        $('.main-card').hide();
+        $('.quiz-body').hide();
         // $('.thank-you').hide();
       }());
 
@@ -208,7 +210,7 @@
 
       $('#go_to_quiz').click( () => {
         $('.home-page').hide();
-        $('.second-page').show();
+        $('.main-card').show();
         $('.quiz-form').show();
         $('.progress').hide();
       })
@@ -229,9 +231,10 @@
           success: function(output) {
             if (output.result == "success") {
               $('.quiz-form').hide();
-              contentBoxShow(boxNum);
+              $('.quiz-body').show();
+              // contentBoxShow(boxNum);
               $('.progress').show();
-              progressBarProgress(progressWidth);
+              // progressBarProgress(progressWidth);
             }
             else if(output.result == "failed"){
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
