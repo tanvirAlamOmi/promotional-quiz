@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12">
               
-                <form id="submitForm">
+                <form id="customerForm">
                   <div class="alert">
                       <ul id="message" style="margin: 0px;">
                       </ul>
