@@ -193,39 +193,61 @@
         totalPoint += $(`input:checkbox[name=${checkboxNames[boxNum-1]}]:checked`).val();
         progressWidth = progressWidth + progressBarPortion;
         progressBarProgress(progressWidth)
-
         contentBoxShow(boxNum)
       }
 
       $('#result_button').click( () => {
         $(".box").hide();
         $("#result_button").hide();
-        // $("#result_button").hide();
-        $('.progress').hide();
         $('.quiz-gift').show();
-        
+        $('.progress').hide();
         prize = logic(totalPoint);
         $('#gift_name').html(prize.name);
         $('#gift_img').attr("src", `{{asset('img/prize/${prize.img_source}')}}`);
       })
 
-      $('#coupon_button').click( () => {
-        
-        $('.quiz-gift').hide();
-        $('.quiz-form').show();
-        
-      })
-
       $('#go_to_quiz').click( () => {
         $('.home-page').hide();
-        
         $('.second-page').show();
-        
-        contentBoxShow(boxNum);
-        progressBarProgress(progressWidth);
+        $('.quiz-form').show();
+        $('.progress').hide();
       })
 
-      $('#submitForm').submit( (event) => {
+      $('#customerForm').submit( (event) => {
+        event.preventDefault();
+        $.ajax({
+          type: "POST",
+          url: '/check_validation',
+          data:{
+          "_token": "{{ csrf_token() }}",
+          "customerName": $('#customerName').val(),
+          "customerEmail": $('#customerEmail').val(),
+          "customerPhone": $('#customerPhone').val(),
+          // "prizeWon": prize.name,
+          // "coupon_code": prize.coupon_code
+          }, 
+          success: function(output) {
+            if (output.result == "success") {
+              $('.quiz-form').hide();
+              contentBoxShow(boxNum);
+              $('.progress').show();
+              progressBarProgress(progressWidth);
+            }
+            else if(output.result == "failed"){
+              $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
+            }
+          },
+          error:function (response){
+            let list = '';
+              $.each(response.responseJSON.errors,function(field_name,error){
+                list +=`<li> ${error} </li>`;
+              })
+              $('#message').html(list).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
+          }
+        });
+      })
+
+      $('#coupon_button').click( (event) => {
         event.preventDefault();
         $.ajax({
           type: "POST",
@@ -240,9 +262,8 @@
           }, 
           success: function(output) {
             if (output.result == "success") {
+              $('.quiz-gift').hide();
               $('.thank-you').show();
-              $('.quiz-form').hide();
-
             }
             else if(output.result == "failed"){
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')

@@ -11,15 +11,15 @@ use Mail;
 
 class SubmitController extends Controller
 {
-    
-    public function onSubmit(Request $request ){
+
+    public function validationChcekForCustomer(Request $request)
+    {
         $request->validate([
-            'customerName' => 'required|max:100|min:3',
+            'customerName' => 'required|max:50|min:3',
             'customerEmail' => 'required|email|max:255',
             'customerPhone' => 'required|numeric',
-            'prizeWon' => 'required',
         ]);
-
+        
         try{
             $delayDays = 30;
             $newDateTime = Carbon::now()->subDays($delayDays);
@@ -36,6 +36,37 @@ class SubmitController extends Controller
                 $remainintTime = $result->created_at->diff($newDateTime)->format('%D day(s) %H:%i:%s');
                 return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime hour(s).")); 
             }
+
+            return response()->json(array("result" => "success", "message" => "The User is Valid"));
+
+        }catch(Exception $e){
+        	return response()->json(array("result" => "failed", "message" => $e));
+        }
+       
+    }
+    
+    public function onSubmit(Request $request ){
+
+        $request->validate([
+            'prizeWon' => 'required',
+        ]);
+
+        try{
+            // $delayDays = 30;
+            // $newDateTime = Carbon::now()->subDays($delayDays);
+            // // START check if already took the code in given period of time 
+
+            // $result = Submit::where('created_at', ">", $newDateTime)
+            // ->where(function ($query) use ( $request) {
+            //     $query->where('email', $request->customerEmail)
+            //     ->orWhere('phone', $request->customerPhone);
+            // })
+            // ->first();
+
+            // if($result){
+            //     $remainintTime = $result->created_at->diff($newDateTime)->format('%D day(s) %H:%i:%s');
+            //     return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime hour(s).")); 
+            // }
 
             // END check if already took the code in given period of time 
             // DB::transaction(function() {

@@ -22,7 +22,7 @@
     <!-- Container Fluid-->
     <canvas id="myChart" width="400" height="150" aria-label="Sale Chart" role="img"></canvas>
 
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-5">
             <div class="card-body">
                 <div class="table-responsive">
                     <table id="rewardlist" class="p-l-0 p-r-0 table table-bordered">
@@ -126,6 +126,7 @@
                 ]
             });
         }
+        
         topSale( )
 		function topSale( ) {
             ddata =  $.get("{{ url('/rewards_stat_chart') }}/" , function(data) {})
@@ -156,10 +157,10 @@
                         }]
                     },
                     options: {
-                        legend: { display: false },
-                        title: {
-                            display: true,
-                            text: 'TOP REWARD ITEMS'
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
                         },
                         scales: {
                             yAxes: [{
