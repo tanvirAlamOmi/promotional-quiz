@@ -17,6 +17,7 @@ use App\Http\Controllers\UserController;
 
 Route::view('/', 'Website.main-deli');
 Route::post('/submit_form', [SubmitController::class, 'onSubmit']);
+Route::post('/check_validation', [SubmitController::class, 'validationChcekForCustomer']);
 
 Route::group(['middleware' => 'auth'], function () {
     Route::view('/home', 'Admin.home');
