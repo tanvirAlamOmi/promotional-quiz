@@ -16,7 +16,11 @@
   <link href="{{asset('Admin/css/ruang-admin.min.css')}}" rel="stylesheet">
 
 </head>
-
+<style>
+  label{
+    color: black;
+  }
+</style>
 <body class="bg-gradient-login">
   <!-- Register Content -->
   <div class="container-login">
