@@ -88,6 +88,7 @@
     
     <!-- fontawesome js start-->
     <script src="{{asset('js/fontawesome.min.js')}}"></script>
+    <script src="{{asset('js/lazysizes.min.js')}}" async></script>
     
     <!-- fontawesome js end-->
     <script src="{{asset('js\jquery-3.6.0.min.js')}}"></script>

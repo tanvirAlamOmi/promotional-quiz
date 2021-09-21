@@ -27,13 +27,13 @@
           <div class="row">
             <div class="card">
             <div class="col-12">
-             <img src="{{asset('img\main-logo.webp')}}" class="logo-home" alt="main-logo">
+             <img data-src="{{asset('img\main-logo.webp')}}" class="logo-home lazyload" alt="main-logo">
             </div>
             <div class="col-12">
-              <img src="{{asset('img\soul-sand.webp')}}" class="soul-sand" alt="">
+              <img data-src="{{asset('img\soul-sand.webp')}}" class="soul-sand lazyload" alt="">
             </div>
             <div class="col-12">
-             <img src="{{asset('img\sand-two.webp')}}" class="sand-img" alt="">
+             <img data-src="{{asset('img\sand-two.webp')}}" class="sand-img lazyload" alt="">
             </div>
             <div class="col-12">
             <h1>Win a free sandwich</h1>
