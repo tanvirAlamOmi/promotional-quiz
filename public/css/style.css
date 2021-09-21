@@ -4,7 +4,7 @@
     src: url("../Font/NoirPro-Regular.ttf");
 }
 body {
-    font-family: 'noir-font';
+    font-family: 'noir-font', sans-serif;
     /* font-family: 'Poppins', sans-serif; */
     margin: 0px;
     padding: 0px;
