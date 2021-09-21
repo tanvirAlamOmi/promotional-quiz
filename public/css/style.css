@@ -149,7 +149,7 @@ body {
 }
 
 .progress {
-    height: 1.2rem !important;
+    height: 0.6rem !important;
     border-radius: 0;
 }
 
@@ -281,6 +281,8 @@ body {
 
 .quiz-form .mb-3 .form-control {
     border: 1px solid #148185;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .quiz-form .btn {
@@ -667,6 +669,7 @@ body {
     }
     .thank-you {
         min-height: 100vw;
+        margin-top: 10rem;
     }
     .thank-you h1 {
         font-size: 70px;
@@ -723,6 +726,10 @@ body {
     
     .quiz-form .alert ul {
         font-size: 22px;
+    }
+    .progress {
+        height: 1.2rem !important;
+        border-radius: 0;
     }
 }
 
