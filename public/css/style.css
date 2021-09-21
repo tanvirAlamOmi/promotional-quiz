@@ -221,7 +221,7 @@ body {
 
 .quiz-body .card .card-body .form-check .form-check-label {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
