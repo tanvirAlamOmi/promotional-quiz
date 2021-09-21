@@ -1,8 +1,10 @@
 /*Global css start*/
+
 @font-face {
     font-family: "noir-font";
     src: url("../Font/NoirPro-Regular.ttf");
 }
+
 body {
     font-family: 'noir-font', sans-serif;
     /* font-family: 'Poppins', sans-serif; */
@@ -94,7 +96,7 @@ body {
 /* home page css end */
 
 .quiz-headline {
-    background: #eef1db;
+    background: #efc50940;
     margin-bottom: 4%;
 }
 
@@ -211,7 +213,9 @@ body {
     padding: 0.1rem 1rem;
 }
 
-.quiz-body .card .card-body .form-check {}
+.quiz-body .card .card-body .form-check {
+    margin: 0px;
+}
 
 .quiz-body .card .card-body .form-check .form-check-input {}
 
@@ -227,6 +231,7 @@ body {
     background: #D95840;
     text-transform: uppercase;
     border: none;
+    margin-top: 49px;
 }
 
 .quiz-body .btn:hover {
@@ -271,6 +276,7 @@ body {
 .quiz-form .term h1 {
     color: #148185;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .quiz-form .term ul {}
@@ -392,6 +398,7 @@ body {
     padding: 12px 37px;
     background: #D95840;
     border: none;
+    text-transform: uppercase;
 }
 
 .quiz-gift .btn:hover {
