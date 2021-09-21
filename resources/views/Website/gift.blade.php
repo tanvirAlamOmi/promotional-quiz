@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-12">
           <img src="{{asset('img\clb.png')}}" alt="" class="win">
-          <h4></h4>
+          <h4>on winning</h4>
           <h1 id="gift_name"></h1>
           <img src="" id="gift_img" alt="gift-img" class="test-img">
           </div>
