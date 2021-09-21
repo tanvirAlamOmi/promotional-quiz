@@ -11,15 +11,15 @@
                   @csrf
                     <div class="mb-3">
                       <label for="customerName" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="customerName" name="customerName" aria-describedby="emailHelp">
+                      <input type="text" placeholder="Please enter your name" class="form-control" id="customerName" name="customerName" aria-describedby="emailHelp">
                     </div>
                   <div class="mb-3">
                     <label for="customerEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="customerEmail" name="customerEmail" aria-describedby="emailHelp">
+                    <input type="email" placeholder="Please enter your email" class="form-control" id="customerEmail" name="customerEmail" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-3">
                     <label for="customerPhone" class="form-label">Phone</label>
-                    <input type="number" class="form-control" id="customerPhone" name="customerPhone" aria-describedby="emailHelp">
+                    <input type="number" placeholder="Please enter your mobile" class="form-control" id="customerPhone" name="customerPhone" aria-describedby="emailHelp">
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
