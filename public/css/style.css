@@ -42,10 +42,7 @@ body {
 /* home page css start */
 
 .home-page {
-    background: url(../img/home-bg.webp);
     text-align: center;
-    background-size: cover;
-    background-position: center;
     padding: 2% 30%;
 }
 
@@ -535,7 +532,7 @@ body {
         border: 1px solid #757575;
     }
     .quiz-body .card .card-body .form-check .form-check-label {
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 500;
     }
     .quiz-footer h2 {
@@ -608,12 +605,12 @@ body {
         max-width: 100% !important;
     }
     .quiz-card {
-        width: 24rem !important;
-        height: 23rem !important;
-        margin: 1.4rem !important;
+        width: 27rem !important;
+        height: 27.8rem !important;
+        margin: 0.9rem 0 !important;
     }
     .quiz-card img {
-        height: 18rem !important;
+        height: 21rem !important;
     }
     /* .quiz-body {
         padding-top: 5%;
@@ -659,7 +656,7 @@ body {
         font-size: 30px;
     }
     .quiz-form .term ul li {
-        font-size: 20px;
+        font-size: 25px;
     }
     .quiz-form .term h1 {
         font-size: 25px;
@@ -672,6 +669,12 @@ body {
     }
     .home-page .card .home-btn {
         font-size: 44px;
+    }
+    .quiz-form .term {
+        padding-bottom: 30px;
+    }
+    .card-body {
+        padding: 1.4rem 1rem;
     }
 }
 
