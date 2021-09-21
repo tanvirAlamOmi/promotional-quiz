@@ -222,6 +222,7 @@
 
       $('#customerForm').submit( (event) => {
         event.preventDefault();
+        $('#quiz_start').addClass('spinner-border spinner-border-sm');
         $.ajax({
           type: "POST",
           url: '/check_validation',
@@ -240,9 +241,11 @@
               $('.progress').show();
               contentBoxShow(boxNum);
               progressBarProgress(progressWidth);
+              $('#quiz_start').removeClass('spinner-border spinner-border-sm');
             }
             else if(output.result == "failed"){
-              $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
+              $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger');
+              $('#quiz_start').removeClass('spinner-border spinner-border-sm');
             }
           },
           error:function (response){
@@ -251,12 +254,14 @@
                 list +=`<li> ${error} </li>`;
               })
               $('#message').html(list).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
-          }
+              $('#quiz_start').removeClass('spinner-border spinner-border-sm');
+            }
         });
       })
 
       $('#coupon_button').click( (event) => {
         event.preventDefault();
+        $('#coupon_button_loading').addClass('spinner-border spinner-border-sm');
         $.ajax({
           type: "POST",
           url: '/submit_form',
@@ -273,9 +278,12 @@
               $('.quiz-gift').hide();
               $('.thank-you').show();
               totalPoint = 0;
+              $('#coupon_button_loading').removeClass('spinner-border spinner-border-sm');
+
             }
             else if(output.result == "failed"){
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
+              $('#coupon_button_loading').removeClass('spinner-border spinner-border-sm');
             }
           },
           error:function (response){
@@ -283,7 +291,8 @@
               $.each(response.responseJSON.errors,function(field_name,error){
                 list +=`<li> ${error} </li>`;
               })
-              $('#message').html(list).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
+              $('#message').html(list).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger');
+              $('#coupon_button_loading').removeClass('spinner-border spinner-border-sm');
           }
         });
       })

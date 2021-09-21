@@ -9,7 +9,10 @@
           <img src="" id="gift_img" alt="gift-img" class="test-img">
           </div>
           <div>
-          <button type="button" class="btn btn-primary hide" id="coupon_button">Get your coupon now</button>
+          <button class="btn btn-primary" type="button" id="coupon_button">
+            <span class="" role="status" aria-hidden="true" id="coupon_button_loading" ></span>
+            Get your coupon now
+          </button>
           </div>
         </div>
       <!-- </div> -->
