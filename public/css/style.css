@@ -648,7 +648,7 @@ body {
     }
     .main-card {
         margin: 0 0;
-        position: relative; 
+        position: relative;
         min-height: 180vw
     }
     .row-center {
@@ -719,17 +719,19 @@ body {
         font-size: 40px;
         padding: 20px 50px;
     }
-    .absulate-bottom{
-        position:absolute; 
+    .absulate-bottom {
+        position: absolute;
         bottom: 0;
     }
-    
     .quiz-form .alert ul {
         font-size: 22px;
     }
     .progress {
         height: 1.2rem !important;
         border-radius: 0;
+    }
+    .quiz-footer h2 a {
+        font-size: 23px;
     }
 }
 
