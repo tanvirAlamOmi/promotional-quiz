@@ -321,7 +321,7 @@
         <div id="sixthBox" class="row box">
           <div class="col-12">
               <div class="qus-headline">
-                  <h1>Lastly tell us, what are you craving today</h1>
+                  <h1>Lastly tell us, what are you craving today?</h1>
               </div>
           </div>
           

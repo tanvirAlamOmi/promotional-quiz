@@ -34,8 +34,13 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
-                {{-- status code start --}}
+                <div class="col-12">
+                    <div class="float-right p-2" id="close_button">
+                        <i class="fas fa-times fa-sm fa-fw"></i> </a>
+                      </div>
+                    <div class="card-header">{{ __('Reset Password') }}</div>
+                    {{-- status code start --}}
+                </div>
                 @if (session('status'))
                     <div class="mb-4 font-medium text-sm text-green-600" style="text-align: center; padding-top: 20px;">
                         {{ session('status') }}
@@ -105,6 +110,11 @@
   <script src="{{asset('Admin/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
   <script src="{{asset('Admin/js/ruang-admin.min.js')}}"></script>
   
+  <script>
+    $('#close_button').click(function() {
+            history.go(-1);
+      });
+  </script>
 </body>
 
 </html>

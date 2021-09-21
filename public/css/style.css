@@ -162,6 +162,7 @@ body {
 .quiz-body .qus-headline {
     text-align: center;
     padding: 0 1%;
+    text-transform: capitalize;
 }
 
 .quiz-body .qus-headline img {
@@ -454,6 +455,7 @@ body {
     padding: 11px 74px;
     background: #D95840;
     border: none;
+    border-radius: .25rem;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
@@ -553,10 +555,10 @@ body {
         font-weight: 500;
     }
     .quiz-footer h2 {
-        font-size: 23px;
+        font-size: 25px;
     }
     .quiz-footer h1 {
-        font-size: 20px;
+        font-size: 23px;
     }
     .quiz-body .btn {
         padding: 20px 76px;
