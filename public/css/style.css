@@ -83,6 +83,7 @@ body {
     color: #fff;
     border: none;
     padding: 2px 36px;
+    border-radius: .25rem;
     text-transform: uppercase;
 }
 
@@ -148,7 +149,7 @@ body {
 }
 
 .progress {
-    height: 0.6rem !important;
+    height: 1.2rem !important;
     border-radius: 0;
 }
 
@@ -220,6 +221,7 @@ body {
     margin: 20px 0;
     padding: 12px 37px;
     background: #D95840;
+    text-transform: uppercase;
     border: none;
 }
 
@@ -277,6 +279,7 @@ body {
     background: #D95840;
     border: none;
     margin: 16px 0 0 0;
+    text-transform: uppercase;
 }
 
 .quiz-form .btn:hover {
@@ -442,6 +445,7 @@ body {
     background: #D95840;
     border: none;
     text-decoration: none;
+    text-transform: uppercase;
     color: #fff;
 }
 
@@ -509,7 +513,10 @@ body {
         font-size: 24px;
     }
     .quiz-gift .btn {
-        padding: 12px 20px;
+        padding: 20px 50px;
+        font-size: 36px;
+        text-transform: uppercase;
+        margin: 1.4rem 0 1.5rem 0;
     }
     .quiz-gift .card .body-part p {
         font-size: 15px;
@@ -542,12 +549,11 @@ body {
         font-size: 20px;
     }
     .quiz-body .btn {
-        padding: 12px 76px;
-        /* font-size: 27px; */
+        padding: 20px 76px;
+        margin-bottom: 1.4rem;
+        margin-top: 2.9rem;
+        font-size: 36px;
     }
-    /* .quiz-form .btn {
-        font-size: 24px;
-    } */
     .quiz-body .qus-headline h1 {
         padding-top: 42px;
         padding-bottom: 30px;
@@ -598,6 +604,7 @@ body {
     .thank-you a {
         font-size: 29px;
         padding: 20px 50px;
+        text-transform: uppercase;
     }
     .container,
     .container-md,
@@ -641,10 +648,10 @@ body {
         width: 25%;
     }
     .quiz-gift h1 {
-        font-size: 45px;
+        font-size: 54px;
     }
     .quiz-gift .test-img {
-        width: 75%;
+        width: 86%;
     }
     .thank-you {
         min-height: 100vw;
@@ -654,6 +661,8 @@ body {
     }
     .thank-you h2 {
         font-size: 30px;
+        padding-bottom: 81px;
+        padding-top: 13px;
     }
     .quiz-form .term ul li {
         font-size: 25px;
@@ -668,13 +677,32 @@ body {
         font-size: 45px;
     }
     .home-page .card .home-btn {
-        font-size: 44px;
+        font-size: 54px;
     }
     .quiz-form .term {
         padding-bottom: 30px;
     }
     .card-body {
         padding: 1.4rem 1rem;
+    }
+    body {
+        background: none;
+    }
+    .home-page .card {
+        border: none;
+    }
+    .home-page .card .home-btn {
+        padding: 15px 36px;
+    }
+    .quiz-gift h4 {
+        font-size: 31px;
+        padding-bottom: 20px;
+        padding-top: 18px;
+    }
+    .quiz-form .btn {
+        text-transform: uppercase;
+        font-size: 40px;
+        padding: 20px 50px;
     }
 }
 
