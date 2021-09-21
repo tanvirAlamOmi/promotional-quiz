@@ -5,7 +5,7 @@
               
                 <form id="customerForm">
                   <div class="alert">
-                      <ul id="message" style="margin: 0px; font-size: 25px;">
+                      <ul id="message" style="margin: 0px;">
                       </ul>
                   </div>
                   @csrf
