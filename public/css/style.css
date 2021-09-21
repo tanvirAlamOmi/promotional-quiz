@@ -7,7 +7,7 @@ body {
     padding: 0px;
     background: url(../img/home-bg.webp);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 .right {
@@ -31,9 +31,11 @@ body {
     margin-right: 0%;
 }
 
-.relative-position{
+.relative-position {
     position: relative;
 }
+
+
 /*global css end*/
 
 
@@ -307,10 +309,14 @@ body {
     width: 18%;
 }
 
-.quiz-gift h4 {}
+.quiz-gift h4 {
+    color: #D95840;
+    padding-top: 1rem;
+    font-size: 21px;
+}
 
 .quiz-gift h1 {
-    padding: 17px 0;
+    padding: 0px 0 12px 0px;
     font-size: 30px;
     color: #148185;
 }
@@ -619,20 +625,19 @@ body {
         margin-top: -5%;
     }
     .home-page {
-        padding: 0 0;
+        padding: 13% 0;
     }
     .home-page .card .soul-sand {
-        width: 72%;
+        width: 80%;
     }
     .main-card {
         margin: 0 0;
     }
-    
     .row-center {
         margin-left: 2.2%;
         margin-right: 0%;
     }
-    .btn{
+    .btn {
         font-size: 29px;
     }
     .quiz-gift .win {
@@ -657,7 +662,16 @@ body {
         font-size: 20px;
     }
     .quiz-form .term h1 {
-       font-size: 25px;
+        font-size: 25px;
+    }
+    .home-page .card .logo-home {
+        width: 25%;
+    }
+    .home-page .card h1 {
+        font-size: 45px;
+    }
+    .home-page .card .home-btn {
+        font-size: 44px;
     }
 }
 
