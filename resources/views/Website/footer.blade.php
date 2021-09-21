@@ -1,6 +1,6 @@
 
     <footer class="quiz-footer">
-        <div class="container">
+        <div class="container absulate-bottom">
           <div class="row">
             <div class="col-12">
             <h1>Copyright <?php echo date("Y"); ?> © Delicious</h1>
