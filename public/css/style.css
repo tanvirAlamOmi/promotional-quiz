@@ -1,8 +1,11 @@
 /*Global css start*/
-
+@font-face {
+    font-family: "noir-font";
+    src: url("../Font/NoirPro-Regular.ttf");
+}
 body {
-    font-family: 'Pattaya', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'noir-font', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     margin: 0px;
     padding: 0px;
     background: url(../img/home-bg.webp);
@@ -107,7 +110,7 @@ body {
     text-align: right;
     font-size: 19px;
     color: #D95840;
-    font-weight: 500;
+    font-weight: bold;
     margin: 0;
     top: 39%;
     position: absolute;
@@ -175,7 +178,7 @@ body {
     padding: 10px 0;
     color: #038183;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 
@@ -214,7 +217,7 @@ body {
 
 .quiz-body .card .card-body .form-check .form-check-label {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -274,7 +277,7 @@ body {
 
 .quiz-form .term ul li {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .quiz-form .mb-3 .form-label {}
@@ -282,7 +285,7 @@ body {
 .quiz-form .mb-3 .form-control {
     border: 1px solid #148185;
     font-size: 15px;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 .quiz-form .btn {
@@ -552,7 +555,7 @@ body {
     }
     .quiz-body .card .card-body .form-check .form-check-label {
         font-size: 35px;
-        font-weight: 500;
+        font-weight: bold;
     }
     .quiz-footer h2 {
         font-size: 25px;

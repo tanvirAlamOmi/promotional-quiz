@@ -11,7 +11,7 @@
       <!-- google font-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+      {{-- <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet"> --}}
       
       <!-- Font awesome css file -->
       <link rel="stylesheet" href="{{asset('/css/all.min.css')}}">
@@ -24,7 +24,7 @@
       <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
       <style>
-      
+     
        </style>
   </head>
   
