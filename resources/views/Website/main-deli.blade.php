@@ -93,6 +93,9 @@
     <script src="{{asset('js\jquery-3.6.0.min.js')}}"></script>
     
     <script>
+      
+    $(document).ready(function() {
+
       let boxNum = 0;
       let progressWidth = 0;
       let checkboxNames = ['friends', 'vacation', 'night', 'Sandwich', 'juice', 'craving'];
@@ -268,6 +271,7 @@
             if (output.result == "success") {
               $('.quiz-gift').hide();
               $('.thank-you').show();
+              totalPoint = 0;
             }
             else if(output.result == "failed"){
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
@@ -287,7 +291,7 @@
         $(window).on('popstate', function() {
         location.reload(true);
       });
-      
+    })
     </script>
   </body>
 </html>
