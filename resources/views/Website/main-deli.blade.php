@@ -158,7 +158,7 @@
             switch(vegOrNonveg(result)) {
               case 'n':
                 return {
-              "name" : "Tikka flavoured sandwich",
+              "name" : "Tikka Flavoured Sandwich",
               "coupon_code" : "Pesto Chicken",
               "img_source" : "Tikka_sandwich.webp"
             };
