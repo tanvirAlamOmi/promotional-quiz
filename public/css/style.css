@@ -245,6 +245,14 @@ body {
     margin-top: -61px;
 }
 
+.quiz-form .alert {
+    margin-top: 2rem;
+}
+
+.quiz-form .alert ul {
+    font-size: 15px;
+}
+
 .quiz-form .mb-3 {
     text-align: start;
 }
@@ -703,6 +711,9 @@ body {
         text-transform: uppercase;
         font-size: 40px;
         padding: 20px 50px;
+    }
+    .quiz-form .alert ul {
+        font-size: 22px;
     }
 }
 
