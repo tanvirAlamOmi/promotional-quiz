@@ -636,6 +636,8 @@ body {
     }
     .main-card {
         margin: 0 0;
+        position: relative; 
+        min-height: 180vw
     }
     .row-center {
         margin-left: 2.2%;
@@ -703,6 +705,10 @@ body {
         text-transform: uppercase;
         font-size: 40px;
         padding: 20px 50px;
+    }
+    .absulate-bottom{
+        position:absolute; 
+        bottom: 0
     }
 }
 
