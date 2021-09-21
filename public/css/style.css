@@ -646,6 +646,8 @@ body {
     }
     .main-card {
         margin: 0 0;
+        position: relative; 
+        min-height: 180vw
     }
     .row-center {
         margin-left: 2.2%;
@@ -715,6 +717,11 @@ body {
         font-size: 40px;
         padding: 20px 50px;
     }
+    .absulate-bottom{
+        position:absolute; 
+        bottom: 0;
+    }
+    
     .quiz-form .alert ul {
         font-size: 22px;
     }
