@@ -283,7 +283,7 @@ body {
 
 .quiz-form .term ul li {
     font-size: 13px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .quiz-form .mb-3 .form-label {}
