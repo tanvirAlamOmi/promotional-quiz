@@ -221,7 +221,7 @@ body {
 
 .quiz-body .card .card-body .form-check .form-check-label {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -283,7 +283,7 @@ body {
 
 .quiz-form .term ul li {
     font-size: 13px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .quiz-form .mb-3 .form-label {}
