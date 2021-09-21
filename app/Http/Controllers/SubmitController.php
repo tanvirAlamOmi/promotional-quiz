@@ -114,7 +114,7 @@ class SubmitController extends Controller
 			$data = Submit::All();
 			return Datatables::of($data)
             ->addColumn('created_at', function ($row){
-                return $row->created_at->format('d-M-Y h:m:s');
+                return $row->created_at->format('d-M-Y h:i A');
             })
 			->make(true);
 			return $data;
