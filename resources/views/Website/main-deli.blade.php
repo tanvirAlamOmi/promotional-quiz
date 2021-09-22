@@ -89,6 +89,8 @@
     
     <!-- fontawesome js start-->
     <script src="{{asset('js/fontawesome.min.js')}}"></script>
+
+    {{-- lazy load --}}
     <script src="{{asset('js/lazysizes.min.js')}}" async></script>
     
     <!-- fontawesome js end-->
@@ -265,7 +267,7 @@
         $('#coupon_button_loading').addClass('spinner-border spinner-border-sm');
         $.ajax({
           type: "POST",
-          url: '/submit_form',
+          url: '/submit_form_deli',
           data:{
           "_token": "{{ csrf_token() }}",
           "customerName": $('#customerName').val(),
