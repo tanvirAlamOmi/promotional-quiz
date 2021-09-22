@@ -16,7 +16,8 @@ use App\Http\Controllers\UserController;
 */
 
 Route::view('/', 'Website.main-deli');
-Route::post('/submit_form', [SubmitController::class, 'onSubmit']);
+Route::post('/submit_form_deli', [SubmitController::class, 'onSubmitDeli']);
+Route::post('/submit_form_nkd', [SubmitController::class, 'onSubmitNkd']);
 Route::post('/check_validation', [SubmitController::class, 'validationChcekForCustomer']);
 
 Route::group(['middleware' => 'auth'], function () {
