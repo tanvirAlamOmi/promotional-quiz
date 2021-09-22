@@ -8,19 +8,19 @@
     </a>
     <li class="nav-item">
         <a class="nav-link" href="{{url('home')}}">
-            <i class="far fa-fw fa-window-maximize"></i>
+            <i class="far fa fa-file"></i>
             <span>Submissions</span>
         </a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{url('rewards_statistic')}}">
-            <i class="far fa-fw fa-window-maximize"></i>
+            <i class="far fa fa-spinner"></i>
             <span>Product Statistic</span>
         </a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{url('users')}}">
-            <i class="far fa-fw fa-window-maximize"></i>
+            <i class="far fa fa-user"></i>
             <span>Users</span>
         </a>
     </li>
