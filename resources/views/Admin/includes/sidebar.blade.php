@@ -14,14 +14,14 @@
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{url('rewards_statistic')}}">
-            <i class="far fa fa-spinner"></i>
+            <i class="fas fa-chart-bar"></i>
             <span>Product Statistic</span>
         </a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{url('users')}}">
             <i class="far fa fa-user"></i>
-            <span>Users</span>
+            <span>Admins</span>
         </a>
     </li>
 </ul>
