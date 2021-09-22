@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!DOCTYPE html>
-  <html>
 
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <link href="{{asset('img/main-logo.webp')}}" rel="icon">
-      <title>Delicious Quiz</title>
+      {{-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> --}}
+      <title>NKD Quiz</title>
       <!-- google font-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+      {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> --}}
+      {{-- <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet"> --}}
       
       <!-- Font awesome css file -->
       <link rel="stylesheet" href="{{asset('/css/all.min.css')}}">
@@ -39,7 +38,7 @@
     
     @include('Website.home')
     <!-- home page end-->
-    <div class="second-page">
+    <div class="main-card">
       <!-- change Quiz section start -->
       @include('Website.header')
       
@@ -88,6 +87,9 @@
     <!-- fontawesome js start-->
     <script src="{{asset('js/fontawesome.min.js')}}"></script>
     
+    {{-- lazy load --}}
+    <script src="{{asset('js/lazysizes.min.js')}}" async></script>
+
     <!-- fontawesome js end-->
     <script src="{{asset('js\jquery-3.6.0.min.js')}}"></script>
     
@@ -105,7 +107,7 @@
         $('.quiz-form').hide();
         $('.quiz-gift').hide();
         $('.thank-you').hide();
-        $('.second-page').hide();
+        $('.main-card').hide();
         // $('.thank-you').hide();
       }());
 
@@ -171,7 +173,7 @@
         return k[1];
       }
 
-      $('.card').click( function () {
+      $('.quiz-card').click( function () {
         $(this).find("input:checkbox").prop('checked', true);
         let vr = this;
         boxNum++;
@@ -193,33 +195,28 @@
         totalPoint += $(`input:checkbox[name=${checkboxNames[boxNum-1]}]:checked`).val();
         progressWidth = progressWidth + progressBarPortion;
         progressBarProgress(progressWidth)
-
         contentBoxShow(boxNum)
       }
 
       $('#result_button').click( () => {
         $(".box").hide();
+        $('.quiz-body').hide();
         $("#result_button").hide();
-        // $("#result_button").hide();
-        $('.progress').hide();
         $('.quiz-gift').show();
-        
+        $('.progress').hide();
         prize = logic(totalPoint);
         $('#gift_name').html(prize.name);
         $('#gift_img').attr("src", `{{asset('img/prize/${prize.img_source}')}}`);
       })
 
       $('#coupon_button').click( () => {
-        
         $('.quiz-gift').hide();
         $('.quiz-form').show();
-        
       })
 
       $('#go_to_quiz').click( () => {
         $('.home-page').hide();
-        
-        $('.second-page').show();
+        $('.main-card').show();
         
         contentBoxShow(boxNum);
         progressBarProgress(progressWidth);
@@ -229,7 +226,7 @@
         event.preventDefault();
         $.ajax({
           type: "POST",
-          url: '/submit_form',
+          url: '/submit_form_nkd',
           data:{
           "_token": "{{ csrf_token() }}",
           "customerName": $('#customerName').val(),
@@ -240,12 +237,14 @@
           }, 
           success: function(output) {
             if (output.result == "success") {
-              $('.thank-you').show();
               $('.quiz-form').hide();
-
+              $('.thank-you').show();
+              totalPoint = 0;
+              $('#coupon_button_loading').removeClass('spinner-border spinner-border-sm');
             }
             else if(output.result == "failed"){
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
+              $('#coupon_button_loading').removeClass('spinner-border spinner-border-sm');
             }
           },
           error:function (response){
@@ -254,7 +253,8 @@
                 list +=`<li> ${error} </li>`;
               })
               $('#message').html(list).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
-          }
+              $('#coupon_button_loading').removeClass('spinner-border spinner-border-sm');
+            }
         });
       })
 
