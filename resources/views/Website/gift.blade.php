@@ -11,7 +11,7 @@
           <div>
           <button class="btn btn-primary" type="button" id="coupon_button">
             <span class="" role="status" aria-hidden="true" id="coupon_button_loading" ></span>
-            Get your coupon now
+            Click here to send the coupon code to your email
           </button>
           </div>
         </div>
