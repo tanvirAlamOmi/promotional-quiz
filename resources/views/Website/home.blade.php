@@ -13,7 +13,7 @@
             </div>
             <div class="col-12">
             <h1>Win a free sandwich</h1>
-            <button class="home-btn" id="go_to_quiz">Take Quiz</button>
+            <button class="home-btn" id="go_to_quiz">Start Quiz</button>
             </div>
             </div>
           </div>
