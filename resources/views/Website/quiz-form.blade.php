@@ -28,13 +28,14 @@
                 <div class="term">
                   <h1>Terms & Conditions:</h1>
                   <ul>
-                    <li>Coupon codes & Prizes are subject to change without any notice.</li>
+                    <!-- <li>Coupon codes & Prizes are subject to change without any notice.</li> -->
+                    <li>Please enter the email that you check regularly as the coupon code will be sent to your email. Please enter the phone number that you use to place the order as the coupon code will be linked to your phone number.</li>
                     <li>Coupon code only valid when ordering via our Website, Facebook, Instagram & WhatsApp.</li>
-                    <li>Coupon code can only be used once and is only valid for 2 weeks.</li>
+                    <li>Coupon code expires after 14 days of being issued. You can enter this competition once every month.</li>
                     <li>Minimum basket order value & Delivery charges are still valid with the coupon code.</li>
                     <li>Not applicable on purchases of detox plans.</li>
-                    <li>You can win a coupon code for your sandwich only once a month.</li>
-                    <li>By entering your details, you agree to receive SMS & Email communication by the Delicious team - we send communication on discounts & offers max; twice a month.</li>
+                    <!-- <li>You can win a coupon code for your sandwich only once a month.</li> -->
+                    <li>By entering your details, you agree to receive SMS & Email communication by the Delicious team - we send communication on discounts & offers; twice a month.</li>
                   </ul>
                 </div>
               </div>

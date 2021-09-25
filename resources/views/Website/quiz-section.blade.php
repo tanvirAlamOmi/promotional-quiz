@@ -355,7 +355,7 @@
         <!--6th checkbox section end-->
 
         <div class="col-12 text-center">
-            <button type="button" class="btn btn-primary hide" id="result_button">Show Result</button>
+            <button type="button" class="btn btn-primary hide" id="result_button">Show me my soul sandwich</button>
         </div>
 
       </div>
