@@ -17,7 +17,7 @@ class SubmitController extends Controller
         $request->validate([
             'customerName' => 'required|max:50|min:3',
             'customerEmail' => 'required|email:rfc,dns|max:255',
-            'customerPhone' => 'required|numeric',
+            'customerPhone' => 'required|numeric|digits:10',
         ]);
         
         try{
