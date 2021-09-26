@@ -106,13 +106,13 @@
       let progressBarPortion = 16.66; //6 question so (100/6) = 16.66
 
       (function () {
-        $(".box").hide();
-        $("#result_button").hide();
-        $('.quiz-form').hide();
-        $('.quiz-gift').hide();
-        $('.thank-you').hide();
-        $('.main-card').hide();
-        $('.quiz-body').hide();
+        // $(".box").hide();
+        // $("#result_button").hide();
+        // $('.quiz-form').hide();
+        // $('.quiz-gift').hide();
+        // $('.thank-you').hide();
+        // $('.main-card').hide();
+        // $('.quiz-body').hide();
       }());
 
       function contentBoxShow(boxNum){
@@ -178,17 +178,26 @@
       }
 
       $('.quiz-card').click( function () {
+        console.log($(this).parent().parent().find('.quiz-card').css('background', "#ce452b"));
         
+        $(this).parent('.box').find('.card');
         $(this).find("input:checkbox").prop('checked', true);
-        let vr = this;
         boxNum++;
+
+
         if(boxNum <= 6){
           $(this).css('background', "#038183");
         }
 
         setTimeout(() => {
 
-          if(boxNum < 6){
+          whichBoxToShow(boxNum);
+        }, 500);
+        
+      })
+
+      function whichBoxToShow(boxNum) {
+        if(boxNum < 6){
             $(".box").hide();
           }
           else if(boxNum == 6){
@@ -198,13 +207,27 @@
           else{ 
             return;
           }
+          
+          onImageclick();
+      }
 
-          onImageclick(vr);
-        }, 500);
-        
+      $('#prev_button').click( function () {
+        if(boxNum < 1){
+          return;
+        }
+        boxNum--;
+        whichBoxToShow(boxNum);
       })
 
-     function onImageclick(vr) {
+      $('#next_button').click( function () {
+        if(boxNum > 4){
+          return;
+        }
+        boxNum++;
+        whichBoxToShow(boxNum);
+      })
+
+     function onImageclick() {
         totalPoint += $(`input:checkbox[name=${checkboxNames[boxNum-1]}]:checked`).val();
         progressWidth = progressWidth + progressBarPortion;
         progressBarProgress(progressWidth)
