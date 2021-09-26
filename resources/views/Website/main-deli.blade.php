@@ -113,6 +113,7 @@
         $('.thank-you').hide();
         $('.main-card').hide();
         $('.quiz-body').hide();
+        // $('.thank-you').hide();
       }());
 
       function contentBoxShow(boxNum){
@@ -136,7 +137,7 @@
             return {
               "name" : "Tikka",
               "coupon_code" : "CT14FREE",
-              "img_source" : "Tikka_flavoured_sandwich.webp"
+              "img_source" : "Tikka_sandwich.webp"
             };
             
           case '1b2b3c4a5d-n':
@@ -178,30 +179,21 @@
       }
 
       $('.quiz-card').click( function () {
-        
         $(this).find("input:checkbox").prop('checked', true);
         let vr = this;
         boxNum++;
-        if(boxNum <= 6){
-          $(this).css('background', "#038183");
+        if(boxNum < 6){
+          $(".box").hide();
         }
-
-        setTimeout(() => {
-
-          if(boxNum < 6){
-            $(".box").hide();
-          }
-          else if(boxNum == 6){
-            $("#result_button").show();
-            $('.form-check-input').attr("disabled", true);
-          }
-          else{ 
-            return;
-          }
-
-          onImageclick(vr);
-        }, 500);
-        
+        else if(boxNum == 6){
+          $("#result_button").show();
+          $('.form-check-input').attr("disabled", true);
+          $(vr).addClass('exchange-card-color')
+        }
+        else{ 
+          return;
+        }
+        onImageclick(vr);
       })
 
      function onImageclick(vr) {
