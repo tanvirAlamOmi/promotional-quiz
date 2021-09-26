@@ -5,7 +5,7 @@
           <img src="{{asset('img\main-logo.webp')}}" class="img-fluid" alt="main-logo">
         </div>
         <div class="col-8 relative-position">
-          <h1>Delicious Ultimate Quiz </h1>
+          <h1 class="text-capitalize">Find your soul sandwich</h1>
         </div>
         <div class="col-12" style="padding: 0;">
         <div class="progress">
