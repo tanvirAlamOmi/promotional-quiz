@@ -113,7 +113,6 @@
         $('.thank-you').hide();
         $('.main-card').hide();
         $('.quiz-body').hide();
-        // $('.thank-you').hide();
       }());
 
       function contentBoxShow(boxNum){
@@ -179,21 +178,30 @@
       }
 
       $('.quiz-card').click( function () {
+        
         $(this).find("input:checkbox").prop('checked', true);
         let vr = this;
         boxNum++;
-        if(boxNum < 6){
-          $(".box").hide();
+        if(boxNum <= 6){
+          $(this).css('background', "#038183");
         }
-        else if(boxNum == 6){
-          $("#result_button").show();
-          $('.form-check-input').attr("disabled", true);
-          $(vr).addClass('exchange-card-color')
-        }
-        else{ 
-          return;
-        }
-        onImageclick(vr);
+
+        setTimeout(() => {
+
+          if(boxNum < 6){
+            $(".box").hide();
+          }
+          else if(boxNum == 6){
+            $("#result_button").show();
+            $('.form-check-input').attr("disabled", true);
+          }
+          else{ 
+            return;
+          }
+
+          onImageclick(vr);
+        }, 500);
+        
       })
 
      function onImageclick(vr) {
