@@ -13,15 +13,15 @@
       {{-- <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet"> --}}
       
       <!-- Font awesome css file -->
-      <link rel="stylesheet" href="{{asset('/css/all.min.css')}}">
-      <link rel="stylesheet" href="{{asset('/css/fontawesome.min.css')}}">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+      <!-- <link rel="stylesheet" href="{{asset('css/fontawesome.css')}}"> -->
+      
       
       <!-- Boostrap css-->      
       <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
-     
       <!-- Main css -->
       <link rel="stylesheet" href="{{asset('css/style.css')}}">
-
+      
       <style>
      
        </style>
