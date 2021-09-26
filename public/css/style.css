@@ -61,6 +61,7 @@ input[type=number] {
 .home-page {
     text-align: center;
     padding: 2% 30%;
+    background: #fff;
 }
 
 .home-page .card .logo-home {
@@ -69,6 +70,9 @@ input[type=number] {
 
 .home-page .card {
     padding: 4% 0%;
+    background: url(../img/home-bg.webp);
+    background-position: center;
+    background-size: cover;
 }
 
 .home-page h1 {
@@ -92,6 +96,8 @@ input[type=number] {
 .home-page .card h1 {
     font-size: 26px;
     padding: 4% 0 1% 0;
+    font-family: 'noir-font';
+    font-weight: bolder;
 }
 
 .home-page .card .home-btn {
@@ -755,7 +761,6 @@ input[type=number] {
     .quiz-footer h2 a {
         font-size: 23px;
     }
-
     input[type="color"],
     input[type="date"],
     input[type="datetime"],
