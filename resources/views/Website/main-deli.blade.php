@@ -13,15 +13,15 @@
       {{-- <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet"> --}}
       
       <!-- Font awesome css file -->
-      <link rel="stylesheet" href="{{asset('/css/all.min.css')}}">
-      <link rel="stylesheet" href="{{asset('/css/fontawesome.min.css')}}">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+      <!-- <link rel="stylesheet" href="{{asset('css/fontawesome.css')}}"> -->
+      
       
       <!-- Boostrap css-->      
       <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
-     
       <!-- Main css -->
       <link rel="stylesheet" href="{{asset('css/style.css')}}">
-
+      
       <style>
      
        </style>
@@ -106,13 +106,14 @@
       let progressBarPortion = 16.66; //6 question so (100/6) = 16.66
 
       (function () {
-        // $(".box").hide();
-        // $("#result_button").hide();
-        // $('.quiz-form').hide();
-        // $('.quiz-gift').hide();
+        $(".box").hide();
+        $("#result_button").hide();
+        $('.quiz-form').hide();
+        $('.quiz-gift').hide();
+        $('.thank-you').hide();
+        $('.main-card').hide();
+        $('.quiz-body').hide();
         // $('.thank-you').hide();
-        // $('.main-card').hide();
-        // $('.quiz-body').hide();
       }());
 
       function contentBoxShow(boxNum){
@@ -134,9 +135,9 @@
 
           case '1c2c3d4c5c-n':
             return {
-              "name" : "Tikka",
+              "name" : "Tikka Flavoured Sandwich",
               "coupon_code" : "CT14FREE",
-              "img_source" : "Tikka_flavoured_sandwich.webp"
+              "img_source" : "Tikka_sandwich.webp"
             };
             
           case '1b2b3c4a5d-n':

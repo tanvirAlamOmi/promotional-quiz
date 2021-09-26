@@ -359,8 +359,8 @@
         </div>
         <!-- Back btn start-->
         <div class="col-12 text-center">
-          <button class="btn btn-primary" id="prev_button"><i class="fas fa-angle-left"></i></button>
-          <button class="btn btn-primary" id="next_button"><i class="fas fa-angle-right"></i></button>
+          <button class="btn btn-primary" id="prev_button"><i class="fa fa-angle-left"></i></button>
+          <button class="btn btn-primary" id="next_button"><i class="fa fa-angle-right"></i></button>
         </div>
         <!-- Back btn end-->
       </div>
