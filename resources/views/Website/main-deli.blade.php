@@ -135,7 +135,7 @@
 
           case '1c2c3d4c5c-n':
             return {
-              "name" : "Tikka",
+              "name" : "Tikka Flavoured Sandwich",
               "coupon_code" : "CT14FREE",
               "img_source" : "Tikka_sandwich.webp"
             };
