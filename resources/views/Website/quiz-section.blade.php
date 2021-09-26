@@ -357,7 +357,12 @@
         <div class="col-12 text-center">
             <button type="button" class="btn btn-primary hide" id="result_button">Show me my soul sandwich</button>
         </div>
-
+        <!-- Back btn start-->
+        <div class="col-12 text-center">
+          <a href="#" ><i class="fas fa-angle-left"></i></a>
+          <a href="#" ><i class="fas fa-angle-right"></i></a>
+        </div>
+        <!-- Back btn end-->
       </div>
     </div>
   </section>
