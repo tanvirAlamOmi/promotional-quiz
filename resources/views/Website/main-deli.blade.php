@@ -108,15 +108,16 @@
       let progressDone = 0;
       const counts = {};
       let winResult = "";
+      let prevClcickId = '';
 
       (function () {
-        $(".box").hide();
-        $("#result_button").hide();
-        $('.quiz-form').hide();
-        $('.quiz-gift').hide();
-        $('.thank-you').hide();
-        $('.main-card').hide();
-        $('.quiz-body').hide();
+        // $(".box").hide();
+        // $("#result_button").hide();
+        // $('.quiz-form').hide();
+        // $('.quiz-gift').hide();
+        // $('.thank-you').hide();
+        // $('.main-card').hide();
+        // $('.quiz-body').hide();
       }());
 
       function contentBoxShow(boxNum){
@@ -128,29 +129,33 @@
       }
 
       function logic(point){
-        let questionNum = [...point][0];
-        let optionNum = [...point][1];
-        let winNum = [...point][2];
-        let found = [...totalPoint].find( x =>  x == questionNum);
+        console.log(point);
+        if(point){
+          let questionNum = [...point][0];
+          let optionNum = [...point][1];
+          let winNum = [...point][2];
+          let found = [...totalPoint].find( x =>  x == questionNum);
 
-        if(found){
-          let index = totalPoint.indexOf(found);
-          let newPoint = [...totalPoint];
-          newPoint[index] = questionNum;
-          newPoint[index + 1] = optionNum;
-          newPoint[index + 2] = winNum;
-          totalPoint = newPoint.join("");
-          progressDone++;
-          if(progressDone > 0){
-            progressDone = 0;
+          if(found){
+            let index = totalPoint.indexOf(found);
+            let newPoint = [...totalPoint];
+            newPoint[index] = questionNum;
+            newPoint[index + 1] = optionNum;
+            newPoint[index + 2] = winNum;
+            totalPoint = newPoint.join("");
+            progressDone++;
+            if(progressDone > 0){
+              progressDone = 0;
+            }
+          }else{
+            totalPoint += point;
           }
-        }else{
-          totalPoint += point;
         }
+        
       }
 
       function awardCalculation() {
-
+        console.log(totalPoint);
         let filtereds = [...totalPoint]
         .filter(function(el, index) {
           return el !== el.toLowerCase()
@@ -209,21 +214,28 @@
       }
 
       $('.quiz-card').click( function () {
-        $(this).parent().parent().find('.quiz-card').css('background', "#ce452b");
+        
         $(this).parent().parent().find("input:checkbox").prop('checked', false);
-        $(this).find("input:checkbox").prop('checked', true);
-        boxNum++;
+        $(this).find("input:checkbox").prop('checked', true); 
+        if($(this).find("input:checkbox").prop('checked', true)[0].id != prevClcickId){ 
+          prevClcickId = $(this).find("input:checkbox").prop('checked', true)[0].id;
+         $(this).parent().parent().find('.quiz-card').css('background', "#ce452b");
+          boxNum++;
+          if(boxNum > 6){
+            boxNum = 6;
+          }
 
-        if(boxNum <= 6){
-          $(this).css('background', "#038183");
+          if(boxNum <= 6){
+            $(this).css('background', "#038183");
+          }
+          setTimeout(() => {
+            whichBoxToShow(boxNum);
+            onImageclick();
+            checkBackNextButtonAvailability();
+            showResultButton()
+            prevClcickId = ""; 
+          }, 300);
         }
-
-        setTimeout(() => {
-          whichBoxToShow(boxNum);
-          onImageclick();
-          checkBackNextButtonAvailability();
-          showResultButton()
-        }, 500);
       })
 
       function checkBackNextButtonAvailability() {
@@ -253,9 +265,9 @@
         if(boxNum < 6){
           $(".box").hide();
         }
-        else if(boxNum == 6){
-          $('.form-check-input').attr("disabled", true);
-        }
+        // else if(boxNum == 6){
+        //   $('.form-check-input').attr("disabled", true);
+        // }
         else{ 
           return;
         }
