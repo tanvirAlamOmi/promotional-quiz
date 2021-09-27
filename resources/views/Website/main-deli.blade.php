@@ -127,55 +127,6 @@
         $('.progress-bar').css('width', `${progressWidth}%`)
       }
 
-      // function logic(result){
-      //   switch(result) {
-      //     case '1a2a3a4d5a-n':
-      //       return {
-      //         "name" : "Pesto Chicken",
-      //         "coupon_code" : "PPDE1FREE",
-      //         "img_source" : "pesto_chicken_sandwich.webp"
-      //       };
-
-      //     case '1c2c3d4c5c-n':
-      //       return {
-      //         "name" : "Tikka Flavoured Sandwich",
-      //         "coupon_code" : "CT14FREE",
-      //         "img_source" : "Tikka_sandwich.webp"
-      //       };
-            
-      //     case '1b2b3c4a5d-n':
-      //       return {
-      //         "name" : "Spicy Meatball",
-      //         "coupon_code" : "SM98FREE",
-      //         "img_source" : "Spicy_Meatball_sandwich.webp"
-      //       };
-            
-      //     case '1d2d3b4b5b-v':
-      //       return {
-      //         "name" : "Veggie Melt",
-      //         "coupon_code" : "Pesto Chicken",
-      //         "img_source" : "Veggie_Melt_sandwich.webp"
-      //       };
-            
-      //     default:
-      //       switch(vegOrNonveg(result)) {
-      //         case 'n':
-      //           return {
-      //         "name" : "Tikka Flavoured Sandwich",
-      //         "coupon_code" : "Pesto Chicken",
-      //         "img_source" : "Tikka_sandwich.webp"
-      //       };
-                
-      //         case 'v':
-      //           return  {
-      //         "name" : "Southern Roasted Veggie",
-      //         "coupon_code" : "SRVD5FREE",
-      //         "img_source" : "Southern_Roasted_Veggie_sandwich.webp"
-      //       };
-      //       }
-      //   }
-      // }
-
       function logic(point){
         let questionNum = [...point][0];
         let optionNum = [...point][1];
@@ -196,14 +147,9 @@
         }else{
           totalPoint += point;
         }
-        // console.log(totalPoint);
       }
 
       function awardCalculation() {
-        let filtered = [...totalPoint]
-        .filter(function(el, index) {
-          return index % 2 === 1;
-        })
 
         let filtereds = [...totalPoint]
         .filter(function(el, index) {
@@ -276,6 +222,7 @@
           whichBoxToShow(boxNum);
           onImageclick();
           checkBackNextButtonAvailability();
+          showResultButton()
         }, 500);
       })
 
@@ -293,12 +240,20 @@
         }
       }
 
+      function showResultButton() {
+        if(boxNum == 6){
+          $("#result_button").show();
+        }else{
+          $("#result_button").hide();
+        }
+      }
+
       function whichBoxToShow(boxNum) {
+        console.log(boxNum);
         if(boxNum < 6){
           $(".box").hide();
         }
         else if(boxNum == 6){
-          $("#result_button").show();
           $('.form-check-input').attr("disabled", true);
         }
         else{ 
@@ -310,8 +265,17 @@
         if(boxNum < 1){
           return;
         }
+        if(boxNum == 6){
+          boxNum = 5;
+        }
         boxNum--;
         progressDone--;
+        
+        if(boxNum == 5){
+          $("#result_button").show();
+        }else{
+          $("#result_button").hide();
+        }
         whichBoxToShow(boxNum);
         contentBoxShow(boxNum)
         checkBackNextButtonAvailability();
@@ -320,12 +284,20 @@
       $('#next_button').click( function () {
         if(boxNum > 4){
           return;
-        }
+        } 
+        
         boxNum++;
         progressDone++;
         if(progressDone > 0){
           progressDone = 0;
         }
+        
+        if(boxNum == 5){
+          $("#result_button").show();
+        }else{
+          $("#result_button").hide();
+        }
+
         whichBoxToShow(boxNum);
         contentBoxShow(boxNum)
         checkBackNextButtonAvailability();
