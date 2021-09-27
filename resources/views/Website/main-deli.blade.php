@@ -179,24 +179,56 @@
       }
 
       $('.quiz-card').click( function () {
+        console.log($(this).parent().parent().find('.quiz-card').css('background', "#ce452b"));
+        
+        $(this).parent('.box').find('.card');
         $(this).find("input:checkbox").prop('checked', true);
-        let vr = this;
         boxNum++;
-        if(boxNum < 6){
-          $(".box").hide();
+
+
+        if(boxNum <= 6){
+          $(this).css('background', "#038183");
         }
-        else if(boxNum == 6){
-          $("#result_button").show();
-          $('.form-check-input').attr("disabled", true);
-          $(vr).addClass('exchange-card-color')
-        }
-        else{ 
-          return;
-        }
-        onImageclick(vr);
+
+        setTimeout(() => {
+
+          whichBoxToShow(boxNum);
+        }, 500);
+        
       })
 
-     function onImageclick(vr) {
+      function whichBoxToShow(boxNum) {
+        if(boxNum < 6){
+            $(".box").hide();
+          }
+          else if(boxNum == 6){
+            $("#result_button").show();
+            $('.form-check-input').attr("disabled", true);
+          }
+          else{ 
+            return;
+          }
+          
+          onImageclick();
+      }
+
+      $('#prev_button').click( function () {
+        if(boxNum < 1){
+          return;
+        }
+        boxNum--;
+        whichBoxToShow(boxNum);
+      })
+
+      $('#next_button').click( function () {
+        if(boxNum > 4){
+          return;
+        }
+        boxNum++;
+        whichBoxToShow(boxNum);
+      })
+
+     function onImageclick() {
         totalPoint += $(`input:checkbox[name=${checkboxNames[boxNum-1]}]:checked`).val();
         progressWidth = progressWidth + progressBarPortion;
         progressBarProgress(progressWidth)
