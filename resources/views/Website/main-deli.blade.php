@@ -111,7 +111,7 @@
 
       (function () {
         $(".box").hide();
-        $("#result_buttololn").hide();
+        $("#result_button").hide();
         $('.quiz-form').hide();
         $('.quiz-gift').hide();
         $('.thank-you').hide();
