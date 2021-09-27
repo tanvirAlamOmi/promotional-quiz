@@ -102,18 +102,21 @@
       let progressWidth = 0;
       let checkboxNames = ['friends', 'vacation', 'night', 'Sandwich', 'juice', 'craving'];
       let totalPoint = '';
+      let point;
       let prize;
       let progressBarPortion = 16.66; //6 question so (100/6) = 16.66
+      let progressDone = 0;
+      const counts = {};
+      let winResult = "";
 
       (function () {
         $(".box").hide();
-        $("#result_button").hide();
+        $("#result_buttololn").hide();
         $('.quiz-form').hide();
         $('.quiz-gift').hide();
         $('.thank-you').hide();
         $('.main-card').hide();
         $('.quiz-body').hide();
-        // $('.thank-you').hide();
       }());
 
       function contentBoxShow(boxNum){
@@ -124,78 +127,168 @@
         $('.progress-bar').css('width', `${progressWidth}%`)
       }
 
-      function logic(result){
-        switch(result) {
-          case '1a2a3a4d5a-n':
+      // function logic(result){
+      //   switch(result) {
+      //     case '1a2a3a4d5a-n':
+      //       return {
+      //         "name" : "Pesto Chicken",
+      //         "coupon_code" : "PPDE1FREE",
+      //         "img_source" : "pesto_chicken_sandwich.webp"
+      //       };
+
+      //     case '1c2c3d4c5c-n':
+      //       return {
+      //         "name" : "Tikka Flavoured Sandwich",
+      //         "coupon_code" : "CT14FREE",
+      //         "img_source" : "Tikka_sandwich.webp"
+      //       };
+            
+      //     case '1b2b3c4a5d-n':
+      //       return {
+      //         "name" : "Spicy Meatball",
+      //         "coupon_code" : "SM98FREE",
+      //         "img_source" : "Spicy_Meatball_sandwich.webp"
+      //       };
+            
+      //     case '1d2d3b4b5b-v':
+      //       return {
+      //         "name" : "Veggie Melt",
+      //         "coupon_code" : "Pesto Chicken",
+      //         "img_source" : "Veggie_Melt_sandwich.webp"
+      //       };
+            
+      //     default:
+      //       switch(vegOrNonveg(result)) {
+      //         case 'n':
+      //           return {
+      //         "name" : "Tikka Flavoured Sandwich",
+      //         "coupon_code" : "Pesto Chicken",
+      //         "img_source" : "Tikka_sandwich.webp"
+      //       };
+                
+      //         case 'v':
+      //           return  {
+      //         "name" : "Southern Roasted Veggie",
+      //         "coupon_code" : "SRVD5FREE",
+      //         "img_source" : "Southern_Roasted_Veggie_sandwich.webp"
+      //       };
+      //       }
+      //   }
+      // }
+
+      function logic(point){
+        let questionNum = [...point][0];
+        let optionNum = [...point][1];
+        let winNum = [...point][2];
+        let found = [...totalPoint].find( x =>  x == questionNum);
+
+        if(found){
+          let index = totalPoint.indexOf(found);
+          let newPoint = [...totalPoint];
+          newPoint[index] = questionNum;
+          newPoint[index + 1] = optionNum;
+          newPoint[index + 2] = winNum;
+          totalPoint = newPoint.join("");
+        }else{
+          totalPoint += point;
+        }
+        // console.log(totalPoint);
+      }
+
+      function awardCalculation() {
+        let filtered = [...totalPoint]
+        .filter(function(el, index) {
+          return index % 2 === 1;
+        })
+
+        let filtereds = [...totalPoint]
+        .filter(function(el, index) {
+          return el !== el.toLowerCase()
+        }).forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
+
+        let sortable = Object.fromEntries(
+            Object.entries(counts).sort(([,a],[,b]) => a+b)
+        );
+
+        if( sortable[Object.keys(sortable)[0]] > sortable[Object.keys(sortable)[1]] ) { 
+          switch(Object.keys(sortable)[0]) {
+          case 'P':
             return {
               "name" : "Pesto Chicken",
               "coupon_code" : "PPDE1FREE",
               "img_source" : "pesto_chicken_sandwich.webp"
             };
 
-          case '1c2c3d4c5c-n':
+          case 'T':
             return {
               "name" : "Tikka Flavoured Sandwich",
               "coupon_code" : "CT14FREE",
               "img_source" : "Tikka_sandwich.webp"
             };
             
-          case '1b2b3c4a5d-n':
+          case 'S':
             return {
               "name" : "Spicy Meatball",
               "coupon_code" : "SM98FREE",
               "img_source" : "Spicy_Meatball_sandwich.webp"
             };
             
-          case '1d2d3b4b5b-v':
+          case 'V':
             return {
               "name" : "Veggie Melt",
               "coupon_code" : "Pesto Chicken",
               "img_source" : "Veggie_Melt_sandwich.webp"
             };
-            
-          default:
-            switch(vegOrNonveg(result)) {
-              case 'n':
-                return {
+        }
+        }else{
+          if( [...totalPoint][[...totalPoint].length - 1]  == 'n' ){
+            return {
               "name" : "Tikka Flavoured Sandwich",
               "coupon_code" : "Pesto Chicken",
               "img_source" : "Tikka_sandwich.webp"
             };
-                
-              case 'v':
-                return  {
-              "name" : "Southern Roasted Veggie",
-              "coupon_code" : "SRVD5FREE",
-              "img_source" : "Southern_Roasted_Veggie_sandwich.webp"
+          }
+          else{
+            return {
+              "name" : "Veggie Melt",
+              "coupon_code" : "Pesto Chicken",
+              "img_source" : "Veggie_Melt_sandwich.webp"
             };
-            }
+          }
         }
       }
 
-      function vegOrNonveg(result){
-        let k = result.split('-');
-        return k[1];
-      }
-
       $('.quiz-card').click( function () {
-        console.log($(this).parent().parent().find('.quiz-card').css('background', "#ce452b"));
-        
-        $(this).parent('.box').find('.card');
+        $(this).parent().parent().find('.quiz-card').css('background', "#ce452b");
+        $(this).parent().parent().find("input:checkbox").prop('checked', false);
         $(this).find("input:checkbox").prop('checked', true);
         boxNum++;
-
+        progressDone++;
 
         if(boxNum <= 6){
           $(this).css('background', "#038183");
         }
 
         setTimeout(() => {
-
           whichBoxToShow(boxNum);
+          onImageclick();
+          checkBackNextButtonAvailability();
         }, 500);
-        
       })
+
+      function checkBackNextButtonAvailability() {
+        if(boxNum < 1){
+          $('#prev_button').prop('disabled', true);
+        }else{
+          $('#prev_button').prop('disabled', false);
+        }
+
+        if(boxNum > 4 || boxNum > progressDone){
+          $('#next_button').prop('disabled', true);
+        }else{
+          $('#next_button').prop('disabled', false);
+        }
+      }
 
       function whichBoxToShow(boxNum) {
         if(boxNum < 6){
@@ -208,8 +301,6 @@
           else{ 
             return;
           }
-          
-          onImageclick();
       }
 
       $('#prev_button').click( function () {
@@ -217,7 +308,10 @@
           return;
         }
         boxNum--;
+        progressDone--;
         whichBoxToShow(boxNum);
+        contentBoxShow(boxNum)
+        checkBackNextButtonAvailability();
       })
 
       $('#next_button').click( function () {
@@ -225,14 +319,18 @@
           return;
         }
         boxNum++;
+        progressDone++;
         whichBoxToShow(boxNum);
+        contentBoxShow(boxNum)
+        checkBackNextButtonAvailability();
       })
 
-     function onImageclick() {
-        totalPoint += $(`input:checkbox[name=${checkboxNames[boxNum-1]}]:checked`).val();
+      function onImageclick() {
+        point = $(`input:checkbox[name=${checkboxNames[boxNum-1]}]:checked`).val();
+        logic(point);
         progressWidth = progressWidth + progressBarPortion;
         progressBarProgress(progressWidth)
-        contentBoxShow(boxNum)
+        contentBoxShow(boxNum);
       }
 
       $('#result_button').click( () => {
@@ -241,7 +339,7 @@
         $("#result_button").hide();
         $('.quiz-gift').show();
         $('.progress').hide();
-        prize = logic(totalPoint);
+        prize = awardCalculation();
         $('#gift_name').html(prize.name);
         $('#gift_img').attr("src", `{{asset('img/prize/${prize.img_source}')}}`);
       })
