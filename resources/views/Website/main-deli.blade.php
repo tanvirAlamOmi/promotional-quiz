@@ -189,6 +189,10 @@
           newPoint[index + 1] = optionNum;
           newPoint[index + 2] = winNum;
           totalPoint = newPoint.join("");
+          progressDone++;
+          if(progressDone > 0){
+            progressDone = 0;
+          }
         }else{
           totalPoint += point;
         }
@@ -263,7 +267,6 @@
         $(this).parent().parent().find("input:checkbox").prop('checked', false);
         $(this).find("input:checkbox").prop('checked', true);
         boxNum++;
-        progressDone++;
 
         if(boxNum <= 6){
           $(this).css('background', "#038183");
@@ -283,7 +286,7 @@
           $('#prev_button').prop('disabled', false);
         }
 
-        if(boxNum > 4 || boxNum > progressDone){
+        if(boxNum > 4 || progressDone == 0){
           $('#next_button').prop('disabled', true);
         }else{
           $('#next_button').prop('disabled', false);
@@ -292,15 +295,15 @@
 
       function whichBoxToShow(boxNum) {
         if(boxNum < 6){
-            $(".box").hide();
-          }
-          else if(boxNum == 6){
-            $("#result_button").show();
-            $('.form-check-input').attr("disabled", true);
-          }
-          else{ 
-            return;
-          }
+          $(".box").hide();
+        }
+        else if(boxNum == 6){
+          $("#result_button").show();
+          $('.form-check-input').attr("disabled", true);
+        }
+        else{ 
+          return;
+        }
       }
 
       $('#prev_button').click( function () {
@@ -320,6 +323,9 @@
         }
         boxNum++;
         progressDone++;
+        if(progressDone > 0){
+          progressDone = 0;
+        }
         whichBoxToShow(boxNum);
         contentBoxShow(boxNum)
         checkBackNextButtonAvailability();
