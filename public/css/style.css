@@ -480,13 +480,16 @@ input[type=number] {
 }
 
 .thank-you a {
-    padding: 11px 74px;
+    padding: 11px 11px;
     background: #D95840;
     border: none;
     border-radius: .25rem;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
+    margin: 0 106px;
+    margin-bottom: 12px;
+    display: inherit;
 }
 
 .thank-you a:hover {
