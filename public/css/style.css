@@ -358,21 +358,26 @@ input::placeholder {
 }
 
 .quiz-gift p {
+    font-size: 17px;
+    line-height: 20px;
     padding: 0 2rem;
-    font-size: 20px;
+    padding-top: 1rem;
+    margin: 0;
 }
 
 .quiz-gift h6 {
-    font-size: 20px;
+    font-size: 15px;
+    padding: 1rem 2rem;
 }
 
 #gift_name {
     font-size: 30px;
     color: #148185;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
 }
 
 .quiz-gift .test-img {
-    padding-bottom: 30px;
     width: 46%;
 }
 
@@ -579,6 +584,7 @@ input::placeholder {
         font-size: 36px;
         text-transform: uppercase;
         margin: 1.4rem 0 1.5rem 0;
+        width: 74%;
     }
     .quiz-gift .card .body-part p {
         font-size: 15px;
@@ -715,7 +721,7 @@ input::placeholder {
         font-size: 54px;
     }
     .quiz-gift .test-img {
-        width: 86%;
+        width: 63%;
     }
     .thank-you {
         min-height: 100vw;
@@ -806,6 +812,7 @@ input::placeholder {
     }
     .quiz-gift p {
         font-size: 42px;
+        line-height: 50px;
     }
     .quiz-gift p span {
         font-size: 67px;
@@ -813,6 +820,14 @@ input::placeholder {
     .quiz-footer a i {
         font-size: 3.4rem;
         padding: 2rem 1.3rem 1rem 0.3rem;
+    }
+    .quiz-gift h6 {
+        font-size: 34px;
+        padding: 0 1rem;
+        padding-top: 1.9rem;
+    }
+    #gift_name {
+        font-size: 58px;
     }
 }
 
