@@ -62,7 +62,7 @@
                 <tr><td align='left' style='font-size:0px;padding:0px;word-break:break-word;'><table border='0' cellpadding='0' cellspacing='0' style='color:#000000;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;' width='100%'>
                   <tr>
                     <td align='left'>
-                      <img align='left' height='33' padding='5px' ratio='0:0' src='https://cdn.assets.dyspatch.io/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MjE0NzQ4MzY0NywiaGFuZGxlIjoiQnNGYldnVE5SY2V6OXRwQjhhVmgifQ==,signature:0ba0c1cd5699dfcdff158a5b0549c1961c0cbaa6d25eca49ee6464bc3531de8b/compress/BsFbWgTNRcez9tpB8aVh' width='120' />
+                      <img align='left' height='100%' padding='5px' ratio='0:0' src='https://cdn.assets.dyspatch.io/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MjE0NzQ4MzY0NywiaGFuZGxlIjoiQnNGYldnVE5SY2V6OXRwQjhhVmgifQ==,signature:0ba0c1cd5699dfcdff158a5b0549c1961c0cbaa6d25eca49ee6464bc3531de8b/compress/BsFbWgTNRcez9tpB8aVh' width='120' />
                     </td>
                     <td align='right' style='vertical-align:bottom;' width='34px'>
                       <a href='https://appsinemail.com'><a href='https://goo.gl/maps/DXB2f7S82sQkD4h16' target='_blank'><img alt='' height='22' ratio='180:180' src='https://www.pngrepo.com/png/3335/180/location-pin.png' width='22' /></a></a>
