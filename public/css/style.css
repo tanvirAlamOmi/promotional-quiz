@@ -353,8 +353,16 @@ input[type=number] {
     font-size: 21px;
 }
 
-.quiz-gift h1 {
-    padding: 0px 0 12px 0px;
+.quiz-gift p {
+    padding: 0 2rem;
+    font-size: 20px;
+}
+
+.quiz-gift h6 {
+    font-size: 20px;
+}
+
+.quiz-gift p span {
     font-size: 30px;
     color: #148185;
 }
@@ -475,6 +483,7 @@ input[type=number] {
 .thank-you h2 {
     font-family: 'Poppins';
     color: #000000;
+    padding: 0 3rem;
     padding-bottom: 35px;
     font-size: 20px;
 }
@@ -781,6 +790,15 @@ input[type=number] {
     select:focus,
     textarea {
         font-size: 42px !important;
+    }
+    .quiz-gift p span {
+        font-size: 40px;
+    }
+    .quiz-gift p {
+        font-size: 25px;
+    }
+    .quiz-gift h6 {
+        font-size: 25px;
     }
 }
 
