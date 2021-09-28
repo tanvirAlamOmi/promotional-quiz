@@ -159,12 +159,11 @@
         }).forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
 
         let sortable = Object.fromEntries(
-            Object.entries(counts).sort(([,a],[,b]) => a+b)
+            Object.entries(counts).sort(([,a],[,b]) => a-b)
         );
-
-        if( !sortable[Object.keys(sortable)[1]] || sortable[Object.keys(sortable)[0]] > sortable[Object.keys(sortable)[1]] ) { 
-
-          switch(Object.keys(sortable)[0]) {
+        if( !sortable[Object.keys(sortable)[Object.keys(sortable).length - 2]] || sortable[Object.keys(sortable)[Object.keys(sortable).length - 1]] > sortable[Object.keys(sortable)[Object.keys(sortable).length - 2]] ) { 
+          
+          switch(Object.keys(sortable)[Object.keys(sortable).length - 1]) {
           case 'P':
             return {
               "name" : "Pesto Chicken",
