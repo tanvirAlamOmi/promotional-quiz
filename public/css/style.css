@@ -359,11 +359,13 @@ input::placeholder {
 
 .quiz-gift p {
     padding: 0 2rem;
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 1rem;
 }
 
 .quiz-gift h6 {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 #gift_name {

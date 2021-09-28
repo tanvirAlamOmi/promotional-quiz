@@ -14,7 +14,7 @@
       
       <!-- Font awesome css file -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
-      <!-- <link rel="stylesheet" href="{{asset('css/fontawesome.css')}}"> -->
+      {{-- <link rel="stylesheet" href="{{asset('css/fontawesome.css')}}"> --}}
       
       
       <!-- Boostrap css-->      
