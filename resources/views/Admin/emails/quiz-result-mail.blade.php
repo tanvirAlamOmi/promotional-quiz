@@ -24,7 +24,11 @@
               <tr>
                 <td width="600">
         <![endif]-->
-        <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 600px; margin: 0 auto;">
+
+
+
+
+        {{-- <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 600px; margin: 0 auto;">
           <tbody>
             <tr>
               <td style="line-height: 24px; font-size: 16px; margin: 0;" align="left">
@@ -36,14 +40,48 @@
 </td>
         <td class="col-6 ax-right" align="right" style="line-height: 24px; font-size: 16px; width: 50%; margin: 0;">
   
-          <i class="fa fa-map-marker"><i class="fa fa-globe"><i class="fa fa-instagram">
+          <img class="img-fluid" src="{{asset('/img/instagrey.png')}}" alt="Some Image" style="height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; max-width: 30%; width: 30%; border: 0 none;" width="100%">
+          <img class="img-fluid" src="{{asset('/img/location-pin.png')}}" alt="Some Image" style="height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; max-width: 30%; width: 30%; border: 0 none;" width="100%">
+          <img class="img-fluid" src="{{asset('/img/imgpsh_fullsize_anim-min.jpg')}}" alt="Some Image" style="height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; max-width: 30%; width: 30%; border: 0 none;" width="100%">
+
         
 </td>
      
               </td>
             </tr>
           </tbody>
-        </table>
+        </table> --}}
+
+        <table align='center' background='https://s3.amazonaws.com/swu-filepicker/4E687TRe69Ld95IDWyEg_bg_top_02.jpg' border='0' cellpadding='0' cellspacing='0' role='presentation' style='background:url(https://s3.amazonaws.com/swu-filepicker/4E687TRe69Ld95IDWyEg_bg_top_02.jpg) top center / auto repeat;width:100%;'><tbody><tr><td><!--[if mso | IE]>
+          <v:rect style="mso-width-percent:1000;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"><v:fill src="https://s3.amazonaws.com/swu-filepicker/4E687TRe69Ld95IDWyEg_bg_top_02.jpg" origin="0.5, 0" position="0.5, 0" type="tile" /><v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+          <![endif]--><!--[if mso | IE]>
+          <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+          <![endif]--><div style='margin:0px auto;max-width:600px;'><div style='font-size:0;line-height:0;'><table align='center' border='0' cellpadding='0' cellspacing='0' role='presentation' style='width:100%;'><tbody><tr><td style='direction:ltr;font-size:0px;padding:20px 0px 30px 0px;text-align:center;vertical-align:top;'><!--[if mso | IE]>
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:600px;">
+          <![endif]--><div class='dys-column-per-100 outlook-group-fix' style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' width='100%'><tbody><tr><td style='padding:0px 20px;vertical-align:top;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='' width='100%'>
+                <tr><td align='left' style='font-size:0px;padding:0px;word-break:break-word;'><table border='0' cellpadding='0' cellspacing='0' style='color:#000000;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;' width='100%'>
+                  <tr>
+                    <td align='left'>
+                      <img align='left' height='33' padding='5px' ratio='0:0' src='https://cdn.assets.dyspatch.io/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MjE0NzQ4MzY0NywiaGFuZGxlIjoiQnNGYldnVE5SY2V6OXRwQjhhVmgifQ==,signature:0ba0c1cd5699dfcdff158a5b0549c1961c0cbaa6d25eca49ee6464bc3531de8b/compress/BsFbWgTNRcez9tpB8aVh' width='120' />
+                    </td>
+                    <td align='right' style='vertical-align:bottom;' width='34px'>
+                      <a href='https://appsinemail.com'><a href='https://goo.gl/maps/DXB2f7S82sQkD4h16' target='_blank'><img alt='' height='22' ratio='180:180' src='https://www.pngrepo.com/png/3335/180/location-pin.png' width='22' /></a></a>
+                    </td>
+                    <td align='right' style='vertical-align:bottom;' width='34px'>
+                      <a href='https://appsinemail.com'><a href='https://order.radyes.co/deli-cious' target='_blank'><img alt='' height='22' ratio='840:880' src='https://www.pikpng.com/pngl/m/32-321477_png-file-website-icon-vector-png-clipart.png' width='22' /></a></a>
+                    </td>
+                    <td align='right' style='vertical-align:bottom;' width='34px'>
+                      <a href='https://appsinemail.com'><a href='https://www.instagram.com/deliciousuae/' target='_blank'><img alt='Instagram' height='22' src='https://swu-cs-assets.s3.amazonaws.com/OSET/social/instagrey.png' width='22' /></a></a>
+                    </td>
+                  </tr>
+                </table></td></tr>
+              </table></td></tr></tbody></table></div><!--[if mso | IE]>
+          </td></tr></table>
+          <![endif]--></td></tr></tbody></table></div></div><!--[if mso | IE]>
+          </td></tr></table></v:textbox></v:rect>
+          <![endif]--></td></tr></tbody></table>
+
+
         <!--[if (gte mso 9)|(IE)]>
                 </td>
               </tr>
