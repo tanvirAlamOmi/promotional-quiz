@@ -31,12 +31,12 @@
                 
       <td class="col-6" style="line-height: 24px; font-size: 16px; width: 50%; margin: 0;" align="left">
   
-          <img class="img-fluid" src="{{asset('/img/main-logo.webp')}}" alt="Some Image" style="height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; max-width: 100%; width: 100%; border: 0 none;" width="100%">
+          <img class="img-fluid" src="{{asset('/img/main-logo.webp')}}" alt="Some Image" style="height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; max-width: 30%; width: 30%; border: 0 none;" width="100%">
         
 </td>
         <td class="col-6 ax-right" align="right" style="line-height: 24px; font-size: 16px; width: 50%; margin: 0;">
   
-          icon here
+          <i class="fa fa-map-marker"><i class="fa fa-globe"><i class="fa fa-instagram">
         
 </td>
      
