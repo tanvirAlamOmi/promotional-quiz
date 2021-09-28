@@ -111,13 +111,13 @@
       let prevClcickId = '';
 
       (function () {
-        $(".box").hide();
-        $("#result_button").hide();
-        $('.quiz-form').hide();
-        $('.quiz-gift').hide();
-        $('.thank-you').hide();
-        $('.main-card').hide();
-        $('.quiz-body').hide();
+        // $(".box").hide();
+        // $("#result_button").hide();
+        // $('.quiz-form').hide();
+        // $('.quiz-gift').hide();
+        // $('.thank-you').hide();
+        // $('.main-card').hide();
+        // $('.quiz-body').hide();
       }());
 
       function contentBoxShow(boxNum){
@@ -129,7 +129,6 @@
       }
 
       function logic(point){
-        console.log(point);
         if(point){
           let questionNum = [...point][0];
           let optionNum = [...point][1];
@@ -151,11 +150,9 @@
             totalPoint += point;
           }
         }
-        
       }
 
       function awardCalculation() {
-        console.log(totalPoint);
         let filtereds = [...totalPoint]
         .filter(function(el, index) {
           return el !== el.toLowerCase()
@@ -165,7 +162,8 @@
             Object.entries(counts).sort(([,a],[,b]) => a+b)
         );
 
-        if( sortable[Object.keys(sortable)[0]] > sortable[Object.keys(sortable)[1]] ) { 
+        if( !sortable[Object.keys(sortable)[1]] || sortable[Object.keys(sortable)[0]] > sortable[Object.keys(sortable)[1]] ) { 
+
           switch(Object.keys(sortable)[0]) {
           case 'P':
             return {
@@ -261,7 +259,6 @@
       }
 
       function whichBoxToShow(boxNum) {
-        console.log(boxNum);
         if(boxNum < 6){
           $(".box").hide();
         }
