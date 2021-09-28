@@ -325,6 +325,10 @@ input[type=number] {
     background: #038183;
 }
 
+input::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+
 
 /* quiz form section css end */
 
@@ -451,6 +455,12 @@ input[type=number] {
 
 .quiz-footer h1 {
     font-size: 14px;
+}
+
+.quiz-footer a i {
+    color: #038183;
+    font-size: 1.4rem;
+    padding: 2rem 0.3rem 1rem 0.3rem;
 }
 
 .quiz-footer h2 {
