@@ -366,7 +366,7 @@ input::placeholder {
     font-size: 20px;
 }
 
-.quiz-gift p span {
+#gift_name {
     font-size: 30px;
     color: #148185;
 }

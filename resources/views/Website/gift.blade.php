@@ -4,9 +4,8 @@
         <div class="row">
           <div class="col-12">
           <img data-src="{{asset('img\clb.png')}}" alt="" class="win lazyload">
-          <h4>on winning</h4>
-          <p>Nothing makes you happier than a cup of karak and a night with the boys, so your soul sandwich is the
-            <span id="gift_name"></span>
+          <p>Nothing makes you happier than a cup of karak and a night with the boys, so your soul sandwich is
+            <div id="gift_name"></div>
           </p>
           <h6 id="gift_details"></h6>
           
