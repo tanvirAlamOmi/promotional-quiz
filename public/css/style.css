@@ -651,7 +651,7 @@ input::placeholder {
         padding: 0px 10%;
     }
     .quiz-form .mb-3 .form-label {
-        font-size: 32px;
+        font-size: 42px;
     }
     .quiz-form .mb-3 .form-control {
         height: 73px;
@@ -805,10 +805,14 @@ input::placeholder {
         font-size: 40px;
     }
     .quiz-gift p {
-        font-size: 25px;
+        font-size: 42px;
     }
-    .quiz-gift h6 {
-        font-size: 25px;
+    .quiz-gift p span {
+        font-size: 67px;
+    }
+    .quiz-footer a i {
+        font-size: 3.4rem;
+        padding: 2rem 1.3rem 1rem 0.3rem;
     }
 }
 
