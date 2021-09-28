@@ -13,8 +13,8 @@
       {{-- <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet"> --}}
       
       <!-- Font awesome css file -->
-      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
-      <!-- <link rel="stylesheet" href="{{asset('css/fontawesome.css')}}"> -->
+      {{-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"> --}}
+      <link rel="stylesheet" href="{{asset('css/fontawesome.css')}}">
       
       
       <!-- Boostrap css-->      
@@ -166,30 +166,34 @@
           switch(Object.keys(sortable)[Object.keys(sortable).length - 1]) {
           case 'P':
             return {
-              "name" : "Pesto Chicken",
+              "name" : "Pesto Chicken Sandwich",
               "coupon_code" : "PPDE1FREE",
-              "img_source" : "pesto_chicken_sandwich.webp"
+              "img_source" : "pesto_chicken_sandwich.webp",
+              "details": "It’s-a Pesto Chicken Sandwich for you. You like the finer things in life, just like our delicious pesto sauce made with the freshest and finest ingredients. A quick getaway for you is not a vacation. You like long 3, 4, or 5 week vacations 🤷‍♂️ The Pesto Chicken sandwich is just the vacation that your taste buds need."
             };
 
           case 'T':
             return {
               "name" : "Tikka Flavoured Sandwich",
               "coupon_code" : "CT14FREE",
-              "img_source" : "Tikka_sandwich.webp"
+              "img_source" : "Tikka_sandwich.webp",
+              "details": "Your soul sandwich is the Chicken Tikka Baguette! You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
             };
             
           case 'S':
             return {
-              "name" : "Spicy Meatball",
+              "name" : "Spicy Meatball Sandwich",
               "coupon_code" : "SM98FREE",
-              "img_source" : "Spicy_Meatball_sandwich.webp"
+              "img_source" : "Spicy_Meatball_sandwich.webp",
+              "details": "Your soul sandwich is the Spicy Meatball! To you food is comfort and there's no better comfort food than our Spicy Meatball sandwich. Made with fresh home made meatballs, this sandwich will keep you happy & satisfied the whole day 🌞 Crafted with Aarabiatta Sauce to add a little spice twist to a wholesome sandwich."
             };
             
           case 'V':
             return {
-              "name" : "Veggie Melt",
+              "name" : "Veggie Melt Sandwich",
               "coupon_code" : "VM77FREE",
-              "img_source" : "Veggie_Melt_sandwich.webp"
+              "img_source" : "Veggie_Melt_sandwich.webp",
+              "details": "Pure, healthy, and fresh, your soul sandwich is the Veggie Melt sandwich! Made with the freshest ingredients, this sandwich is our best selling vegetarian sandwich. Do you like doing things differently, so do we! We added a little bit of cheese to this classic vegetarian sandwich to give it an exciting twist 👌"
             };
         }
         }else{
@@ -197,14 +201,16 @@
             return {
               "name" : "Tikka Flavoured Sandwich",
               "coupon_code" : "Pesto Chicken",
-              "img_source" : "Tikka_sandwich.webp"
+              "img_source" : "Tikka_sandwich.webp",
+              "details": "Your soul sandwich is the Chicken Tikka Baguette! You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
             };
           }
           else{
             return {
-              "name" : "Veggie Melt",
+              "name" : "Veggie Melt Sandwich",
               "coupon_code" : "VM77FREE",
-              "img_source" : "Veggie_Melt_sandwich.webp"
+              "img_source" : "Veggie_Melt_sandwich.webp",
+              "details": "Pure, healthy, and fresh, your soul sandwich is the Veggie Melt sandwich! Made with the freshest ingredients, this sandwich is our best selling vegetarian sandwich. Do you like doing things differently, so do we! We added a little bit of cheese to this classic vegetarian sandwich to give it an exciting twist 👌"
             };
           }
         }
@@ -326,7 +332,8 @@
         $('.quiz-gift').show();
         $('.progress').hide();
         prize = awardCalculation();
-        $('#gift_name').html(prize.name);
+        $('#gift_name').html(`the ${prize.name}`);
+        $('#gift_details').html(prize.details);
         $('#gift_img').attr("src", `{{asset('img/prize/${prize.img_source}')}}`);
       })
 
