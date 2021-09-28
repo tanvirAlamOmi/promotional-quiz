@@ -5,7 +5,11 @@
           <div class="col-12">
           <img data-src="{{asset('img\clb.png')}}" alt="" class="win lazyload">
           <h4>on winning</h4>
-          <h1 id="gift_name"></h1>
+          <p>Nothing makes you happier than a cup of karak and a night with the boys, so your soul sandwich is the
+            <span id="gift_name"></span>
+          </p>
+          <h6 id="gift_details"></h6>
+          
           <img src="" id="gift_img" alt="gift-img" class="test-img">
           </div>
           <div>
