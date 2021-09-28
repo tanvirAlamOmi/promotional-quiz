@@ -32,10 +32,10 @@ class SubmitController extends Controller
             })
             ->first();
 
-            if($result){
-                $remainintTime = $result->created_at->diff($newDateTime)->format('%D day(s) %H:%i:%s');
-                return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime hour(s).")); 
-            }
+            // if($result){
+            //     $remainintTime = $result->created_at->diff($newDateTime)->format('%D day(s) %H:%i:%s');
+            //     return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime hour(s).")); 
+            // }
 
             return response()->json(array("result" => "success", "message" => "The User is Valid"));
 
@@ -60,6 +60,7 @@ class SubmitController extends Controller
                 $submit->email = $request->customerEmail;
                 $submit->phone = $request->customerPhone;
                 $submit->reward = $request->prizeWon;
+                // $submit->coupon = $request->coupon;
         
                 $submit->save();
                 // END store request
@@ -67,19 +68,21 @@ class SubmitController extends Controller
                 // START mail send 
                 $mail_to = $request->customerEmail;
                 $name = $request->customerName;
-                $mail_template = "Admin.emails.test";
+                $mail_template = "Admin.emails.quiz-result-mail";
                 $data = [
                     // 'restaurant_name'=> $restaurant->name,
                     // 'restaurant_email'=> $restaurant->email,
                     'customer'=> $request->customerName,
+                    'sandwich_name' => $request->prizeWon,
+                    'sandwich_code' => $request->coupon_code,
                     // 'phone'=>  $request->phone,
                     // 'email'=> $request->customerEmail,
                     // 'comment'=> $request->comment,
                     // 'reply'=> $request->reply,
                 ];
-                // Mail::send($mail_template, $data, function($message) use ($mail_to, $name) {
-                //     $message->to($mail_to, $name )->subject('Resonse to your query');
-                // }); 
+                Mail::send($mail_template, $data, function($message) use ($mail_to, $name) {
+                    $message->to($mail_to, $name )->subject('Resonse to your query');
+                }); 
                 // END mail send
             // });
 
