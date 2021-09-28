@@ -111,13 +111,13 @@
       let prevClcickId = '';
 
       (function () {
-        // $(".box").hide();
-        // $("#result_button").hide();
-        // $('.quiz-form').hide();
-        // $('.quiz-gift').hide();
-        // $('.thank-you').hide();
-        // $('.main-card').hide();
-        // $('.quiz-body').hide();
+        $(".box").hide();
+        $("#result_button").hide();
+        $('.quiz-form').hide();
+        $('.quiz-gift').hide();
+        $('.thank-you').hide();
+        $('.main-card').hide();
+        $('.quiz-body').hide();
       }());
 
       function contentBoxShow(boxNum){
