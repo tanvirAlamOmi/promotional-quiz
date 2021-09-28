@@ -31,7 +31,7 @@
                 
       <td class="col-6" style="line-height: 24px; font-size: 16px; width: 50%; margin: 0;" align="left">
   
-          <img class="img-fluid" src="https://bootstrapemail.com/some/image.png" alt="Some Image" style="height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; max-width: 100%; width: 100%; border: 0 none;" width="100%">
+          <img class="img-fluid" src="{{asset('/img/main-logo.webp')}}" alt="Some Image" style="height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; max-width: 100%; width: 100%; border: 0 none;" width="100%">
         
 </td>
         <td class="col-6 ax-right" align="right" style="line-height: 24px; font-size: 16px; width: 50%; margin: 0;">
@@ -81,7 +81,7 @@
     </tr>
   </tbody>
 </table>
-          <div class="h4 text-center fw-700" style="padding-top: 0; padding-bottom: 0; font-weight: 700 !important; vertical-align: baseline; font-size: 24px; line-height: 28.8px; margin: 0;" align="center">{Enter Sandwich name}!</div>
+          <div class="h4 text-center fw-700" style="padding-top: 0; padding-bottom: 0; font-weight: 700 !important; vertical-align: baseline; font-size: 24px; line-height: 28.8px; margin: 0;" align="center">{{$sandwich_name}}!</div>
 <table class="s-2 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
   <tbody>
     <tr>
@@ -147,7 +147,7 @@
     <table class="container bg-white py-12" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" bgcolor="#ffffff">
   <tbody>
     <tr>
-      <td align="center" style="line-height: 24px; font-size: 16px; margin: 0; padding: 48px 16px;" bgcolor="#ffffff">
+      <td align="center" style="line-height: 24px; font-size: 16px; margin: 0; padding: 48px 16px 0px 16px;" bgcolor="#ffffff">
         <!--[if (gte mso 9)|(IE)]>
           <table align="center" role="presentation">
             <tbody>
@@ -192,6 +192,33 @@
 </table>
         
 </td>
+       
+     
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        <![endif]-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="container bg-white py-12" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" bgcolor="#ffffff">
+  <tbody>
+    <tr>
+      <td align="center" style="line-height: 24px; font-size: 16px; margin: 0; padding: 16px 16px;" bgcolor="#ffffff">
+        <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 600px; margin: 0 auto;">
+          <tbody>
+            <tr>
+              <td style="line-height: 24px; font-size: 16px; margin: 0;" align="left">
+                
+      
         <table class="card" role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-radius: 6px; border-collapse: separate !important; width: 100%; overflow: hidden; border: 1px solid #e2e8f0;" bgcolor="#ffffff">
   <tbody>
     <tr>
@@ -199,8 +226,8 @@
         <table class="card-body text-center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; text-align: center !important;">
   <tbody>
     <tr>
-      <td style="line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 20px;" align="center">
-        {ENTER CODE}
+      <td style="line-height: 24px; font-size: 16px; width: 40%; margin: 0; padding: 20px;" align="center">
+        {{$sandwich_code}}
       </td>
     </tr>
   </tbody>
@@ -240,16 +267,29 @@
             </tr>
           </tbody>
         </table>
-        <!--[if (gte mso 9)|(IE)]>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        <![endif]-->
       </td>
     </tr>
   </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
       </td>
     </tr>
