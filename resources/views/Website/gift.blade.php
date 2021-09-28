@@ -4,12 +4,12 @@
         <div class="row">
           <div class="col-12">
           <img data-src="{{asset('img\clb.png')}}" alt="" class="win lazyload">
-          <p>Nothing makes you happier than a cup of karak and a night with the boys, so your soul sandwich is
+          <p>Nothing makes you happier than a cup of karak and a night with the boys, so your soul sandwich is</p>
             <div id="gift_name"></div>
-          </p>
-          <h6 id="gift_details"></h6>
           
           <img src="" id="gift_img" alt="gift-img" class="test-img">
+          
+          <h6 id="gift_details"></h6>
           </div>
           <div>
           <button class="btn btn-primary" type="button" id="coupon_button">
