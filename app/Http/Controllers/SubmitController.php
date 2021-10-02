@@ -81,7 +81,7 @@ class SubmitController extends Controller
                     // 'reply'=> $request->reply,
                 ];
                 Mail::send($mail_template, $data, function($message) use ($mail_to, $name) {
-                    $message->to($mail_to, $name )->subject('Resonse to your query');
+                    $message->to($mail_to, $name )->subject("You've won a free sandwich from delicious 🤯");
                 }); 
                 // END mail send
             // });
@@ -149,7 +149,7 @@ class SubmitController extends Controller
                     // 'reply'=> $request->reply,
                 ];
                 // Mail::send($mail_template, $data, function($message) use ($mail_to, $name) {
-                //     $message->to($mail_to, $name )->subject('Resonse to your query');
+                //     $message->to($mail_to, $name )->subject("You've won a free sandwich from delicious 🤯");
                 // }); 
                 // END mail send
             // });
@@ -163,9 +163,9 @@ class SubmitController extends Controller
 
     }
     
-    public function orderListDataTable()
+    public function orderListDataTable($fromDate, $toDate)
     {
-			$data = Submit::All();
+			$data = Submit::whereBetween('created_at', [$fromDate, $toDate])->get();
 			return Datatables::of($data)
             ->addColumn('created_at', function ($row){
                 return $row->created_at->format('d-M-Y h:i A');

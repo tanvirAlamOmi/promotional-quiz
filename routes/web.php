@@ -24,7 +24,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::view('/home', 'Admin.home');
     Route::view('/users', 'Admin.users');
     Route::view('/rewards_statistic', 'Admin.reward_stats');
-    Route::get('/orders_datatable', [SubmitController::class, 'orderListDataTable']);
+    Route::get('/orders_datatable/{fromDate}/{toDate}', [SubmitController::class, 'orderListDataTable']);
     Route::get('/users_datatable', [UserController::class, 'userListDataTable']);
     Route::get('/rewards_datatable', [SubmitController::class, 'rewardListDataTable']);
     Route::get('/rewards_stat_chart', [SubmitController::class, 'rewardStatChart']);
