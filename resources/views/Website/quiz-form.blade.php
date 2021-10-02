@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-              
+              <h1>Win a free sandwich - everyone is a winner!</h1>
                 <form id="customerForm">
                   <div class="alert">
                       <ul id="message" style="margin: 0px;">
@@ -36,6 +36,7 @@
                     <li>Not applicable on purchases of detox plans.</li>
                     <!-- <li>You can win a coupon code for your sandwich only once a month.</li> -->
                     <li>By entering your details, you agree to receive SMS & Email communication by the Delicious team - we send communication on discounts & offers; twice a month.</li>
+                    <li>Management reserves the right to pause or end the campaign, as needed.</li>
                   </ul>
                 </div>
               </div>
