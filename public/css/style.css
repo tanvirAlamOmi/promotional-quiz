@@ -275,6 +275,7 @@ input[type=number] {
 .quiz-form h1 {
     font-size: 1.7rem;
     padding: 4rem 0 1rem 0;
+    color: #038183;
 }
 
 .quiz-form .alert {
@@ -562,6 +563,7 @@ b {
     color: #148185;
     text-transform: uppercase;
     display: inline-flex;
+    padding: 0.4rem;
 }
 
 
@@ -736,6 +738,8 @@ b {
     }
     .quiz-gift .test-img {
         width: 63%;
+        margin-top: 1.8rem;
+        margin-bottom: 1rem;
     }
     .thank-you {
         min-height: 100vw;
@@ -786,7 +790,7 @@ b {
     }
     .quiz-form .btn {
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: 37.3px;
         padding: 20px 50px;
     }
     .absulate-bottom {
@@ -844,9 +848,8 @@ b {
         font-size: 58px;
     }
     .quiz-form h1 {
-        font-size: 2.9rem;
-        padding: 2rem 0 1rem 0;
-        
+        font-size: 3.5rem;
+        padding: 2.4rem 0 1rem 0;
     }
     b {
         font-size: 2.4rem;
