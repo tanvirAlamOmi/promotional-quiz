@@ -560,6 +560,8 @@ b {
     font-weight: bolder;
     font-size: 1.5rem;
     color: #148185;
+    text-transform: uppercase;
+    display: inline-flex;
 }
 
 
@@ -846,6 +848,7 @@ b {
     }
     b {
         font-size: 2.4rem;
+        margin: 20px;
     }
 }
 
