@@ -278,7 +278,7 @@ input[type=number] {
 }
 
 .quiz-form .alert {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .quiz-form .alert ul {

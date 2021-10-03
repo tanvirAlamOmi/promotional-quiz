@@ -118,6 +118,7 @@
         $('.thank-you').hide();
         $('.main-card').hide();
         $('.quiz-body').hide();
+        $('.alert').hide();
       }());
 
       function contentBoxShow(boxNum){
@@ -347,6 +348,8 @@
       $('#customerForm').submit( (event) => {
         event.preventDefault();
         $('#quiz_start').addClass('spinner-border spinner-border-sm');
+        $('.alert').hide();
+        
         $.ajax({
           type: "POST",
           url: '/check_validation',
@@ -368,6 +371,7 @@
               $('#quiz_start').removeClass('spinner-border spinner-border-sm');
             }
             else if(output.result == "failed"){
+              $('.alert').show();
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger');
               $('#quiz_start').removeClass('spinner-border spinner-border-sm');
             }
@@ -377,6 +381,7 @@
               $.each(response.responseJSON.errors,function(field_name,error){
                 list +=`<li> ${error} </li>`;
               })
+              $('.alert').show();
               $('#message').html(list).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
               $('#quiz_start').removeClass('spinner-border spinner-border-sm');
             }
