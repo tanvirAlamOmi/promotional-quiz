@@ -845,6 +845,8 @@ b {
     }
     .quiz-form h1 {
         font-size: 2.9rem;
+        padding: 2rem 0 1rem 0;
+        
     }
     b {
         font-size: 2.4rem;
