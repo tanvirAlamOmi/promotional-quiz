@@ -21,7 +21,9 @@
                     <label for="customerPhone" class="form-label">Phone</label>
                     <input type="number" placeholder="0551234567" class="form-control" id="customerPhone" name="customerPhone" aria-describedby="emailHelp">
                   </div>
-                  <button type="submit" class="btn btn-primary">start quiz</button>
+                  <button type="submit" class="btn btn-primary">
+                    <span class="" role="status" aria-hidden="true" id="quiz_start" ></span>
+                    start quiz</button>
                 </form>
             </div>
               <div class="col-12">
