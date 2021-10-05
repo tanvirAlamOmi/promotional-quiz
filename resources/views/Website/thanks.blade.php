@@ -9,8 +9,8 @@
               <!-- <a href="{{url('/')}}">Back Home</a> -->
             </div>
             <div class="col-12">
-              <a href="{{url('https://www.instagram.com/deliciousuae/?hl=en')}}" class="btn btn-primary">Contact us on Instagram for any questions</a>
-              <a href="{{url('/')}}" class="btn btn-primary">Visit Website</a>
+              <a href="{{url('https://www.instagram.com/deliciousuae/?hl=en')}}" target="_blank" class="btn btn-primary">Contact us on Instagram for any questions</a>
+              <a href="{{url('/')}}" target="_blank" class="btn btn-primary">Visit Website</a>
             </div>
           </div>
         </div>

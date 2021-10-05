@@ -175,7 +175,7 @@
 
           case 'T':
             return {
-              "name" : "Tikka Sandwich",
+              "name" : "Chicken Tikka Baguette",
               "coupon_code" : "CT14FREE",
               "img_source" : "Tikka_sandwich.webp",
               "details": "Your soul sandwich is </br><b>the Chicken Tikka Baguette!</b> </br>You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
@@ -200,8 +200,8 @@
         }else{
           if( [...totalPoint][[...totalPoint].length - 1]  == 'n' ){
             return {
-              "name" : "Tikka Sandwich",
-              "coupon_code" : "Pesto Chicken",
+              "name" : "Chicken Tikka Baguette",
+              "coupon_code" : "CT14FREE",
               "img_source" : "Tikka_sandwich.webp",
               "details": "Your soul sandwich is </br> <b> the Chicken Tikka Baguette! </b> </br> You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
             };
