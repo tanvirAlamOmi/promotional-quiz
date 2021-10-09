@@ -44,7 +44,7 @@
       
       <!-- Quiz section end -->
       <!-- quiz body start -->
-      @include('Website.quiz-section')
+      @include('Website.quiz-section-nkd')
     
       <!-- quiz body end -->
 
@@ -98,8 +98,14 @@
       let progressWidth = 0;
       let checkboxNames = ['friends', 'vacation', 'night', 'Sandwich', 'juice', 'craving'];
       let totalPoint = '';
+      let point;
       let prize;
-      let progressBarPortion = 16.66; //6 question so (100/6) = 16.66
+      let progressBarPortion = 20; //5 question so (100/5) = 20
+      let progressDone = 0;
+      const counts = {};
+      let winResult = "";
+      let prevClcickId = '';
+      let total_qus = $('.qus-headline').length;
 
       (function () {
         $(".box").hide();
@@ -108,6 +114,8 @@
         $('.quiz-gift').hide();
         $('.thank-you').hide();
         $('.main-card').hide();
+        // $('.quiz-body').hide();
+        // $('.alert').hide();
         // $('.thank-you').hide();
       }());
 
@@ -119,83 +127,203 @@
         $('.progress-bar').css('width', `${progressWidth}%`)
       }
 
-      function logic(result){
-        switch(result) {
-          case '1a2a3a4d5a-n':
-            return {
-              "name" : "Pesto Chicken",
-              "coupon_code" : "PPDE1FREE",
-              "img_source" : "pesto_chicken_sandwich.webp"
-            };
+      
+      function logic(point){
+        if(point){
+          let questionNum = [...point][0];
+          let optionNum = [...point][1];
+          let winNum = [...point][2];
+          let found = [...totalPoint].find( x =>  x == questionNum);
 
-          case '1c2c3d4c5c-n':
-            return {
-              "name" : "Tikka",
-              "coupon_code" : "CT14FREE",
-              "img_source" : "Tikka_flavoured_sandwich.webp"
-            };
-            
-          case '1b2b3c4a5d-n':
-            return {
-              "name" : "Spicy Meatball",
-              "coupon_code" : "SM98FREE",
-              "img_source" : "Spicy_Meatball_sandwich.webp"
-            };
-            
-          case '1d2d3b4b5b-v':
-            return {
-              "name" : "Veggie Melt",
-              "coupon_code" : "Pesto Chicken",
-              "img_source" : "Veggie_Melt_sandwich.webp"
-            };
-            
-          default:
-            switch(vegOrNonveg(result)) {
-              case 'n':
-                return {
-              "name" : "Tikka Flavoured Sandwich",
-              "coupon_code" : "Pesto Chicken",
-              "img_source" : "Tikka_sandwich.webp"
-            };
-                
-              case 'v':
-                return  {
-              "name" : "Southern Roasted Veggie",
-              "coupon_code" : "SRVD5FREE",
-              "img_source" : "Southern_Roasted_Veggie_sandwich.webp"
-            };
+          if(found){
+            let index = totalPoint.indexOf(found);
+            let newPoint = [...totalPoint];
+            newPoint[index] = questionNum;
+            newPoint[index + 1] = optionNum;
+            newPoint[index + 2] = winNum;
+            totalPoint = newPoint.join("");
+            progressDone++;
+            if(progressDone > 0){
+              progressDone = 0;
             }
+          }else{
+            totalPoint += point;
+          }
         }
       }
 
-      function vegOrNonveg(result){
-        let k = result.split('-');
-        return k[1];
+      function awardCalculation() {
+        let filtereds = [...totalPoint]
+        .filter(function(el, index) {
+          return el !== el.toLowerCase()
+        }).forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
+
+        let sortable = Object.fromEntries(
+            Object.entries(counts).sort(([,a],[,b]) => a-b)
+        );
+        if( !sortable[Object.keys(sortable)[Object.keys(sortable).length - 2]] || sortable[Object.keys(sortable)[Object.keys(sortable).length - 1]] > sortable[Object.keys(sortable)[Object.keys(sortable).length - 2]] ) { 
+          
+          switch(Object.keys(sortable)[Object.keys(sortable).length - 1]) {
+          case 'P':
+            return {
+              "name" : "Pepperoni",
+              "coupon_code" : "PPDE1FREE",
+              "img_source" : "pesto_chicken_sandwich.webp",
+              "details": "It’s-a </br> <b>  Pesto Chicken Sandwich  </b> </br> for you. You like the finer things in life, just like our delicious pesto sauce made with the freshest and finest ingredients. A quick getaway for you is not a vacation. You like long 3, 4, or 5 week vacations 🤷‍♂️ The Pesto Chicken sandwich is just the vacation that your taste buds need."
+            };
+
+          case 'T':
+            return {
+              "name" : "Mediterranean",
+              "coupon_code" : "CT14FREE",
+              "img_source" : "Tikka_sandwich.webp",
+              "details": "Your soul sandwich is </br><b>the Chicken Tikka Baguette!</b> </br>You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
+            };
+            
+          case 'S':
+            return {
+              "name" : "Margheritta",
+              "coupon_code" : "SM98FREE",
+              "img_source" : "Spicy_Meatball_sandwich.webp",
+              "details": "Your soul sandwich is </br> <b>the Spicy Meatball! </b></br> To you food is comfort and there's no better comfort food than our Spicy Meatball sandwich. Made with fresh home made meatballs, this sandwich will keep you happy & satisfied the whole day 🌞 Crafted with Aarabiatta Sauce to add a little spice twist to a wholesome sandwich."
+            };
+            
+          case 'V':
+            return {
+              "name" : "Sweet, Hot, and crusty",
+              "coupon_code" : "VM77FREE",
+              "img_source" : "Veggie_Melt_sandwich.webp",
+              "details": "Pure, healthy, and fresh, your soul sandwich is </br> <b>the Veggie Melt sandwich!</b> </br> Made with the freshest ingredients, this sandwich is our best selling vegetarian sandwich. Do you like doing things differently, so do we! We added a little bit of cheese to this classic vegetarian sandwich to give it an exciting twist 👌"
+            };
+        }
+        }else{
+          if( [...totalPoint][[...totalPoint].length - 1]  == 'n' ){
+            return {
+              "name" : "tandoori chicken",
+              "coupon_code" : "CT14FREE",
+              "img_source" : "Tikka_sandwich.webp",
+              "details": "Your soul sandwich is </br> <b> the Chicken Tikka Baguette! </b> </br> You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
+            };
+          }
+          else{
+            return {
+              "name" : "Sweet, Hot, and crusty",
+              "coupon_code" : "VM77FREE",
+              "img_source" : "Veggie_Melt_sandwich.webp",
+              "details": "Pure, healthy, and fresh, your soul sandwich is </br> <b> the Veggie Melt sandwich!</b> </br> Made with the freshest ingredients, this sandwich is our best selling vegetarian sandwich. Do you like doing things differently, so do we! We added a little bit of cheese to this classic vegetarian sandwich to give it an exciting twist 👌"
+            };
+          }
+        }
       }
+
 
       $('.quiz-card').click( function () {
-        $(this).find("input:checkbox").prop('checked', true);
-        let vr = this;
-        boxNum++;
-        if(boxNum < 6){
+        $(this).parent().parent().find("input:checkbox").prop('checked', false);
+        $(this).find("input:checkbox").prop('checked', true); 
+        if($(this).find("input:checkbox").prop('checked', true)[0].id != prevClcickId){ 
+          prevClcickId = $(this).find("input:checkbox").prop('checked', true)[0].id;
+         $(this).parent().parent().find('.quiz-card').css('background', "#ce452b");
+          boxNum++;
+          if(boxNum > total_qus){
+            boxNum = total_qus;
+          }
+
+          if(boxNum <= total_qus){
+            $(this).css('background', "#038183");
+          }
+          setTimeout(() => {
+            whichBoxToShow(boxNum);
+            onImageclick();
+            checkBackNextButtonAvailability();
+            showResultButton()
+            prevClcickId = ""; 
+          }, 300);
+        }
+      })
+
+      function checkBackNextButtonAvailability() {
+        if(boxNum < 1){
+          $('#prev_button').prop('disabled', true);
+        }else{
+          $('#prev_button').prop('disabled', false);
+        }
+
+        if(boxNum > 4 || progressDone == 0){
+          $('#next_button').prop('disabled', true);
+        }else{
+          $('#next_button').prop('disabled', false);
+        }
+      }
+
+      function showResultButton() {
+        if(boxNum == total_qus){
+          $("#result_button").show();
+        }else{
+          $("#result_button").hide();
+        }
+      }
+
+      function whichBoxToShow(boxNum) {
+        if(boxNum < total_qus){
           $(".box").hide();
         }
-        else if(boxNum == 6){
-          $("#result_button").show();
-          $('.form-check-input').attr("disabled", true);
-          $(vr).addClass('exchange-card-color')
-        }
+        // else if(boxNum == total_qus){
+        //   $('.form-check-input').attr("disabled", true);
+        // }
         else{ 
           return;
         }
-        onImageclick(vr);
+      }
+
+      
+      $('#prev_button').click( function () {
+        if(boxNum < 1){
+          return;
+        }
+        if(boxNum == total_qus){
+          boxNum = total_qus - 1;
+        }
+        boxNum--;
+        progressDone--;
+        
+        if(boxNum == total_qus - 1){
+          $("#result_button").show();
+        }else{
+          $("#result_button").hide();
+        }
+        whichBoxToShow(boxNum);
+        contentBoxShow(boxNum)
+        checkBackNextButtonAvailability();
+      })
+      
+      $('#next_button').click( function () {
+        if(boxNum > (total_qus - 2)){
+          return;
+        } 
+        
+        boxNum++;
+        progressDone++;
+        if(progressDone > 0){
+          progressDone = 0;
+        }
+        
+        if(boxNum == total_qus - 1){
+          $("#result_button").show();
+        }else{
+          $("#result_button").hide();
+        }
+
+        whichBoxToShow(boxNum);
+        contentBoxShow(boxNum)
+        checkBackNextButtonAvailability();
       })
 
-     function onImageclick(vr) {
-        totalPoint += $(`input:checkbox[name=${checkboxNames[boxNum-1]}]:checked`).val();
+     function onImageclick() {
+        point = $(`input:checkbox[name=${checkboxNames[boxNum-1]}]:checked`).val();
+        logic(point);
         progressWidth = progressWidth + progressBarPortion;
         progressBarProgress(progressWidth)
-        contentBoxShow(boxNum)
+        contentBoxShow(boxNum);
       }
 
       $('#result_button').click( () => {
@@ -204,8 +332,9 @@
         $("#result_button").hide();
         $('.quiz-gift').show();
         $('.progress').hide();
-        prize = logic(totalPoint);
+        prize = awardCalculation();
         $('#gift_name').html(prize.name);
+        $('#gift_details').html(prize.details);
         $('#gift_img').attr("src", `{{asset('img/prize/${prize.img_source}')}}`);
       })
 
@@ -224,6 +353,9 @@
 
       $('#customerForm').submit( (event) => {
         event.preventDefault();
+        $('#quiz_start').addClass('spinner-border spinner-border-sm');
+        $('.alert').hide();
+
         $.ajax({
           type: "POST",
           url: '/submit_form_nkd',

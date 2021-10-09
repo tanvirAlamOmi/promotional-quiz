@@ -44,7 +44,7 @@
         
         <!-- Quiz section end -->
         <!-- quiz body start -->
-        @include('Website.quiz-section')
+        @include('Website.quiz-section-deli')
       
         <!-- quiz body end -->
 
@@ -78,7 +78,6 @@
 
     function showPage() {
       document.getElementById("loader").style.display = "none";
-
     }
     </script>
     <!-- preloader js end-->
@@ -109,6 +108,7 @@
       const counts = {};
       let winResult = "";
       let prevClcickId = '';
+      let total_qus = $('.qus-headline').length;
 
       (function () {
         $(".box").hide();
@@ -225,11 +225,11 @@
           prevClcickId = $(this).find("input:checkbox").prop('checked', true)[0].id;
          $(this).parent().parent().find('.quiz-card').css('background', "#ce452b");
           boxNum++;
-          if(boxNum > 6){
-            boxNum = 6;
+          if(boxNum > total_qus){
+            boxNum = total_qus;
           }
 
-          if(boxNum <= 6){
+          if(boxNum <= total_qus){
             $(this).css('background', "#038183");
           }
           setTimeout(() => {
@@ -249,7 +249,7 @@
           $('#prev_button').prop('disabled', false);
         }
 
-        if(boxNum > 4 || progressDone == 0){
+        if(boxNum > (total_qus - 2) || progressDone == 0){
           $('#next_button').prop('disabled', true);
         }else{
           $('#next_button').prop('disabled', false);
@@ -257,7 +257,7 @@
       }
 
       function showResultButton() {
-        if(boxNum == 6){
+        if(boxNum == total_qus){
           $("#result_button").show();
         }else{
           $("#result_button").hide();
@@ -265,10 +265,10 @@
       }
 
       function whichBoxToShow(boxNum) {
-        if(boxNum < 6){
+        if(boxNum < total_qus){
           $(".box").hide();
         }
-        // else if(boxNum == 6){
+        // else if(boxNum == total_qus){
         //   $('.form-check-input').attr("disabled", true);
         // }
         else{ 
@@ -280,13 +280,13 @@
         if(boxNum < 1){
           return;
         }
-        if(boxNum == 6){
-          boxNum = 5;
+        if(boxNum == total_qus){
+          boxNum = total_qus - 1;
         }
         boxNum--;
         progressDone--;
         
-        if(boxNum == 5){
+        if(boxNum == total_qus - 1){
           $("#result_button").show();
         }else{
           $("#result_button").hide();
@@ -297,7 +297,7 @@
       })
 
       $('#next_button').click( function () {
-        if(boxNum > 4){
+        if(boxNum > (total_qus - 2)){
           return;
         } 
         
@@ -307,7 +307,7 @@
           progressDone = 0;
         }
         
-        if(boxNum == 5){
+        if(boxNum == total_qus - 1){
           $("#result_button").show();
         }else{
           $("#result_button").hide();
@@ -347,6 +347,7 @@
 
       $('#customerForm').submit( (event) => {
         event.preventDefault();
+        $('#customer_submit').prop('disabled', true);
         $('#quiz_start').addClass('spinner-border spinner-border-sm');
         $('.alert').hide();
         
@@ -375,6 +376,8 @@
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger');
               $('#quiz_start').removeClass('spinner-border spinner-border-sm');
             }
+            
+            $('#customer_submit').prop('disabled', false);
           },
           error:function (response){
             let list = '';
@@ -384,12 +387,16 @@
               $('.alert').show();
               $('#message').html(list).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
               $('#quiz_start').removeClass('spinner-border spinner-border-sm');
+              
+              $('#customer_submit').prop('disabled', false);
             }
         });
       })
 
       $('#coupon_button').click( (event) => {
         event.preventDefault();
+        
+        $('#coupon_button').prop('disabled', true);
         $('#coupon_button_loading').addClass('spinner-border spinner-border-sm');
         $.ajax({
           type: "POST",
@@ -414,6 +421,8 @@
               $('#message').html(`<li> ${output.message} </li>`).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger')
               $('#coupon_button_loading').removeClass('spinner-border spinner-border-sm');
             }
+            
+            $('#coupon_button').prop('disabled', false);
           },
           error:function (response){
             let list = '';
@@ -422,6 +431,8 @@
               })
               $('#message').html(list).removeClass('alert-success').removeClass('alert-danger').addClass('alert-danger');
               $('#coupon_button_loading').removeClass('spinner-border spinner-border-sm');
+              
+              $('#coupon_button').prop('disabled', false);
           }
         });
       })
