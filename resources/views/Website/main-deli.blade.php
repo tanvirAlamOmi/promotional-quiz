@@ -158,47 +158,54 @@
         .filter(function(el, index) {
           return el !== el.toLowerCase()
         }).forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
-
         let sortable = Object.fromEntries(
             Object.entries(counts).sort(([,a],[,b]) => a-b)
         );
-        if( !sortable[Object.keys(sortable)[Object.keys(sortable).length - 2]] || sortable[Object.keys(sortable)[Object.keys(sortable).length - 1]] > sortable[Object.keys(sortable)[Object.keys(sortable).length - 2]] ) { 
-          
-          switch(Object.keys(sortable)[Object.keys(sortable).length - 1]) {
-          case 'P':
-            return {
-              "name" : "Pesto Chicken Sandwich",
-              "coupon_code" : "PPDE1FREE",
-              "img_source" : "pesto_chicken_sandwich.webp",
-              "details": "It’s-a </br> <b>  Pesto Chicken Sandwich  </b> </br> for you. You like the finer things in life, just like our delicious pesto sauce made with the freshest and finest ingredients. A quick getaway for you is not a vacation. You like long 3, 4, or 5 week vacations 🤷‍♂️ The Pesto Chicken sandwich is just the vacation that your taste buds need."
-            };
 
-          case 'T':
-            return {
-              "name" : "Chicken Tikka Baguette",
-              "coupon_code" : "CT14FREE",
-              "img_source" : "Tikka_sandwich.webp",
-              "details": "Your soul sandwich is </br><b>the Chicken Tikka Baguette!</b> </br>You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
-            };
-            
-          case 'S':
-            return {
-              "name" : "Spicy Meatball Sandwich",
-              "coupon_code" : "SM98FREE",
-              "img_source" : "Spicy_Meatball_sandwich.webp",
-              "details": "Your soul sandwich is </br> <b>the Spicy Meatball! </b></br> To you food is comfort and there's no better comfort food than our Spicy Meatball sandwich. Made with fresh home made meatballs, this sandwich will keep you happy & satisfied the whole day 🌞 Crafted with Aarabiatta Sauce to add a little spice twist to a wholesome sandwich."
-            };
-            
-          case 'V':
-            return {
-              "name" : "Veggie Melt Sandwich",
-              "coupon_code" : "VM77FREE",
-              "img_source" : "Veggie_Melt_sandwich.webp",
-              "details": "Pure, healthy, and fresh, your soul sandwich is </br> <b>the Veggie Melt sandwich!</b> </br> Made with the freshest ingredients, this sandwich is our best selling vegetarian sandwich. Do you like doing things differently, so do we! We added a little bit of cheese to this classic vegetarian sandwich to give it an exciting twist 👌"
-            };
+        if( [...totalPoint][[...totalPoint].length - 1]  == 'v' ){
+          return {
+            "name" : "Veggie Melt Sandwich",
+            "coupon_code" : "VM77FREE",
+            "img_source" : "Veggie_Melt_sandwich.webp",
+            "details": "Pure, healthy, and fresh, your soul sandwich is </br> <b> the Veggie Melt sandwich!</b> </br> Made with the freshest ingredients, this sandwich is our best selling vegetarian sandwich. Do you like doing things differently, so do we! We added a little bit of cheese to this classic vegetarian sandwich to give it an exciting twist 👌"
+          };
         }
-        }else{
-          if( [...totalPoint][[...totalPoint].length - 1]  == 'n' ){
+        else{
+          if( !sortable[Object.keys(sortable)[Object.keys(sortable).length - 2]] || sortable[Object.keys(sortable)[Object.keys(sortable).length - 1]] > sortable[Object.keys(sortable)[Object.keys(sortable).length - 2]] ) { 
+            switch(Object.keys(sortable)[Object.keys(sortable).length - 1]) {
+              case 'P':
+                return {
+                  "name" : "Pesto Chicken Sandwich",
+                  "coupon_code" : "PPDE1FREE",
+                  "img_source" : "pesto_chicken_sandwich.webp",
+                  "details": "It’s-a </br> <b>  Pesto Chicken Sandwich  </b> </br> for you. You like the finer things in life, just like our delicious pesto sauce made with the freshest and finest ingredients. A quick getaway for you is not a vacation. You like long 3, 4, or 5 week vacations 🤷‍♂️ The Pesto Chicken sandwich is just the vacation that your taste buds need."
+                };
+
+              case 'T':
+                return {
+                  "name" : "Chicken Tikka Baguette",
+                  "coupon_code" : "CT14FREE",
+                  "img_source" : "Tikka_sandwich.webp",
+                  "details": "Your soul sandwich is </br><b>the Chicken Tikka Baguette!</b> </br>You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
+                };
+                
+              case 'S':
+                return {
+                  "name" : "Spicy Meatball Sandwich",
+                  "coupon_code" : "SM98FREE",
+                  "img_source" : "Spicy_Meatball_sandwich.webp",
+                  "details": "Your soul sandwich is </br> <b>the Spicy Meatball! </b></br> To you food is comfort and there's no better comfort food than our Spicy Meatball sandwich. Made with fresh home made meatballs, this sandwich will keep you happy & satisfied the whole day 🌞 Crafted with Aarabiatta Sauce to add a little spice twist to a wholesome sandwich."
+                };
+                
+              case 'V':
+                return {
+                  "name" : "Chicken Tikka Baguette",
+                  "coupon_code" : "CT14FREE",
+                  "img_source" : "Tikka_sandwich.webp",
+                  "details": "Your soul sandwich is </br><b>the Chicken Tikka Baguette!</b> </br>You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
+                };
+              }
+          }else{
             return {
               "name" : "Chicken Tikka Baguette",
               "coupon_code" : "CT14FREE",
@@ -206,19 +213,12 @@
               "details": "Your soul sandwich is </br> <b> the Chicken Tikka Baguette! </b> </br> You’re down to earth and always up for an adventure. You are also loved by everyone around you just like our Chicken Tikka that’s found its way to the top of the best selling sandwich at delicious 💯This Chicken Tikka sandwich is just the adventure that your taste buds need."
             };
           }
-          else{
-            return {
-              "name" : "Veggie Melt Sandwich",
-              "coupon_code" : "VM77FREE",
-              "img_source" : "Veggie_Melt_sandwich.webp",
-              "details": "Pure, healthy, and fresh, your soul sandwich is </br> <b> the Veggie Melt sandwich!</b> </br> Made with the freshest ingredients, this sandwich is our best selling vegetarian sandwich. Do you like doing things differently, so do we! We added a little bit of cheese to this classic vegetarian sandwich to give it an exciting twist 👌"
-            };
-          }
+
         }
+
       }
 
       $('.quiz-card').click( function () {
-        
         $(this).parent().parent().find("input:checkbox").prop('checked', false);
         $(this).find("input:checkbox").prop('checked', true); 
         if($(this).find("input:checkbox").prop('checked', true)[0].id != prevClcickId){ 

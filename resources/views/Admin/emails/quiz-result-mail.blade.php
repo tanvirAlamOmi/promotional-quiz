@@ -101,45 +101,23 @@ u + #body a {color: #0000EE;text-decoration: underline;font-size: inherit; font-
 <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
 <![endif]--><div style='margin:0px auto;max-width:600px;'><table align='center' border='0' cellpadding='0' cellspacing='0' role='presentation' style='width:100%;'><tbody><tr><td style='direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;text-align:center;vertical-align:top;'><!--[if mso | IE]>
 <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:150px;">
-<![endif]--><div class='dys-column-per-25 outlook-group-fix' style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
-      
-    </table></div><!--[if mso | IE]>
-</td><td style="vertical-align:top;width:150px;">
-<![endif]--><div class='dys-column-per-25 outlook-group-fix' style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
-      <tr><td align='center' style='font-size:0px;padding:5px;word-break:break-word;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='border-collapse:collapse;border-spacing:0px;'><tbody><tr><td style='width:140px;'><a href='https://www.instagram.com/deliciousuae/?hl=en' target='_blank'><img height='auto' src='https://cdn.assets.dyspatch.io/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MjE0NzQ4MzY0NywiaGFuZGxlIjoiUHYxUUEwcGtUMEdMakdNZkNPd00ifQ==,signature:e131636e5368121fe3c370831e7fe53ad45bc150bab91b159614304eb19ec0cb/compress/Pv1QA0pkT0GLjGMfCOwM' style='border:none;border-radius:5px;display:block;font-size:13px;height:auto;outline:none;text-decoration:none;width:100%;' width='140' /></a></td></tr></tbody></table></td></tr>
-    </table></div><!--[if mso | IE]>
-</td><td style="vertical-align:top;width:150px;">
-<![endif]--><div class='dys-column-per-25 outlook-group-fix' style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
-      <tr><td align='center' style='font-size:0px;padding:5px;word-break:break-word;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='border-collapse:collapse;border-spacing:0px;'><tbody><tr><td style='width:140px;'><a href='https://www.instagram.com/deliciousuae/?hl=en' target='_blank'><img height='auto' src='https://cdn.assets.dyspatch.io/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MjE0NzQ4MzY0NywiaGFuZGxlIjoiMTFnOHJkRnFSRWl4enBDbXNWTkEifQ==,signature:2e48261bbe88d7050f254e754ecef46f3ed9d135b23417021f1bdc16c4114d6d/compress/11g8rdFqREixzpCmsVNA' style='border:none;border-radius:5px;display:block;font-size:13px;height:auto;outline:none;text-decoration:none;width:100%;' width='140' /></a></td></tr></tbody></table></td></tr>
-    </table></div><!--[if mso | IE]>
-</td><td style="vertical-align:top;width:150px;">
-<![endif]--><div class='dys-column-per-25 outlook-group-fix' style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
-      
-    </table></div><!--[if mso | IE]>
-</td></tr></table>
-<![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
-</td></tr></table>
 <![endif]-->
+<div class='dys-column-per-100 outlook-group-fix' 
+  style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'>
+  <table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
+  <tr><td align='center' style='font-size:0px;padding:5px;word-break:break-word;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='border-collapse:collapse;border-spacing:0px;'><tbody><tr><td style='width:200px;'><a href='https://www.instagram.com/deliciousuae/?hl=en' target='_blank'><img height='auto' src='/public/img/mail-image.jpg' style='border:none;border-radius:5px;display:block;font-size:13px;height:auto;outline:none;text-decoration:none;width:100%;' width='200' /></a></td></tr></tbody></table></td></tr>
+</table>
+</div>
+  </td></tr></tbody></table></div>
 
   <!--[if mso | IE]>
 <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
 <![endif]--><div style='margin:0px auto;max-width:600px;'><table align='center' border='0' cellpadding='0' cellspacing='0' role='presentation' style='width:100%;'><tbody><tr><td style='border-bottom:1px solid #e5e5e5;direction:ltr;font-size:0px;padding:20px 0;padding-top:0px;text-align:center;vertical-align:top;'><!--[if mso | IE]>
 <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:150px;">
-<![endif]--><div class='dys-column-per-25 outlook-group-fix' style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
-      
-    </table></div><!--[if mso | IE]>
-</td><td style="vertical-align:top;width:150px;">
-<![endif]--><div class='dys-column-per-25 outlook-group-fix' style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
-      <tr><td align='center' style='font-size:0px;padding:5px;word-break:break-word;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='border-collapse:collapse;border-spacing:0px;'><tbody><tr><td style='width:140px;'><a href='https://www.instagram.com/deliciousuae/?hl=en' target='_blank'><img height='auto' src='https://cdn.assets.dyspatch.io/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MjE0NzQ4MzY0NywiaGFuZGxlIjoia2xBMXNUUG1TQ1QwMmpIdU11Z2sifQ==,signature:5818e6174261d9a7284d819c7c6dddfdf92c946618ea2153cbc042106579f5c0/compress/klA1sTPmSCT02jHuMugk' style='border:none;border-radius:5px;display:block;font-size:13px;height:auto;outline:none;text-decoration:none;width:100%;' width='140' /></a></td></tr></tbody></table></td></tr>
-    </table></div><!--[if mso | IE]>
-</td><td style="vertical-align:top;width:150px;">
-<![endif]--><div class='dys-column-per-25 outlook-group-fix' style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
-      <tr><td align='center' style='font-size:0px;padding:5px;word-break:break-word;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='border-collapse:collapse;border-spacing:0px;'><tbody><tr><td style='width:140px;'><a href='https://www.instagram.com/deliciousuae/?hl=en' target='_blank'><img height='auto' src='https://cdn.assets.dyspatch.io/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MjE0NzQ4MzY0NywiaGFuZGxlIjoiSUlLR3VTWW1TYXkyYnQyS0cyZHQifQ==,signature:18f77703e4309406ea3f7ea46a84d9c26a20f2e1cc4a9a9576f8f980eb5d2cd6/compress/IIKGuSYmSay2bt2KG2dt' style='border:none;border-radius:5px;display:block;font-size:13px;height:auto;outline:none;text-decoration:none;width:100%;' width='140' /></a></td></tr></tbody></table></td></tr>
-    </table></div><!--[if mso | IE]>
-</td><td style="vertical-align:top;width:150px;">
-<![endif]--><div class='dys-column-per-25 outlook-group-fix' style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
-      
-    </table></div><!--[if mso | IE]>
+<![endif]-->
+
+
+<!--[if mso | IE]>
 </td></tr></table>
 <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
 </td></tr></table>
