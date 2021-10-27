@@ -105,7 +105,7 @@ u + #body a {color: #0000EE;text-decoration: underline;font-size: inherit; font-
 <div class='dys-column-per-100 outlook-group-fix' 
   style='direction:ltr;display:inline-block;font-size:13px;text-align:left;vertical-align:top;width:100%;'>
   <table border='0' cellpadding='0' cellspacing='0' role='presentation' style='vertical-align:top;' width='100%'>
-  <tr><td align='center' style='font-size:0px;padding:5px;word-break:break-word;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='border-collapse:collapse;border-spacing:0px;'><tbody><tr><td style='width:200px;'><a href='https://www.instagram.com/deliciousuae/?hl=en' target='_blank'><img height='auto' src='/public/img/mail-image.jpg' style='border:none;border-radius:5px;display:block;font-size:13px;height:auto;outline:none;text-decoration:none;width:100%;' width='200' /></a></td></tr></tbody></table></td></tr>
+  <tr><td align='center' style='font-size:0px;padding:5px;word-break:break-word;'><table border='0' cellpadding='0' cellspacing='0' role='presentation' style='border-collapse:collapse;border-spacing:0px;'><tbody><tr><td style='width:200px;'><a href='https://www.instagram.com/deliciousuae/?hl=en' target='_blank'><img height='auto' src='https://find-your-soul-sandwich.deliciousae.com/img/mail-image.jpg' style='border:none;border-radius:5px;display:block;font-size:13px;height:auto;outline:none;text-decoration:none;width:100%;' width='200' /></a></td></tr></tbody></table></td></tr>
 </table>
 </div>
   </td></tr></tbody></table></div>

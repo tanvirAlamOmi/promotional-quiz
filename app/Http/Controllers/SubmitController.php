@@ -32,10 +32,10 @@ class SubmitController extends Controller
             })
             ->first();
 
-            // if($result){
-            //     $remainintTime = $result->created_at->diff($newDateTime)->format('%D day(s) %H:%i:%s');
-            //     return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime hour(s).")); 
-            // }
+            if($result){
+                $remainintTime = $result->created_at->diff($newDateTime)->format('%D day(s) %H:%i:%s');
+                return response()->json(array("result" => "failed", "message" => "You can try again after $remainintTime hour(s).")); 
+            }
 
             return response()->json(array("result" => "success", "message" => "The User is Valid"));
 
