@@ -77,9 +77,6 @@ class SubmitController extends Controller
                 Mail::send($mail_template, $data, function($message) use ($mail_to, $name) {
                     $message->to($mail_to, $name )->subject("You've won a free sandwich from delicious 🤯");
                 }); 
-                // END mail send
-            // });
-
 
             return response()->json(array("result" => "success", "message" => "The Request submitted sucessfully."));
 
