@@ -70,15 +70,9 @@ class SubmitController extends Controller
                 $name = $request->customerName;
                 $mail_template = "Admin.emails.quiz-result-mail";
                 $data = [
-                    // 'restaurant_name'=> $restaurant->name,
-                    // 'restaurant_email'=> $restaurant->email,
                     'customer'=> $request->customerName,
                     'sandwich_name' => $request->prizeWon,
                     'sandwich_code' => $request->coupon_code,
-                    // 'phone'=>  $request->phone,
-                    // 'email'=> $request->customerEmail,
-                    // 'comment'=> $request->comment,
-                    // 'reply'=> $request->reply,
                 ];
                 Mail::send($mail_template, $data, function($message) use ($mail_to, $name) {
                     $message->to($mail_to, $name )->subject("You've won a free sandwich from delicious 🤯");
