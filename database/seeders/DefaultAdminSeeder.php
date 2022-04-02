@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use Carbon\Carbon;
 
 class DefaultAdminSeeder extends Seeder
 {
@@ -22,6 +23,7 @@ class DefaultAdminSeeder extends Seeder
             'email' => 'alam.ct013@gmail.com',
             'phone' => '01111111111',
             'password' => Hash::make('arbree123'),
+            'created_at' => Carbon::now(),
         ]);
 
     }
