@@ -79,6 +79,7 @@
     <script src="{{asset('Admin/vendor/datatables/jquery.dataTables.min.js')}}"></script>
     <script src="{{asset('Admin/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
     <script src="{{asset('Admin/js/ruang-admin.min.js')}}"></script>
+    <script src="{{asset('Admin/js/sweetalert2@11.js')}}"></script>
 
 	<script src="{{asset('Admin/vendor/table-button/dataTables.buttons.min.js')}}"></script>
 	<script src="{{asset('Admin/vendor/table-button/buttons.flash.min.js')}}"></script>
