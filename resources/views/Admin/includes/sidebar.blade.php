@@ -19,6 +19,12 @@
         </a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="{{url('products')}}">
+            <i class="fas fa-gift"></i>
+            <span>Product Coupon Code</span>
+        </a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="{{url('users')}}">
             <i class="far fa fa-user"></i>
             <span>Admins</span>
