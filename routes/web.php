@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SubmitController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductsController;
+use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +34,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/update_coupons', [ProductsController::class, 'couponCodeUpdate']);
 
 });
+
+  // Registration... fortify
+    Route::get('/register', [RegisteredUserController::class, 'create'])
+        ->middleware(['auth:'.config('fortify.guard')])
+        ->name('register');
+
+    Route::post('/register', [RegisteredUserController::class, 'store'])
+        ->middleware(['auth:'.config('fortify.guard')]);
