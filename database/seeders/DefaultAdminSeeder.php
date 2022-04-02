@@ -5,6 +5,7 @@ use App\Models\User;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DefaultAdminSeeder extends Seeder
 {
@@ -19,6 +20,7 @@ class DefaultAdminSeeder extends Seeder
          DB::table('users')->insert([
             'name' => 'arbree',
             'email' => 'alam.ct013@gmail.com',
+            'phone' => '01111111111',
             'password' => Hash::make('arbree123'),
         ]);
 
