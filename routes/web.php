@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SubmitController;
 use App\Http\Controllers\UserController;
-
+use App\Http\Controllers\ProductsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +19,7 @@ Route::view('/', 'Website.main-deli');
 Route::post('/submit_form_deli', [SubmitController::class, 'onSubmitDeli']);
 Route::post('/submit_form_nkd', [SubmitController::class, 'onSubmitNkd']);
 Route::post('/check_validation', [SubmitController::class, 'validationChcekForCustomer']);
+Route::get('/reward_pack/{tag}', [ProductsController::class, 'getReward']);
 
 Route::group(['middleware' => 'auth'], function () {
     Route::view('/home', 'Admin.home');
@@ -28,4 +29,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/users_datatable', [UserController::class, 'userListDataTable']);
     Route::get('/rewards_datatable', [SubmitController::class, 'rewardListDataTable']);
     Route::get('/rewards_stat_chart', [SubmitController::class, 'rewardStatChart']);
+    Route::get('/products', [ProductsController::class, 'getCoupons']);
+    Route::post('/update_coupons', [ProductsController::class, 'couponCodeUpdate']);
+
 });
